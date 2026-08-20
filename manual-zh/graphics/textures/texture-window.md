@@ -1,6 +1,6 @@
 # 纹理窗口
 
-![纹理](media/texture-window.jpg)
+![纹理](/manual/media/texture-window.jpg)
 
 **纹理窗口** 是预览和重新导入纹理资源的主要工具。要访问它，只需在 *内容* 窗口中双击纹理即可。
 
@@ -8,7 +8,7 @@
 
 纹理窗口的 UI 由工具栏、视口和属性面板组成。
 
-![纹理窗口](media/texture-editor-ui.jpg)
+![纹理窗口](/manual/media/texture-editor-ui.jpg)
 
 1. 工具栏
 2. 视口
@@ -32,7 +32,7 @@
 
 ### 属性面板
 
-![属性](media/texture-properties.png)
+![属性](/manual/media/texture-properties.png)
 
 此面板显示纹理信息和设置。
 

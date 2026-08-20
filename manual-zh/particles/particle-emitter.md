@@ -1,16 +1,16 @@
 # 粒子发射器
 
-![粒子发射器](media/particle-emitter.png)
+![粒子发射器](/manual/media/particle-emitter.png)
 
 **粒子发射器** 资源用于定义粒子模拟。它允许指定生成规则、模拟逻辑并描述如何渲染粒子。发射器基于可视化图来定义逻辑和创建内容。这使得构建复杂系统更加容易，同时也能直观地理解模拟的工作原理。
 
 ## 创建发射器
 
-![创建粒子发射器](media/particle-emitter-create-new.jpg)
+![创建粒子发射器](/manual/media/particle-emitter-create-new.jpg)
 
 第一步是创建一个新资源。它是一个二进制文件，包含节点图数据以及一组图参数描述。使用 `Content` 窗口创建新资源。右键单击并选择选项 **新建 -> 粒子 -> 粒子发射器**。指定其名称并按回车确认。然后你可以选择要创建的发射器模板。选择适合你需求的模板以更快地开始内容创作。你也可以选择空白发射器从头开始。
 
-![创建粒子发射器](media/particle-emitter-create-template.jpg)
+![创建粒子发射器](/manual/media/particle-emitter-create-template.jpg)
 
 ## 编辑发射器
 
@@ -18,7 +18,7 @@
 
 ## 粒子发射器上下文
 
-![粒子发射器上下文](media/particle-emitter-main-node.png)
+![粒子发射器上下文](/manual/media/particle-emitter-main-node.png)
 
 主节点顶部定义了粒子发射器的基本选项。
 
@@ -32,7 +32,7 @@
 
 ### 生成上下文
 
-![粒子发射器生成上下文](media/particle-emitter-spawn.png)
+![粒子发射器生成上下文](/manual/media/particle-emitter-spawn.png)
 
 在进行任何粒子模拟之前，必须先生成粒子。**生成上下文** 包含一个模块列表，这些模块可以基于自定义规则生成粒子。
 
@@ -40,29 +40,29 @@
 
 ### 初始化上下文
 
-![粒子发射器初始化上下文](media/particle-emitter-initialize.png)
+![粒子发射器初始化上下文](/manual/media/particle-emitter-initialize.png)
 
 **初始化上下文** 中的所有模块都会在所有粒子添加到模拟之前为其执行。此初始化发生在生成的粒子上，可用于设置属性、初始化粒子生命周期和放置粒子。
 
 ### 更新上下文
 
-![粒子发射器更新上下文](media/particle-emitter-update.png)
+![粒子发射器更新上下文](/manual/media/particle-emitter-update.png)
 
 **更新上下文** 定义了实际的粒子模拟逻辑。模块按顺序执行，执行诸如粒子老化、应用重力和模拟碰撞等模拟逻辑。
 
 更新上下文可用于动画化粒子中的任何内容。以下是一个使用 **颜色渐变** 节点在粒子归一化生命周期上采样渐变的粒子颜色动画示例。
 
-![粒子颜色渐变](media/particle-color-gradient.gif)
+![粒子颜色渐变](/manual/media/particle-color-gradient.gif)
 
 ### 渲染上下文
 
-![粒子发射器渲染上下文](media/particle-emitter-render.png)
+![粒子发射器渲染上下文](/manual/media/particle-emitter-render.png)
 
 最后是 **渲染上下文**，它定义了如何渲染粒子。可用于设置粒子排序和公告板精灵渲染，甚至在粒子位置渲染光源。请记住使用具有 *Particle* 领域的材质来绘制粒子形状。
 
 ## 参数
 
-![粒子参数](media/particle-emitter-parameters.jpg)
+![粒子参数](/manual/media/particle-emitter-parameters.jpg)
 
 每个粒子发射器都可以包含一个参数列表。通过使用它们，你可以轻松配置模拟或使其依赖于游戏逻辑。例如，粒子的颜色可以从脚本中分配，并用于为火焰烟雾的粒子着色，以标记玩家队伍颜色。
 

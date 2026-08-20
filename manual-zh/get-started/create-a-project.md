@@ -1,6 +1,6 @@
 # 创建新项目
 
-![Flax 项目页面](media/projects-page.jpg)
+![Flax 项目页面](/manual/media/projects-page.jpg)
 
 [获取 Flax](get-flax.md) 后，导航到 Flax Launcher 中的 **Projects** 页面。在这里你可以查看你的项目库。
 
@@ -12,7 +12,7 @@
 
 要创建新项目，请使用页面右上角的 **New Project** 按钮，并按照对话框的指示操作。你可以选择一个模板，并指定项目名称和目标位置。之后点击 **Create Project** 按钮，然后通过双击或使用项目库中的上下文菜单（三个点）打开它。
 
-![新建 Flax 项目对话框](media/new-project-dialog.jpg)
+![新建 Flax 项目对话框](/manual/media/new-project-dialog.jpg)
 
 现在是时候[了解 Flax 编辑器](editor.md)了……
 

@@ -4,7 +4,7 @@ Flax 引擎提供了非常广泛的自定义选项，可用于扩展渲染管线
 
 在本教程中，你将学习如何实现画中画效果：
 
-![渲染到纹理](media/picture-in-picture.png)
+![渲染到纹理](/manual/media/picture-in-picture.png)
 
 ## 创建材质
 
@@ -13,18 +13,18 @@ Flax 引擎提供了非常广泛的自定义选项，可用于扩展渲染管线
 1. 创建一个新的空材质并命名为 `TV Material`（请参阅[材质基础](../materials/basics/index.md)页面学习如何操作）
 
 2. 在材质编辑器中打开它（双击资源）
-   ![材质编辑器](media/picture-in-picture-2.jpg)
+   ![材质编辑器](/manual/media/picture-in-picture-2.jpg)
 
 3. 在 *属性面板* 中向下滚动，从底部下拉菜单中选择 **GPU 纹理** 选项，然后按下 **添加参数** 按钮
-   <br>![材质参数](media/picture-in-picture-3.jpg)
+   <br>![材质参数](/manual/media/picture-in-picture-3.jpg)
 
 4. 右键单击新创建的 *New parameter*，选择 **重命名** 选项，并将其名称设置为 **Image**
 
 5. 右键单击曲面背景，创建一个 **获取参数** 节点（要了解有关创建节点的更多信息，请参阅[材质编辑器](../materials/material-editor/index.md)页面）
-   ![材质获取参数](media/picture-in-picture-4.jpg)
+   ![材质获取参数](/manual/media/picture-in-picture-4.jpg)
 
 6. 从该节点的下拉菜单中选择 **Image** 参数，并将其 **颜色** 框连接到材质的 **自发光** 输入。
-   <br>![材质参数使用](media/picture-in-picture-5.jpg)
+   <br>![材质参数使用](/manual/media/picture-in-picture-5.jpg)
 
 7. **保存** 材质资源
 
@@ -33,7 +33,7 @@ Flax 引擎提供了非常广泛的自定义选项，可用于扩展渲染管线
 现在是时候编写一个简单的脚本，它将使用摄像机并将其渲染到纹理（也称为 *渲染目标*）。
 
 1. 导航到项目的 *Source/Game* 目录，并创建一个名为 **CameraTV** 的新 C# 脚本
-   ![创建新脚本](media/picture-in-picture-6.jpg)
+   ![创建新脚本](/manual/media/picture-in-picture-6.jpg)
 
 2. 打开脚本
 
@@ -162,13 +162,13 @@ public class CameraTV : Script
 
 1. 创建一个新的 **摄像机** 对象并将其放置在场景中
 2. 添加一个将呈现摄像机图像的对象。你可以使用 *工具箱* 窗口中的 **立方体** 模型
-   ![教程](media/picture-in-picture-7.jpg)
+   ![教程](/manual/media/picture-in-picture-7.jpg)
 
 3. 选择生成的对象，并通过简单地拖放将 **CameraTV** 脚本添加到它上面
-   ![教程](media/picture-in-picture-8.jpg)
+   ![教程](/manual/media/picture-in-picture-8.jpg)
 
 4. 为脚本属性 **Cam** 和 **Material** 设置对摄像机和材质的引用。你还可以调整分辨率（以像素为单位）。
-   <br>![教程](media/picture-in-picture-9.jpg)
+   <br>![教程](/manual/media/picture-in-picture-9.jpg)
 
 5. 点击 **播放** 并查看结果！
-   ![教程](media/picture-in-picture-10.jpg)
+   ![教程](/manual/media/picture-in-picture-10.jpg)

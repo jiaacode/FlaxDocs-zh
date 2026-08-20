@@ -1,6 +1,6 @@
 # 操作指南：设置一日内时间模拟
 
-![纹理](media/time-of-the-day.gif)
+![纹理](/manual/media/time-of-the-day.gif)
 
 在本教程中，你将学习如何设置脚本，以根据当前时间（基于太阳旋转）控制太阳光的颜色。
 

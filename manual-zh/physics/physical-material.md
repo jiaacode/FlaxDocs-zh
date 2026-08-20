@@ -6,7 +6,7 @@
 
 要创建新的物理材质资源，只需在 *内容* 窗口中导航到 Content 目录，然后右键单击并选择选项 **新建 -> 物理 -> 物理材质**。指定其名称并按 *Enter*。
 
-![创建新的物理材质](media/new-physical-material.jpg)
+![创建新的物理材质](/manual/media/new-physical-material.jpg)
 
 ## 使用物理材质
 
@@ -75,7 +75,7 @@ void PointLight::OnFootstep(Vector3 footLocation)
 
 ## 属性
 
-![编辑物理材质](media/physical-material.jpg)
+![编辑物理材质](/manual/media/physical-material.jpg)
 
 | 属性                 | 描述                                                         |
 | -------------------- | ------------------------------------------------------------ |

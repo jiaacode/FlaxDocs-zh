@@ -8,7 +8,7 @@
 
 要实现背面膨胀，你需要沿着法线方向稍微移动顶点来将模型放大一些。只渲染放大后模型的背面，这样原始模型不会被遮挡。打开材质，将混合模式设置为 **透明**，将剔除模式设置为 **反转**，关闭 Z 测试和 Z 写入。然后按下图所示设置材质图：
 
-![卡通轮廓](media/toon-outline-material.png)
+![卡通轮廓](/manual/media/toon-outline-material.png)
 
 ## 2. 编写渲染代码
 
@@ -97,4 +97,4 @@ public class OutlineRenderer : PostProcessEffect
 
 一旦你设置了材质、脚本并将其添加到场景模型中，你应该能够看到轮廓通道正在工作（在游戏模式下）。如果遇到问题，请查看编辑器中的 *输出日志* 窗口，因为它可能包含任何编译错误。
 
-![卡通轮廓示例](media/toon-outline-example.png)
+![卡通轮廓示例](/manual/media/toon-outline-example.png)

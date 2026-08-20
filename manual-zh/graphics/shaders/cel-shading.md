@@ -1,12 +1,12 @@
 # 赛璐珞风格渲染
 
-![赛璐珞风格材质](media/cel-shading-material.png)
+![赛璐珞风格材质](/manual/media/cel-shading-material.png)
 
 在本教程中，你将学习如何创建**赛璐珞风格渲染**效果，也称为**卡通渲染**。
 
 ## 1. 创建新材质
 
-![自定义光照材质着色模型](media/shading-model-custom-lit.png)
+![自定义光照材质着色模型](/manual/media/shading-model-custom-lit.png)
 
 创建一个新[材质](../materials/basics/index.md)，并将**着色模型**设置为**Custom Lit**。此模式会在着色器中暴露光照信息，包括：
 * 方向光
@@ -96,7 +96,7 @@ CelShading GetCelShading(MaterialInput input, LightData light, bool isRadial)
 
 ## 3. 编写光照和轮廓的着色器
 
-![赛璐珞风格材质设置链接](media/cel-shading-linkage.png)
+![赛璐珞风格材质设置链接](/manual/media/cel-shading-linkage.png)
 
 现在，添加一个**自定义代码**节点，该节点输入 3 种颜色：高光色、主光色和阴影色，用于此材质的赛璐珞渲染。这些可以设置为参数，以便在每个[材质实例](../materials/instanced-materials/index.md)中进行自定义。自定义代码节点的输出应直接连接到材质的自发光作为最终光照输出。
 
@@ -138,4 +138,4 @@ Output0 = float4(lighting, 1);
 
 最后，在项目中的对象上使用此材质。这些对象将根据太阳和周围的局部光照，以正确的赛璐珞渲染和轮廓进行响应。此示例着色器可以进一步改进，以支持对假反射表面的反射采样，或以不同的方式进行光照混合。此外，轮廓可以在[后期处理材质](../post-effects/post-fx-materials.md)中计算，而不是在着色器内部，以提供基于法线或基于深度的平滑处理。
 
-![赛璐珞风格渲染效果](media/cel-shading.gif)
+![赛璐珞风格渲染效果](/manual/media/cel-shading.gif)

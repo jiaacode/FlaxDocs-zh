@@ -9,13 +9,13 @@ Flax 使用 **HLSL** 作为着色语言，因为它在业界非常流行，并�
 
 ## 自定义代码
 
-![自定义代码节点](media/custom-code-node.png)
+![自定义代码节点](/manual/media/custom-code-node.png)
 
 自定义代码节点允许编写对固定输入和输出进行操作的原始 HLSL 代码。对于可以实现动态分支、动态循环或调用外部源（例如着色器库文件）中的着色器函数的小代码块，这是一个相当简单的解决方案。
 
 ## 全局自定义代码
 
-![全局自定义代码节点](media/custom-global-code-node.png)
+![全局自定义代码节点](/manual/media/custom-global-code-node.png)
 
 全局自定义代码节点更为强大，因为它将代码内联到材质模板中的特定位置。例如，它可以注入全局预处理器宏、注入自定义头文件包含、添加着色器资源绑定或声明全局函数。
 
@@ -47,4 +47,4 @@ float2 GetRandomValue(float2 uv)
 
 使用示例，其中着色器文件包含在自定义全局代码节点中，然后在该着色器文件中声明的函数在自定义代码节点中使用。请注意，自定义着色器文件可以包含其他文件并声明其他资源或函数。
 
-![自定义全局着色器文件](media/custom-global-shader-file.png)
+![自定义全局着色器文件](/manual/media/custom-global-shader-file.png)

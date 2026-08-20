@@ -4,23 +4,23 @@
 
 ### 新的泛光
 
-![新的泛光渲染](media/bloom.png)
+![新的泛光渲染](/manual/media/bloom.png)
 
 **泛光效果** 采用了新的更平滑的渲染方式，提供了 **更逼真的效果**。它采用了基于 mipmap 的双重过滤，并带有可配置的软拐点。新的视觉效果更柔和、更稳定，并且具有更广泛的扩散效果，在观察亮点时会自然扩散。
 
 ### 多重混合编辑器改进
 
-![新的多重混合 2D 编辑器](media/multi-blend-editor.gif)
+![新的多重混合 2D 编辑器](/manual/media/multi-blend-editor.gif)
 
 新的多重混合 2D 编辑器将可视化三角化的混合空间，并带有渐变和高亮显示，以便更好地理解动画是如何被插值的。这准确地表示了底层运行动画混合的逻辑。
 
 ### 新的网格顶点格式
 
-![新的网格顶点格式](media/vertex-layout.png)
+![新的网格顶点格式](/manual/media/vertex-layout.png)
 
 此版本中最大的变化之一是 **对网格使用的顶点缓冲区进行了完全重构**。静态网格和蒙皮网格将不再使用固定的顶点格式。相反，它们将允许更灵活和完全可自定义的数据。这是通过添加新的 `GPUVertexLayout` 并在顶点着色器中移除固定格式依赖来实现的（请参阅 *迁移指南*）。
 
-![多个纹理坐标网格](media/texcoords.png)
+![多个纹理坐标网格](/manual/media/texcoords.png)
 
 此更改带来了多个好处：
 * 更优化的模型资源数据（在导入时剥离未使用的属性），
@@ -30,11 +30,11 @@
 * 支持蒙皮模型的顶点颜色，
 * 支持游戏使用的非标准网格数据格式。
 
-![多个纹理坐标通道](media/multiple-uvs.png)
+![多个纹理坐标通道](/manual/media/multiple-uvs.png)
 
 ### 新的动画重定向
 
-![新的动画重定向](media/animation-retargeting.gif)
+![新的动画重定向](/manual/media/animation-retargeting.gif)
 
 我们对 **动画重定向** 进行了重大改进。在上面的 GIF 中，来自 Synty 的各种角色使用不同的骨骼（来自不同的资源包），并正确播放相同的动画。要了解有关此功能的更多信息，请参阅[动画重定向文档](../../animation/animation/retargeting.md)。
 
@@ -49,7 +49,7 @@
 
 ### 调试命令
 
-![输出日志中的调试命令](media/debug-commands-output-log.gif)
+![输出日志中的调试命令](/manual/media/debug-commands-output-log.gif)
 
 新的 **调试命令** 系统随 Flax 1.10 一起推出，并在输出日志窗口内提供了新的控制台。`DebugCommand` 是一个可以放置在类、字段、方法和属性上的特性，用于将它们暴露出来以供配置、模组或工具使用。
 
@@ -57,19 +57,19 @@
 
 对于游戏内控制台，我们通过 [Arizona 框架](https://github.com/FlaxEngine/ArizonaFramework) 中的 ImGui 系统添加了一个。
 
-![游戏内调试命令](media/debug-commands-in-game.png)
+![游戏内调试命令](/manual/media/debug-commands-in-game.png)
 
 完整的文档可在[此处](../../scripting/advanced/debug-commands.md)获得。
 
 ### 按钮特性
 
-![按钮特性](media/button-attribute.png)
+![按钮特性](/manual/media/button-attribute.png)
 
 我们做到了！最后，`Button` 特性出现在 C# 和 C++ 脚本中，用于快速注释函数，以便在编辑器属性窗口中向用户公开，供用户点击。这在原型设计程序化关卡生成系统或其他随机化/基于代码的算法时非常方便。它适用于编辑时或运行模式下的静态方法和成员方法。
 
 ### 曲线编辑改进
 
-![曲线编辑改进](media/curve-editing.gif)
+![曲线编辑改进](/manual/media/curve-editing.gif)
 
 此更新为 **曲线编辑器** 带来了各种修复和改进。最终，稳定了缩放和平移，实现了更稳健的编辑。
 

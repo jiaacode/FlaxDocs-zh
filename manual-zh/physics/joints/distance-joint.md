@@ -1,12 +1,12 @@
 # 距离关节
 
-![距离关节](media/distance-joint.gif)
+![距离关节](/manual/media/distance-joint.gif)
 
 **距离关节** 将约束 Actor 的原点保持在一定的距离范围内。该范围可以同时具有上限和下限。
 
 ## 属性
 
-![属性](media/distance-joint-properties.jpg)
+![属性](/manual/media/distance-joint-properties.jpg)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |

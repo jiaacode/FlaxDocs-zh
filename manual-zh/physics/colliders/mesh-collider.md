@@ -1,12 +1,12 @@
 # 网格碰撞体
 
-![网格碰撞体](media/mesh.png)
+![网格碰撞体](/manual/media/mesh.png)
 
 一种由任意网格表示的碰撞体。请参阅[碰撞数据](collision-data.md)资源文档，了解有关创建凸包网格和三角形网格的更多信息。
 
 ## 属性
 
-![属性](media/mesh-properties.jpg)
+![属性](/manual/media/mesh-properties.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |

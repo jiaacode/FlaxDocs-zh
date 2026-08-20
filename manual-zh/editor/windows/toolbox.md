@@ -6,7 +6,7 @@
 
 ## 生成
 
-![工具箱](media/toolbox-1.png)
+![工具箱](/manual/media/toolbox-1.png)
 
 默认且最常用的工具箱模式是 **生成**。
 在此模式下，你可以通过将新 Actor 拖放到[视口](viewport.md)或[场景窗口](scene-window.md)中来将其添加到场景中。

@@ -4,11 +4,11 @@
 
 ## 如何创建动画图函数
 
-![新建动画图函数](media/anim-graph-function-new.png)
+![新建动画图函数](/manual/media/anim-graph-function-new.png)
 
 第一步是在 *内容* 窗口中 *右键单击*，然后选择选项 **新建 -> 动画 -> 动画图函数**。然后指定其名称并按 *回车* 确认。通过双击它来打开资源编辑器。
 
-![空的动画图函数](media/anim-graph-function-empty.png)
+![空的动画图函数](/manual/media/anim-graph-function-empty.png)
 
 现在，你可以尽情发挥创造力，在这里实现几乎任何内容。动画图函数是一个由普通动画图节点组成的图，但它包含自定义的 **函数输出** 和 **函数输入** 节点，这些节点代表函数的参数和返回值。动画图函数可以使用动画，并在可重用的图中执行复杂的计算。
 
@@ -22,4 +22,4 @@
 
 最后，如果你修改了函数，Flax 将自动更新所有使用该函数的图，因此你可以轻松地处理内容。
 
-![动画图函数使用](media/anim-graph-function-calling.png)
+![动画图函数使用](/manual/media/anim-graph-function-calling.png)

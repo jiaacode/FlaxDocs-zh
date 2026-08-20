@@ -11,13 +11,13 @@
 
 现在，将纹理组添加到列表中，并通过命名（例如 `World Textures`、`Character Textures` 等）并设置 **采样器过滤** 为 **各向异性** 来调整其属性。纹理组包含许多用于高级纹理设置的属性。
 
-![新建纹理组](media/texture-group-new.png)
+![新建纹理组](/manual/media/texture-group-new.png)
 
 ### 2. 将纹理组分配给纹理
 
 下一步是告诉引擎哪些纹理属于哪个组。为此，只需在[纹理窗口](../textures/texture-window.md)编辑器（*属性* 组）中打开纹理资源进行设置，或在[导入新纹理](../textures/import-settings.md)时进行分配。使用 **纹理组选择器** 来显示项目中纹理组的列表。对于非常特定的场景，你也可以在运行时通过脚本更改纹理组。
 
-![将纹理组分配给纹理](media/texture-group-set-texture.png)
+![将纹理组分配给纹理](/manual/media/texture-group-set-texture.png)
 
 对所有应属于给定纹理组的纹理重复此步骤。
 
@@ -25,14 +25,14 @@
 
 现在，你可以在材质中使用纹理组采样器，在渲染对象时读取纹理像素。只需添加 **Sample Texture** 节点，将 *Sampler* 设置为 *Texture Group*，然后选择要用于使用此材质的对象的纹理组。将输入纹理从此节点的参数或常量纹理节点插入（蓝色引脚）。然后像往常一样使用采样纹理输出。它将包含使用纹理组过滤器采样的纹理颜色。
 
-![带有纹理组的纹理采样器节点](media/texture-group-sample.png)
+![带有纹理组的纹理采样器节点](/manual/media/texture-group-sample.png)
 
 ### 4. 测试！
 
 最后，你可以测试纹理组采样器和纹理质量流式传输。在编辑器中，你可以使用 **图形质量窗口** 实时调整纹理组的属性（如果未显示新组，只需运行游戏或重启编辑器）。
 
-![带有采样器的纹理组展示](media/texture-group-showcase.gif)
+![带有采样器的纹理组展示](/manual/media/texture-group-showcase.gif)
 
 在这里你可以看到在网格纹理上以陡峭角度观察时，*三线性* 和 *各向异性* 采样器之间的差异。
 
-![纹理采样器三线性或各向异性](media/anisotropic-vs-trilinear.png)
+![纹理采样器三线性或各向异性](/manual/media/anisotropic-vs-trilinear.png)

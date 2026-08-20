@@ -187,13 +187,13 @@ public class WeaponRenderer : PostProcessEffect
 
 打开[层与标签设置](../../editor/game-settings/layers-and-tags-settings.md)，为 `Weapons` 和 `Lights` 添加单独的层。然后将这些层分配给相应的 Actor，以便游戏 *知道* 哪个对象是玩家的武器，哪些是场景中的灯光。
 
-![FPS 武器渲染层设置](media/weapon-fps-render-layers.png)
+![FPS 武器渲染层设置](/manual/media/weapon-fps-render-layers.png)
 
 ### 3. 设置场景
 
 现在，将创建的脚本添加到摄像机 Actor，将脚本的 **WeaponLayer** 属性链接到包含玩家武器对象的层。将 **AdditionalLayers** 属性链接到在渲染武器时应使用的全局后期处理效果体积、环境探针和灯光。
 
-![FPS 武器渲染设置](media/weapon-fps-script-setup.png)
+![FPS 武器渲染设置](/manual/media/weapon-fps-script-setup.png)
 
 你还可以通过 **RenderFlags** 属性调整渲染设置，或覆盖用于武器渲染的投影矩阵。
 
@@ -201,4 +201,4 @@ public class WeaponRenderer : PostProcessEffect
 
 最后，启动游戏并查看结果。
 
-![FPS 武器渲染展示](media/weapon-fps.gif)
+![FPS 武器渲染展示](/manual/media/weapon-fps.gif)

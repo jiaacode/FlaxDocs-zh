@@ -1,8 +1,8 @@
 # 内容搜索
 
 <figure class="video_container">
-  <video autoplay muted loop poster="media/content-search.png">
-    <source src="media/content-search-tool.mp4" type="video/mp4">
+  <video autoplay muted loop poster="/manual/media/content-search.png">
+    <source src="/manual/media/content-search-tool.mp4" type="video/mp4">
   </video>
 </figure>
 

@@ -1,6 +1,6 @@
 # 内容窗口
 
-![内容窗口](media/content-window.jpg)
+![内容窗口](/manual/media/content-window.jpg)
 
 **内容窗口** 显示你的项目资源和脚本。你可以使用新建资源按钮创建新资源，或将源文件拖放到资源视图中。你也可以将资源从资源视图拖放到不同的编辑器或[属性窗口](properties-window.md)中，以添加对它的引用。
 
@@ -8,19 +8,19 @@
 
 ## 工具栏
 
-![内容窗口工具栏](media/content-window-toolstrip.jpg)
+![内容窗口工具栏](/manual/media/content-window-toolstrip.jpg)
 
 | 控件                                          | 描述                                                         |
 | --------------------------------------------- | ------------------------------------------------------------ |
-| ![导入](media/content-window-toolstrip-1.png) | 打开文件导入对话框。用于导入纹理、模型和其他资源。           |
-| ![导入](media/content-window-toolstrip-2.png) | 在历史记录中向后导航。                                       |
-| ![导入](media/content-window-toolstrip-3.png) | 在历史记录中向前导航。                                       |
-| ![导入](media/content-window-toolstrip-4.png) | 在历史记录中向上导航到父目录。                               |
-| ![导入](media/content-window-toolstrip-0.png) | 导航栏，显示当前视图位置的路径，并拆分为一组按钮。你可以点击它们进行快速导航。 |
+| ![导入](/manual/media/content-window-toolstrip-1.png) | 打开文件导入对话框。用于导入纹理、模型和其他资源。           |
+| ![导入](/manual/media/content-window-toolstrip-2.png) | 在历史记录中向后导航。                                       |
+| ![导入](/manual/media/content-window-toolstrip-3.png) | 在历史记录中向前导航。                                       |
+| ![导入](/manual/media/content-window-toolstrip-4.png) | 在历史记录中向上导航到父目录。                               |
+| ![导入](/manual/media/content-window-toolstrip-0.png) | 导航栏，显示当前视图位置的路径，并拆分为一组按钮。你可以点击它们进行快速导航。 |
 
 ## 上下文菜单
 
-![上下文菜单](media/content-window-context-menu.jpg)
+![上下文菜单](/manual/media/content-window-context-menu.jpg)
 
 如果你在项目（资源或文件夹）或资源视图背景上 **右键单击**，将显示上下文菜单。
 它包含用于工作区管理和资源操作的一组选项。

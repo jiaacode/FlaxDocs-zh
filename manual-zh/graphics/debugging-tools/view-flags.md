@@ -4,7 +4,7 @@
 
 编辑器中的每个视口都有选项，可以使用 **视图 -> 视图标志** 来配置其渲染标志，如下图所示。
 
-![视图标志](media/view-flags.png)
+![视图标志](/manual/media/view-flags.png)
 
 完整的选项列表和文档可在[此处](https://docs.flaxengine.com/api/FlaxEngine.ViewFlags.html)查看。
 

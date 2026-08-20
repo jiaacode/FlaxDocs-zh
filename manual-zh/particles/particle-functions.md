@@ -4,11 +4,11 @@
 
 ## 如何创建粒子函数
 
-![新建粒子函数](media/particle-function-create.png)
+![新建粒子函数](/manual/media/particle-function-create.png)
 
 第一步是在 *内容* 窗口中 *右键单击*，然后选择选项 **新建 -> 粒子 -> 粒子发射器函数**。然后指定其名称并按 *回车* 确认。通过双击它打开资源编辑器。
 
-![空粒子函数](media/particle-function-empty.png)
+![空粒子函数](/manual/media/particle-function-empty.png)
 
 现在，你可以尽情发挥创造力，在这里实现几乎任何内容。粒子函数是一个由普通粒子节点组成的图，但它包含自定义的 **函数输出** 和 **函数输入** 节点，这些节点代表函数的参数和返回值。粒子函数可以使用纹理，并在可重用的图中执行复杂的计算。
 
@@ -16,7 +16,7 @@
 
 下面是一个函数的示例，它获取 *Texture* 输入，并在粒子位置对其进行采样（简单的 SDF 纹理采样）。粒子函数可以有多个输入和输出，它们接受基本类型和纹理引用。输入节点包含一个 **默认值** 框，该框是可选的，可用于在调用者未指定时分配输入的默认值。
 
-![粒子函数](media/particle-function-example.png)
+![粒子函数](/manual/media/particle-function-example.png)
 
 ## 如何使用粒子函数
 
@@ -24,4 +24,4 @@
 
 最后，如果你修改了粒子函数，Flax 将自动更新所有使用该粒子函数的粒子发射器，因此你可以轻松地处理美术内容。
 
-![粒子函数使用](media/particle-function-usage.png)
+![粒子函数使用](/manual/media/particle-function-usage.png)

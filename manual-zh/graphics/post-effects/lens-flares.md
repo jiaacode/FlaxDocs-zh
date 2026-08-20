@@ -1,6 +1,6 @@
 # 镜头光晕
 
-![镜头光晕](media/lens-flares.png)
+![镜头光晕](/manual/media/lens-flares.png)
 
 **镜头光晕** 效果模拟了现实相机镜头内部光传输产生的伪影。这包括光线的反射和散射。
 
@@ -8,7 +8,7 @@
 
 ## 属性
 
-![属性](media/lens-flares-properties.jpg)
+![属性](/manual/media/lens-flares-properties.jpg)
 
 | 属性             | 描述                                         |
 | ---------------- | -------------------------------------------- |

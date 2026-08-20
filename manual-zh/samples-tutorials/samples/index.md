@@ -6,28 +6,28 @@ Flax 引擎附带了一系列可直接使用的示例项目。
 
 ## 基础模板
 
-![基础模板](media/BasicTemplate.png)
+![基础模板](/manual/media/BasicTemplate.png)
 
 ## 第一人称射击模板
 
-![第一人称射击模板](media/FirstPersonShooterTemplate.png)
+![第一人称射击模板](/manual/media/FirstPersonShooterTemplate.png)
 
 ## 第三人称射击模板
 
-![第三人称射击模板](media/ThirdPersonShooterTemplate.png)
+![第三人称射击模板](/manual/media/ThirdPersonShooterTemplate.png)
 
 ## 图形功能巡览
 
-![图形功能巡览](media/GraphicsFeaturesTour.png)
+![图形功能巡览](/manual/media/GraphicsFeaturesTour.png)
 
 ## 材质功能巡览
 
-![材质功能巡览](media/MaterialsFeaturesTour.png)
+![材质功能巡览](/manual/media/MaterialsFeaturesTour.png)
 
 ## 物理功能巡览
 
-![物理功能巡览](media/PhysicsFeaturesTour.png)
+![物理功能巡览](/manual/media/PhysicsFeaturesTour.png)
 
 ## 粒子功能巡览
 
-![粒子功能巡览](media/ParticlesFeaturesTour.png)
+![粒子功能巡览](/manual/media/ParticlesFeaturesTour.png)

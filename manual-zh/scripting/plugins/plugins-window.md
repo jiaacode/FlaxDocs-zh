@@ -1,6 +1,6 @@
 # 插件窗口
 
-![插件窗口](media/plugins-window.png)
+![插件窗口](/manual/media/plugins-window.png)
 
 插件窗口是一个编辑器工具，用于预览已加载的插件。你可以通过使用菜单选项 **工具 -> 插件** 来打开它。
 

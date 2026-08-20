@@ -1,6 +1,6 @@
 # Actors
 
-![Actors](media/actors.png)
+![Actors](/manual/media/actors.png)
 
 **Actors** 是场景中的核心对象。您可以将它们放入关卡中，以构建游戏环境、设置光照并创建玩法。每个 [Actor](https://docs.flaxengine.com/api/FlaxEngine.Actor.html) 都链接到父 Actor（除了作为层级根节点的 Scene Actor 之外），并且可以拥有子 Actor（树形层级结构）。Actor 拥有自身的 3D 变换（平移、旋转和缩放），并继承父 Actor 的变换。您可以将 C# 脚本附加到 Actor 上，并在运行时生成/销毁它们。
 
@@ -11,19 +11,19 @@
 <div class="frontpage">
 
 <div class="frontpage-section">
-<a href="placing-actors.md"><img src="media/placing-actors-icon.jpg"></a>
+<a href="placing-actors.md"><img src="/manual/media/placing-actors-icon.jpg"></a>
 <h3><a href="placing-actors.md">放置 Actor</a></h3>
 <p>了解如何在编辑器中创建和移除 Actor。</p>
 </div>
 
 <div class="frontpage-section">
-<a href="selecting-actors.md"><img src="media/selecting-actors-icon.jpg"></a>
+<a href="selecting-actors.md"><img src="/manual/media/selecting-actors-icon.jpg"></a>
 <h3><a href="selecting-actors.md">选择 Actor</a></h3>
 <p>了解如何在编辑器中选择 Actor。</p>
 </div>
 
 <div class="frontpage-section">
-<a href="transforming-actors.md"><img src="media/transforming-actors-icon.jpg"></a>
+<a href="transforming-actors.md"><img src="/manual/media/transforming-actors-icon.jpg"></a>
 <h3><a href="transforming-actors.md">变换 Actor</a></h3>
 <p>了解如何在编辑器中移动、旋转和缩放对象。</p>
 </div>
@@ -85,7 +85,7 @@
 </div>
 
 <div class="frontpage-section">
-<a href="index.md"><img src="media/icon.jpg"></a>
+<a href="index.md"><img src="/manual/media/icon.jpg"></a>
 <h3><a href="index.md">场景</a></h3>
 </div>
 

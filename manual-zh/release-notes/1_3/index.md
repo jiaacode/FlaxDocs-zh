@@ -4,7 +4,7 @@
 
 ### macOS 支持
 
-![macOS 上的 Flax 编辑器](media/flax-editor-on-mac.png)
+![macOS 上的 Flax 编辑器](/manual/media/flax-editor-on-mac.png)
 
 此版本增加了对 **macOS** 的初始支持，包括编辑器和游戏发布！现在，你可以在 macOS 10.14 或更高版本上运行 Flax。所有引擎功能都已实现，包括通过 MoltenVK 在 Metal 之上运行 Vulkan 图形。
 
@@ -19,16 +19,16 @@
 * 鼠标光标定位问题
 * 窗口内拖放
 
-![macOS 上的 Flax 编辑器](media/flax-editor-macos.png)
+![macOS 上的 Flax 编辑器](/manual/media/flax-editor-macos.png)
 
 ### 布娃娃系统
 
-![带有布娃娃模拟的 Flax 物理](media/knight-ragdolls.gif)
+![带有布娃娃模拟的 Flax 物理](/manual/media/knight-ragdolls.gif)
 
 布娃娃系统是游戏中常用的功能，用于生成角色的程序化死亡动画，或模拟骨骼中应表现得更程序化的部分（例如尾巴）。此更新包含了对大量布娃娃模拟的运行时支持，以及编辑器中用于快速生成角色布娃娃的内置工具。
 编辑器现在拥有布娃娃生成器和编辑工具。布娃娃可以在预制体中使用以创建角色。
 
-![Flax 布娃娃编辑器](media/ragdoll-editor.png)
+![Flax 布娃娃编辑器](/manual/media/ragdoll-editor.png)
 
 ### 动画功能
 
@@ -36,13 +36,13 @@
 
 #### 动画插槽
 
-![动画图中的动画插槽播放](media/animation-slot.png)
+![动画图中的动画插槽播放](/manual/media/animation-slot.png)
 
 **动画插槽** 可用于从代码在动画图中播放动画。插槽可以放置在图的任何位置，甚至在图函数中，然后通过游戏脚本使用 `PlaySlotAnimation(...)` 触发。在[文档](../../animation/anim-graph/animation-slots.md)中了解更多信息。
 
 #### 动画事件
 
-![播放 VFX 的动画事件](media/anim-event-vfx.gif)
+![播放 VFX 的动画事件](/manual/media/anim-event-vfx.gif)
 
 **动画事件** 可以添加到动画资源的单独轨道上，在动画播放期间触发，以播放 VFX、SFX 或实现与动画相关的自定义游戏逻辑（例如播放脚步声或在雪地上行走时生成脚印贴花）。在[文档](../../animation/animation/anim-events.md)中了解更多信息。
 
@@ -54,7 +54,7 @@
 
 #### C++ API 文档
 
-![Flax 引擎文档中的 C++ API 脚本文档](media/cpp-api-docs.png)
+![Flax 引擎文档中的 C++ API 脚本文档](/manual/media/cpp-api-docs.png)
 
 **C++ API 文档** 现已上线！完整的引擎和编辑器脚本 API 参考，像 C# API 一样可浏览和搜索。它包含一些很棒的功能：用于快速导航到 Github 上实际引擎源代码的工具按钮、用于复制/粘贴的文件头路径，以及带有继承成员列表的类继承层次结构。此外，Flax 文档在选项卡中显示 C++/C#/VS 代码示例，便于你专注于所选的脚本语言。
 
@@ -115,13 +115,13 @@ Engine::Update.Bind([&myVariable]
 
 除了 C# 和 C++，我们还为可视化脚本添加了许多新功能！现在，你可以在 VS 中使用 **数组**、更改参数类型，并且 **图执行性能** 得到了显著提升。
 
-![可视化脚本数组迭代](media/array-for-each.png)
+![可视化脚本数组迭代](/manual/media/array-for-each.png)
 
 关于[可视化脚本中的数组](../../scripting/visual/arrays.md)的文档。
 
 ### UI 导航
 
-![Flax 用户界面 UI 导航](media/ui-navigation.gif)
+![Flax 用户界面 UI 导航](/manual/media/ui-navigation.gif)
 
 Flax UI 系统获得了 **UI 导航**，以通过键盘方向键或游戏手柄按键等输入操作在用户界面中执行焦点导航。此功能对于主机游戏或其他支持游戏手柄的游戏至关重要，这些游戏旨在无需鼠标输入或用户触摸输入即可提供完整的 UI 可用性。这也在编辑器中实现，以提供 `Tab` 键导航。在此[此处](../../ui/ui-navigation.md)了解更多信息。
 
@@ -144,13 +144,13 @@ Flax UI 系统获得了 **UI 导航**，以通过键盘方向键或游戏手柄�
 
 #### 资源引用
 
-![Flax 资源引用查看器内容配置文件](media/asset-references-graph.png)
+![Flax 资源引用查看器内容配置文件](/manual/media/asset-references-graph.png)
 
 **资源引用查看器** 窗口（通过 *内容窗口* 中的上下文菜单）显示引用此资源的资源及其自身依赖结构的图。可用于分析项目中的内容使用情况（例如，检查给定模型使用了哪些纹理，或场景中使用了哪些模型）。
 
 #### 调试视图
 
-![Flax 调试视图模式四边形过度绘制](media/quuad-overdraw-debug.png)
+![Flax 调试视图模式四边形过度绘制](/manual/media/quuad-overdraw-debug.png)
 
 新的 **四边形过度绘制** 调试视图模式（如上所示）根据 GPU 上使用 2x2 四边形渲染的三角形的过度绘制为像素着色。另一种新模式 **材质复杂度** 根据近似的渲染成本（着色器大小、纹理使用、细分或深度使用等）为屏幕像素着色。这两种视图模式都可用于性能分析和优化场景。
 

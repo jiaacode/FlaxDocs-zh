@@ -52,7 +52,7 @@ inline MyActor::MyActor(const SpawnParams& params)
 
 新建 Visual Script，并选择 **Actor** 作为基类。然后重写方法（例如 OnBeginPlay），在重写的方法节点上右键单击，选择 **添加基类方法调用** 选项，以确保子 Actor 和脚本能够正确初始化。要以紧凑形式使用 Format 方法，可以右键单击该方法，然后选择 **转换为纯节点**。
 
-![自定义 Actor Visual Script](media/custom-actor-vs.png)
+![自定义 Actor Visual Script](/manual/media/custom-actor-vs.png)
 ***
 
 ### 2. 使用 Actor

@@ -1,6 +1,6 @@
 * # 性能分析
 
-  ![Flax 性能分析器](media/title.jpg)
+  ![Flax 性能分析器](/manual/media/title.jpg)
 
   性能分析是开发过程中非常重要的一步。Flax 编辑器包含一套专用工具集，例如[性能分析器](profiler.md)窗口，并支持使用外部工具。
 

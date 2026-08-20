@@ -1,6 +1,6 @@
 # 资源
 
-![资源](media/title.jpg)
+![资源](/manual/media/title.jpg)
 
 **资源** 是保存资源数据的文件。
 例如，纹理、模型或场景文件都是资源。
@@ -14,13 +14,13 @@
 <div class="frontpage">
 
 <div class="frontpage-section">
-<a href="creating-assets.md"><img src="media/creating-assets-icon.jpg"></a>
+<a href="creating-assets.md"><img src="/manual/media/creating-assets-icon.jpg"></a>
 <h3><a href="creating-assets.md">创建资源</a></h3>
 <p>了解如何在编辑器中创建和导入资源。</p>
 </div>
 
 <div class="frontpage-section">
-<a href="using-assets.md"><img src="media/using-assets-icon.jpg"></a>
+<a href="using-assets.md"><img src="/manual/media/using-assets-icon.jpg"></a>
 <h3><a href="using-assets.md">使用资源</a></h3>
 <p>了解如何在编辑器和脚本中使用资源。</p>
 </div>

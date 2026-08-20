@@ -1,6 +1,6 @@
 # Flax 面向 UE4® 开发者
 
-![Unreal 到 Flax](media/title.jpg)
+![Unreal 到 Flax](/manual/media/title.jpg)
 
 Flax 和 Unreal 有许多相似之处（材质管线、物理引擎），并共享许多概念，然而也有一些差异。此页面帮助 Unreal Engine 4 开发者将他们现有的经验迁移到 Flax 引擎的世界中。
 
@@ -11,7 +11,7 @@ Flax 和 Unreal 有许多相似之处（材质管线、物理引擎），并共�
 
 Flax 编辑器和 Unreal 编辑器非常相似。你可以在两个编辑器的截图中看到彩色编码的高亮区域，它们具有共同的功能。Flax 编辑器的布局也是高度可定制的，因此你可以拖放窗口来使编辑器适应你的工作流程。
 
-![Unreal 编辑器](media/unreal-layout.png)
+![Unreal 编辑器](/manual/media/unreal-layout.png)
 
 ![Flax 编辑器](../media/flax-layout.png)
 

@@ -6,23 +6,23 @@
 
 第一步是准备 UI。你可以按照[此教程](create-main-menu.md)学习如何操作。
 
-![主菜单](media/main-menu-buttons.png)
+![主菜单](/manual/media/main-menu-buttons.png)
 
 ## 2. 创建 `UIControl`
 
 按照与上一步相同的步骤，但这次创建一个代表单个 GUI 控件的 [UI 控件](../control/index.md) Actor。将其作为子级添加到 *UI 画布* 中（如下图所示）。务必将创建的控件移动到层级中 *位于* 其他控件 *之前*（例如，作为画布的第一个子级）。
 
-![生成控件](media/spawn-control.png)
+![生成控件](/manual/media/spawn-control.png)
 
 ## 3. 将控件类型设置为 `Blur Panel`
 
 对于新创建的 GUI，我们将使用 `Blur Panel` 控件。为此，选择生成的 **UI 控件**，然后单击 **设置类型** 按钮，并将其类型设置为 **Blur Panel**。可以通过从列表中选择项目或输入名称进行搜索来操作。
 
-![设置类型](media/set-blur-panel.png)
+![设置类型](/manual/media/set-blur-panel.png)
 
 ## 4. 调整面板
 
-![UI 控件拉伸全部](media/ui-stretch-all.png)
+![UI 控件拉伸全部](/manual/media/ui-stretch-all.png)
 
 现在，例如将 **模糊强度** 设置为 **8**，并调整控件的 **边界** 以覆盖界面的整个背景（你可以使用 *锚点预设*，设置为 *拉伸全部*，并按住 *Shift* 键以更新边界）。
 
@@ -32,4 +32,4 @@
 
 下图展示了结果效果。
 
-![模糊面板结果](media/blur-background-result.png)
+![模糊面板结果](/manual/media/blur-background-result.png)

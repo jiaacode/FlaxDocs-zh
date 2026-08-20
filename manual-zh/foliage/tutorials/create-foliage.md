@@ -10,13 +10,13 @@
 
 打开工具箱窗口，然后选择植被选项卡。
 
-![选择植被选项卡](media/select-foliage-tab.png)
+![选择植被选项卡](/manual/media/select-foliage-tab.png)
 
 ## 3. 使用 *创建新植被* 按钮
 
 按下 **创建新植被** 按钮，以在场景中添加新的植被 Actor 实例。
 
-![创建植被](media/create-foliage.png)
+![创建植被](/manual/media/create-foliage.png)
 
 ## 4. 添加植被类型
 
@@ -24,17 +24,17 @@
 
 使用 **添加植被类型** 按钮并选择一个植被类型模型资源（它在植被 Actor 内必须是唯一的）。
 
-![添加植被类型](media/create-foliage-type.png)
+![添加植被类型](/manual/media/create-foliage-type.png)
 
 ## 5. 编辑植被类型属性
 
-![编辑植被类型](media/edit-foliage-type.png)
+![编辑植被类型](/manual/media/edit-foliage-type.png)
 
 现在，你可以选择植被类型并编辑其属性。要了解有关植被类型属性的更多信息，请参阅[此页面](../types.md)。
 
 ## 6. 绘制植被
 
-![绘制植被](media/paint-foliage.gif)
+![绘制植被](/manual/media/paint-foliage.gif)
 
 最后一步是实际在关卡中生成一些植被实例。为此，选择 **绘制** 选项卡，并使用编辑器视口用笔刷绘制植被。你可以在属性面板中调整 **笔刷大小**，以及选中的植被类型放置和绘制属性。
 

@@ -9,11 +9,11 @@
 
 首先，在 **Source/Shaders** 文件夹中创建一个空文件，并适当命名，例如 `BlurComputeShader.shader`。你可以手动执行此操作，或在内容窗口的着色器源文件夹中使用编辑器并 *右键单击*，选择 **新建 -> 着色器**。
 
-![新建着色器源](media/new-shader-source.png)
+![新建着色器源](/manual/media/new-shader-source.png)
 
 如果你使用的是 Visual Studio，请使用 **文件 -> 生成项目文件** 选项，以确保新文件已添加到 VS 项目中。然后你可以 **双击** 在代码编辑器中打开着色器。
 
-![编辑着色器源](media/shader-editing.png)
+![编辑着色器源](/manual/media/shader-editing.png)
 
 ## 2. 编写计算着色器
 
@@ -272,4 +272,4 @@ public class BlurComputeShader : PostProcessEffect
 
 最后一步是 **将脚本添加** 到场景中的 Actor 上，并将 **着色器** 属性分配给从 `Content/Shaders` 自动导入的着色器源。将 **模糊半径** 属性从 0 更改为 10 时，你可以实时看到效果。如果遇到问题，请查看编辑器中的 *输出日志* 窗口，因为它可能包含任何编译错误（包括 C# 脚本和着色器代码）。
 
-![计算着色器模糊](media/compute-blur.gif)
+![计算着色器模糊](/manual/media/compute-blur.gif)

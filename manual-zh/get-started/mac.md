@@ -1,6 +1,6 @@
 # Mac 版编辑器
 
-![Mac 上的 Flax 编辑器](media/flax-editor-mac.png)
+![Mac 上的 Flax 编辑器](/manual/media/flax-editor-mac.png)
 
 ## 下载
 

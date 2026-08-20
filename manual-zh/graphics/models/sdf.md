@@ -1,6 +1,6 @@
 # 有符号距离场
 
-![Flax 中的有符号距离场](media/global-sdf-preview2.png)
+![Flax 中的有符号距离场](/manual/media/global-sdf-preview2.png)
 
 **有符号距离场**（缩写为 **SDF**）是 3D 纹理，其中每个纹素包含到对象最近表面的有符号距离。如果此距离为负，则该纹素位于对象内部。SDF 可以大致表示网格几何体，并允许高效地近似复杂网格。通过能够快速采样到最近表面的距离（以及通过 SDF 导数获得方向），SDF 可用于：
 * 程序化内容创建（例如河流材质中河岸附近的泡沫、房间角落的污垢/苔藓），
@@ -9,7 +9,7 @@
 
 ## 模型 SDF
 
-![模型 SDF 编辑器](media/model-sdf-editor.png)
+![模型 SDF 编辑器](/manual/media/model-sdf-editor.png)
 
 模型资源可以包含为网格烘焙的 SDF 纹理，这可以在模型窗口中创建。它显示烘焙纹理的分辨率和 GPU 内存使用情况。你可以调整烘焙选项，并 *重建* 或 *移除* 数据。
 
@@ -25,19 +25,19 @@
 
 ### 导入时的模型 SDF
 
-![模型导入 SDF 生成选项](media/model-sdf-import-settings.png)
+![模型导入 SDF 生成选项](/manual/media/model-sdf-import-settings.png)
 
 在导入模型资源时，你可以勾选 **生成 SDF** 选项，以自动为每个导入的模型文件计算 SDF 纹理。在使用 DDGI 或全局 SDF 的项目中，你可以在[图形设置](../../editor/game-settings/graphics-settings.md)中启用 **导入模型时生成 SDF** 选项，这将更改默认的模型导入值，使其在导入模型时始终生成 SDF。
 
-![游戏设置中的模型 SDF 选项](media/model-sdf-option-setting.png)
+![游戏设置中的模型 SDF 选项](/manual/media/model-sdf-option-setting.png)
 
 你也可以使用编辑器中的一个小工具，位于 **工具 -> 构建所有网格 SDF** 下，它将计算场景中所有网格的 SDF。由于需要处理大量数据，这可能需要一些时间并导致计算机暂时卡顿。
 
-![模型 SDF 工具](media/build-all-meshes-sdf.png)
+![模型 SDF 工具](/manual/media/build-all-meshes-sdf.png)
 
 ## 全局 SDF
 
-![全局 SDF 预览](media/global-sdf-preview.png)
+![全局 SDF 预览](/manual/media/global-sdf-preview.png)
 
 Flax 包含一个名为 **全局有符号距离场**（缩写为 **全局 SDF**）的功能，它将场景中的所有模型、植被和地形光栅化为一个单一的全局体积纹理，该纹理代表整个场景。此全局 SDF 为附近的摄像机提供高达 10cm 的质量，并可以覆盖摄像机周围 200m 的世界，以高效地表示场景。它使用 4 个级联为附近摄像机提供更高的精度，并提高大型世界的性能。
 
@@ -51,7 +51,7 @@ Flax 包含一个名为 **全局有符号距离场**（缩写为 **全局 SDF**�
 
 #### GPU 图节点
 
-![在材质中采样全局 SDF](media/global-sdf-material.png)
+![在材质中采样全局 SDF](/manual/media/global-sdf-material.png)
 
 材质和粒子可以使用以下节点：
 - `Sample Global SDF` - 采样全局 SDF 以获取到最近表面的距离（在世界空间中）。
@@ -59,9 +59,9 @@ Flax 包含一个名为 **全局有符号距离场**（缩写为 **全局 SDF**�
 
 #### GPU 全场景碰撞
 
-![使用全局 SDF 的全场景碰撞](media/global-sdf-particles.gif)
+![使用全局 SDF 的全场景碰撞](/manual/media/global-sdf-particles.gif)
 
-![粒子节点中的全局 SDF](media/global-sdf-particles-nodes.png)
+![粒子节点中的全局 SDF](/manual/media/global-sdf-particles-nodes.png)
 
 GPU 粒子可以手动访问全局 SDF（例如通过采样），或使用内置模拟模块：
 * `Position (Global SDF)` - 将粒子放置在全局 SDF 表面上（使用当前粒子位置将其捕捉到 SDF）。

@@ -1,6 +1,6 @@
 # 碰撞
 
-![碰撞](media/physics3.gif)
+![碰撞](/manual/media/physics3.gif)
 
 本页面介绍了如何过滤和检测对象碰撞。
 

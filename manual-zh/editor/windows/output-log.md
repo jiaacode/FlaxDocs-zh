@@ -1,6 +1,6 @@
 # 输出日志
 
-![输出日志](media/output-log.jpg)
+![输出日志](/manual/media/output-log.jpg)
 
 **输出日志** 是一个实用工具窗口，显示当前引擎日志。可用于检测游戏问题或分析引擎工作负载。
 

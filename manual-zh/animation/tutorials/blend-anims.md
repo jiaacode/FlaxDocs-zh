@@ -4,7 +4,7 @@
 
 ## 1. 打开动画图
 
-![动画图窗口](media/empty-anim-graph.png)
+![动画图窗口](/manual/media/empty-anim-graph.png)
 
 首先，你需要创建并打开动画图编辑器窗口。
 你可以按照教程[如何创建动画图](create-anim-graph.md)来了解相关内容。
@@ -15,17 +15,17 @@
 下一步是指定你想要混合的两段动画。
 要将它们添加到图中，你可以拖放资源或使用 **动画** 节点，如下图所示。
 
-![动画图添加节点](media/add-anim-node-sample.jpg)
+![动画图添加节点](/manual/media/add-anim-node-sample.jpg)
 
 结果，你应该有两个并排的动画节点。
 
-![带有两个节点的动画图](media/two-anim-nodes-added.png)
+![带有两个节点的动画图](/manual/media/two-anim-nodes-added.png)
 
 ## 3. 添加混合节点
 
 现在你需要添加 **混合** 节点。只需 **右键单击** 曲面，然后从 **动画** 组中选择它，或使用搜索框。
 
-![动画图添加混合节点](media/add-blend-node.jpg)
+![动画图添加混合节点](/manual/media/add-blend-node.jpg)
 
 另外，正如你所看到的，还有更多的混合节点：叠加混合和带遮罩混合，这在创建更高级的动画模型设置时也很有用。
 
@@ -38,10 +38,10 @@
 同时，将混合节点的输出连接到最终的 **动画输出** 节点。
 现在你应该看到第一段动画正在播放，因为默认的 Alpha 值为 0，所以它完全来自第一个输入。
 
-![动画图混合](media/with-blend-node.jpg)
+![动画图混合](/manual/media/with-blend-node.jpg)
 
 ## 4. 查看结果
 
-![动画图混合](media/anim-blending.gif)
+![动画图混合](/manual/media/anim-blending.gif)
 
 最后，你可以手动更改 **Alpha** 值，通过图参数来提供它，或者使用例如基于时间的解决方案。要了解如何操作，请参阅[此教程](change-anim-graph-param.md)。

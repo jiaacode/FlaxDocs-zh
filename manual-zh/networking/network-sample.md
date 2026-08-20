@@ -1,6 +1,6 @@
 # 网络示例
 
-![网络示例主菜单](media/network-sample-menu.png)
+![网络示例主菜单](/manual/media/network-sample-menu.png)
 
 [网络示例](https://github.com/FlaxEngine/NetworkSample) 是一个开源示例项目，包含多人游戏大厅实现，支持玩家同步和聊天功能。它可以用作使用 Flax **低级网络传输层** 的多人项目的基础。
 
@@ -16,9 +16,9 @@
 
 ## 截图
 
-![网络示例玩家](media/network-sample-players.jpg)
+![网络示例玩家](/manual/media/network-sample-players.jpg)
 
-![网络示例玩家列表](media/network-sample-players-list.png)
+![网络示例玩家列表](/manual/media/network-sample-players-list.png)
 
 ## 概述
 

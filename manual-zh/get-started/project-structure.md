@@ -1,6 +1,6 @@
 # Flax 项目结构
 
-![项目结构](media/project-structure.png)
+![项目结构](/manual/media/project-structure.png)
 
 所有 Flax 项目都具有统一的结构。这种严格的组织有助于开发，并为所有 Flax 游戏提供更好的标准化。
 

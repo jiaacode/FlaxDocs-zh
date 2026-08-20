@@ -24,13 +24,13 @@ public class MyScript : Script
 
 在 `Source/<module_name>` 目录中创建一个新的 C# 脚本，并使用目标类名加上 *Editor* 后缀。或者，您也可以使用额外的编辑器专用脚本模块，如[此处](add-scripts-module.md)的教程所示。
 
-![教程](media/custom-editor-tutorial-2.jpg)
+![教程](/manual/media/custom-editor-tutorial-2.jpg)
 
 ### 3. 打开文件
 
 双击创建的文件以在代码编辑器中打开。
 
-![教程](media/custom-editor-tutorial-3.jpg)
+![教程](/manual/media/custom-editor-tutorial-3.jpg)
 
 ### 4. 实现自定义编辑器
 
@@ -77,6 +77,6 @@ namespace GraphicsFeaturesTour
 
 在 Flax 重新加载脚本后，选择添加了 `MyScript` 的对象，即可看到如下所示的自定义编辑器。
 
-![教程](media/custom-editor-tutorial-4.jpg)
+![教程](/manual/media/custom-editor-tutorial-4.jpg)
 
 单击按钮时，它会按预期在 *调试* 窗口中输出 *"Button clicked!"*。

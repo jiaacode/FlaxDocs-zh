@@ -113,13 +113,13 @@ public class LoadingScreen : Script
 
 这些步骤的结果是一个带有 UI Canvas 和 UI Control 的预制体，用于显示加载画面图像。之后您可以通过添加加载进度条或其他加载指示器来进一步自定义它。它还可以按地图进行自定义，以显示不同的背景图像或一些游戏玩法提示。
 
-![加载画面预制体](media/loading-screen-prefab.png)
+![加载画面预制体](/manual/media/loading-screen-prefab.png)
 
 ### 3. 设置加载场景脚本
 
 现在您可以使用已创建的脚本和预制体，将其添加到主地图中（不包括流式关卡或子关卡）。只需选择场景 Actor 并将此脚本添加到其中，然后将预制体链接到脚本属性。
 
-![加载画面设置](media/loading-screen-actor-setup.png)
+![加载画面设置](/manual/media/loading-screen-actor-setup.png)
 
 ### 4. 进行测试运行
 

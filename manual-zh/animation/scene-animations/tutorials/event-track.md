@@ -42,19 +42,19 @@ public class TestScript : Script
 
 你可以将 Actor 拖放到轨道面板中，或使用按钮 添加 -> Actor 来创建新轨道并选择要为其制作动画的 Actor。
 
-![添加 Actor 轨道](media/add-actor-track-drag.png)
+![添加 Actor 轨道](/manual/media/add-actor-track-drag.png)
 
 ### 3. 添加 Script 子轨道
 
 使用 **+** 按钮并选择 Script 子轨道来调用其方法。你也可以直接调用 Actor 的方法。
 
-![添加旋转子轨道](media/add-script-track.png)
+![添加旋转子轨道](/manual/media/add-script-track.png)
 
 ### 3. 添加子轨道
 
 使用 **+** 按钮并选择要调用的脚本方法。
 
-![添加旋转子轨道](media/add-event-track.png)
+![添加旋转子轨道](/manual/media/add-event-track.png)
 
 ### 4. 添加事件
 
@@ -64,4 +64,4 @@ public class TestScript : Script
 
 最后一步是添加场景动画播放器 Actor 并播放此动画。
 
-![事件轨道](media/scene-anims-events.gif)
+![事件轨道](/manual/media/scene-anims-events.gif)

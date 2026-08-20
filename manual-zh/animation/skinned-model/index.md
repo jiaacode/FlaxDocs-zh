@@ -1,6 +1,6 @@
 # 蒙皮模型
 
-![蒙皮模型](media/title.jpg)
+![蒙皮模型](/manual/media/title.jpg)
 
 **蒙皮模型** 是已经过蒙皮处理以匹配骨骼层级结构的[模型](../../graphics/models/index.md)。绑定后的模型包含蒙皮信息，该信息描述了模型移动时网格顶点如何变换。
 
@@ -28,7 +28,7 @@ Flax 支持蒙皮模型的**细节层次**，包括在导入时自动生成。
 
 ## 编辑蒙皮模型
 
-![蒙皮模型窗口](media/skinned-model-window.jpg)
+![蒙皮模型窗口](/manual/media/skinned-model-window.jpg)
 
 要在 *内容* 窗口中查看和编辑导入的蒙皮模型资源，请双击它。
 你可以编辑默认材质槽，或从源文件快速重新导入资源。该窗口还包含各种调试工具，例如骨骼[调试](../advanced/bones-debugging.md)和网格信息面板。
@@ -42,7 +42,7 @@ Flax 支持蒙皮模型的**细节层次**，包括在导入时自动生成。
 
 ## Blend Shapes
 
-![Blend Shapes](media/blend-shapes.gif)
+![Blend Shapes](/manual/media/blend-shapes.gif)
 
 Flax 支持为蒙皮模型导入和使用 Blend Shapes（即变形目标）。这对于在对话场景中实现角色面部表情或口型同步非常有用。导入资源时，请勾选 **导入 Blend Shapes** 选项。然后你将能够在蒙皮模型窗口中预览 Blend Shapes（每个通道都可以在 *Blend Shapes* 组下进行调整）。
 然后，你可以在运行时使用 [AnimatedModel](https://docs.flaxengine.com/api/FlaxEngine.AnimatedModel.html) 类的方法 *SetBlendShapeWeight* / *GetBlendShapeWeight* / *ClearBlendShapeWeights* 从代码控制 Blend Shapes 的外观。

@@ -60,7 +60,7 @@ API_CLASS() class GAME_API MySettings : public ISerializable
 然后指定其名称，并选取类型为所创建类的类型名称（在本示例中为 `MySettings`）。
 点击 **创建** 按钮，即可使用该类型的默认值生成文件。
 
-![新建资源选择器](media/new-settings-asset-picker.png)
+![新建资源选择器](/manual/media/new-settings-asset-picker.png)
 
 此外，您也可以使用[自定义编辑器](custom-editor.md)或[自定义窗口](custom-window.md)，或者直接使用[编辑器专用代码](../preprocessor.md)在编辑器中生成新资源。
 
@@ -80,7 +80,7 @@ public class MyScriptEditor : GenericEditor
 	private void OnButtonClicked()
 	{
 		// 创建 Json 资源
-		FlaxEditor.Editor.SaveJsonAsset("Content/mySettings.json", new MySettings());
+		FlaxEditor.Editor.SaveJsonAsset("/manual/Content/mySettings.json", new MySettings());
 	}
 }
 ```
@@ -89,13 +89,13 @@ public class MyScriptEditor : GenericEditor
 
 选择该脚本并按下自定义编辑器按钮后，资源就会出现在 *内容* 文件夹中。
 
-![教程](media/custom-asset-tutorial-1.jpg)
+![教程](/manual/media/custom-asset-tutorial-1.jpg)
 
 ### 3. 在编辑器中编辑资源
 
 双击已创建的资源，将弹出专用编辑器窗口。使用该窗口修改资源，然后按 `保存` 按钮保存数据。
 
-![教程](media/custom-asset-tutorial-2.jpg)
+![教程](/manual/media/custom-asset-tutorial-2.jpg)
 
 Json 资源文件内容：
 
@@ -185,7 +185,7 @@ inline MyScript::MyScript(const SpawnParams& params)
 ```
 ***
 
-![教程](media/custom-asset-tutorial-3.jpg)
+![教程](/manual/media/custom-asset-tutorial-3.jpg)
 
 ## 资源创建实用工具
 

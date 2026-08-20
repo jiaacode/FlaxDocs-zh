@@ -1,6 +1,6 @@
 # 场景动画播放器
 
-![场景动画播放器](media/scene-animation-player.png)
+![场景动画播放器](/manual/media/scene-animation-player.png)
 
 **场景动画播放器** 是一种 Actor 类型，可以播放 [场景动画](scene-animation.md) 序列。它可以在启动时播放，也可以在从脚本调用播放后播放。播放速度和循环选项可以调整。
 
@@ -14,7 +14,7 @@
 
 ## 属性
 
-![场景动画播放器属性](media/scene-animation-player-properties.png)
+![场景动画播放器属性](/manual/media/scene-animation-player-properties.png)
 
 | 属性               | 描述                                                         |
 | ------------------ | ------------------------------------------------------------ |

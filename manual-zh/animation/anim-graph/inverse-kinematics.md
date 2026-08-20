@@ -10,17 +10,17 @@ Flax 为动画图提供了各种节点，支持向游戏中添加 IK。请按照
 
 ## Aim IK
 
-![Aim IK 节点](media/aim-ik-node.png)
+![Aim IK 节点](/manual/media/aim-ik-node.png)
 
 **Aim IK** 旋转一个节点，使其瞄准目标。你可以使用此节点通过旋转玩家 *头部* 节点来让玩家看向特定对象。此节点也可以用于旋转玩家脚部以对齐地面表面法线向量。
 
 该节点接收动画姿态，并调整指定的 *节点* 旋转。*目标* 输入是节点要瞄准的位置，在模型空间（动画模型 Actor 的局部空间）中定义。*权重* 是瞄准修正的 Alpha 混合（归一化到 0-1 范围）。
 
-![Aim IK](media/aim-ik.gif)
+![Aim IK](/manual/media/aim-ik.gif)
 
 ## Two Bone IK
 
-![Two Bone IK 节点](media/two-bone-ik-node.png)
+![Two Bone IK 节点](/manual/media/two-bone-ik-node.png)
 
 **Two Bone IK** 在三个节点链（2 个相邻骨骼）上执行反向动力学。你可以使用此节点将角色手部或脚部放置在特定的目标位置，或让玩家用双手抓握武器。
 
@@ -28,4 +28,4 @@ Flax 为动画图提供了各种节点，支持向游戏中添加 IK。请按照
 输入属性 *关节目标* 指定中间节点（关节）的目标位置，可用于将中间节点朝向特定方向（例如，使玩家肘部移动到样条线外部，而不是穿透身体）。
 如果目标无法到达（例如目标太远），节点可以将骨骼拉伸到指定的 *最大拉伸缩放*。你可以通过勾选 *允许拉伸* 来启用它。
 
-![Two Bone IK](media/two-bone-ik.gif)
+![Two Bone IK](/manual/media/two-bone-ik.gif)

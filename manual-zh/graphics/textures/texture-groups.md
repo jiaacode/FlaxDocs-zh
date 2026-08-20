@@ -1,6 +1,6 @@
 # 纹理组
 
-![纹理组选项](media/texture-groups.png)
+![纹理组选项](/manual/media/texture-groups.png)
 
 **纹理组** 是引擎的一项功能，允许将一组纹理资源聚集在一起，并为它们使用共享配置。例如，用于地形的纹理（漫反射贴图、法线贴图等）可以组合在一起，以使用自定义配置进行流式传输、采样和质量缩减。这有助于在大型项目中组织游戏内容。
 
@@ -38,11 +38,11 @@
 
 你可以通过 **图形质量窗口** 在编辑器中实时预览纹理组设置。下面的示例 GIF 显示了动态纹理质量的变化。
 
-![Flax 中的纹理流式传输](media/textures-streaming.gif)
+![Flax 中的纹理流式传输](/manual/media/textures-streaming.gif)
 
 ## 纹理采样
 
-![带有纹理组采样器的纹理采样节点](media/sample-texture-group.png)
+![带有纹理组采样器的纹理采样节点](/manual/media/sample-texture-group.png)
 
 默认情况下，材质在对对象进行纹理处理时使用 **Trilinear Wrap** 采样器。对于自定义采样器，请在材质中使用 **Sample Texture** 节点，该节点包含选择其他采样器的选项，或使用 **来自纹理组的采样器**（选择 Texture Group 作为采样器并选择一个纹理组）。然后 *采样器过滤* 和 *各向异性* 属性将用于将采样器传递到 GPU 着色器。这些属性也可以在运行时更改（例如在过场动画期间提高纹理质量，或从游戏主菜单手动更改）。
 

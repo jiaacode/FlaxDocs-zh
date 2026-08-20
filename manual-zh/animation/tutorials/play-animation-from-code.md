@@ -40,7 +40,7 @@ public class PlayAnimationScript : Script
 
 下一步是将此脚本添加到场景中已分配有效 `Skinned Model` 的动画模型上。然后将 `Animation` 属性分配给你要播放的动画。
 
-![从代码播放动画设置](media/play-animation-from-code-setup.png)
+![从代码播放动画设置](/manual/media/play-animation-from-code-setup.png)
 
 ## 3. 测试！
 

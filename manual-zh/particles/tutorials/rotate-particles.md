@@ -4,4 +4,4 @@
 
 添加下图中的节点。更改 `Rotation` 节点的值以在所需方向上旋转形状。
 
-![旋转粒子](media/rotate-particle-shape.png)
+![旋转粒子](/manual/media/rotate-particle-shape.png)

@@ -63,11 +63,11 @@ public class Footsteps : Script
 
 ## 2. 设置脚本
 
-![设置脚本](media/footsteps-properties.png)
+![设置脚本](/manual/media/footsteps-properties.png)
 
 将脚本添加到创建的玩家或测试 Actor 上，从 `WorldLayersMask` 中取消勾选玩家 Actor 所在的层，并设置 `SoundPerSurfaceType` 以包含各种表面类型。该字典将 `Tag` 映射到 `AudioClip`。Tag 必须与[物理材质](../physical-material.md)中分配的标签匹配。通常使用命名空间来更好地组织表面类型。例如，`Surface.Dirt`、`Surface.Metal` 等。
 
-![物理材质属性](media/footsteps-materials.png)
+![物理材质属性](/manual/media/footsteps-materials.png)
 
 ## 3. 测试！
 

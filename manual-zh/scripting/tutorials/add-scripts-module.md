@@ -8,7 +8,7 @@
 
 第一步是在项目的 `Source/<new_module_name>` 目录下为新模块脚本创建一个文件夹。然后在该文件夹中创建一个名为 `<new_module_name>.Build.cs` 的空文件。
 
-![新建模块文件](media/new-module-folder.png)
+![新建模块文件](/manual/media/new-module-folder.png)
 
 ## 2. 编写模块构建脚本
 

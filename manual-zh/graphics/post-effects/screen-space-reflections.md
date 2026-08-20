@@ -1,6 +1,6 @@
 # 屏幕空间反射
 
-![屏幕空间反射](media/screen-space-reflections.png)
+![屏幕空间反射](/manual/media/screen-space-reflections.png)
 
 **屏幕空间反射** 效果（缩写为 **SSR**）为对象添加局部反射，增加场景的真实感。此效果在 *屏幕空间* 中渲染，这意味着只有已经在屏幕上的对象才能被反射（它不适用于屏幕外或被遮挡的对象）。
 
@@ -18,7 +18,7 @@ Flax 引擎通过几个通道渲染 SSR：
 
 ## 属性
 
-![属性](media/screen-space-reflections-properties.jpg)
+![属性](/manual/media/screen-space-reflections-properties.jpg)
 
 | 属性                   | 描述                                                         |
 | ---------------------- | ------------------------------------------------------------ |

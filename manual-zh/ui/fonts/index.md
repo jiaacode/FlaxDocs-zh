@@ -1,6 +1,6 @@
 # 字体
 
-![字体](media/title.jpg)
+![字体](/manual/media/title.jpg)
 
 **字体资源** 是包含字体字符信息（和/或预渲染字符纹理）的二进制资源。
 Flax 执行字体字符的导入、加载和光栅化。字体被 3D [文本渲染](../text-render/index.md) Actor 以及 [UI](../index.md) 系统使用。
@@ -19,14 +19,14 @@ Flax 使用 **FreeType** 库进行字体字符光栅化和离线渲染。字体�
 
 ## 字体窗口
 
-![字体窗口](media/font-window.png)
+![字体窗口](/manual/media/font-window.png)
 
 在 *内容窗口* 中 **双击** 导入的字体资源，以打开专用的字体资源工具窗口。
 你可以使用它输入文本并预览字体。
 
 ## 字体属性
 
-![字体窗口](media/font-tools.gif)
+![字体窗口](/manual/media/font-tools.gif)
 
 字体窗口可用于预览和编辑字体光栅化选项：
 
@@ -40,13 +40,13 @@ Flax 使用 **FreeType** 库进行字体字符光栅化和离线渲染。字体�
 
 ## Bitmap vs MSDF
 
-![Bitmap vs MSDF](media/font-bitma-vs-msdf.png)
+![Bitmap vs MSDF](/manual/media/font-bitma-vs-msdf.png)
 
 字体的默认工作流程使用 `Bitmap` 模式，它将字符字形光栅化为图像（存储在圖集中）。然后可以在 GPU 着色器中直接从中采样字符图像（图集纹理使用 `R8_UNorm` 格式 - 8 位红色通道）。此方法高效、渲染速度快，并且易于集成到图形管线中，因为文本采样只需要一个纹理样本。
 
 此技术最常见的限制是在使用大字体大小时会出现问题。此时，字符字形图像需要更高的分辨率以避免锯齿伪影，这会增加内存使用量并限制在不同硬件上的可扩展性，但即便如此它们可能仍然是可见的（例如在使用自动调整大小的文本时）。
 
-![SDF 字体轮廓](media/font-msdf-outline.png)
+![SDF 字体轮廓](/manual/media/font-msdf-outline.png)
 
 其中一个解决方案是使用基于多通道有符号距离场（缩写为 MSDF）的字体。光栅化器不将字体字形可见性存储在纹理中，而是输出到字形边缘的多个距离场，并将它们存储在单独的纹理通道中（`R8G8B8A8_UNorm` 格式 - 使用 8 位红、绿和蓝色通道）。然后此类字符图像的每个像素都包含到字形边缘的有符号距离，可用于填充具有非正距离（在字形内部）的像素。此方法的关键优势在于，在较大尺度上以高质量表示字体所需的图像分辨率显著降低。此外，此技术为实现更高级的文本效果（如轮廓、发光、阴影或程序化纹理）提供了一种“几乎免费”的方式。
 
@@ -58,6 +58,6 @@ Flax 使用 **FreeType** 库进行字体字符光栅化和离线渲染。字体�
 
 要设置此功能，请在 [图形设置](../../editor/game-settings/graphics-settings.md) 中分配 `Fallback Fonts` 属性：
 
-![回退字体](media/fallback-fonts.png)
+![回退字体](/manual/media/fallback-fonts.png)
 
 在编辑器中，默认使用内置字体作为回退——可以在编辑器选项中进行配置。将其留空以使用图形设置中的字体。

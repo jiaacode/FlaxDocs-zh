@@ -1,12 +1,12 @@
 # 摄像机伪影
 
-![摄像机伪影](media/camera-artifacts.png)
+![摄像机伪影](/manual/media/camera-artifacts.png)
 
 **摄像机伪影** 是一组有助于模拟现实摄像机伪影的效果。这包括暗角、噪点和色差。所有这些效果都与摄像机胶片和镜头相关。
 
 ## 属性
 
-![属性](media/camera-artifacts-properties.jpg)
+![属性](/manual/media/camera-artifacts-properties.jpg)
 
 | 属性                 | 描述                                                         |
 | -------------------- | ------------------------------------------------------------ |

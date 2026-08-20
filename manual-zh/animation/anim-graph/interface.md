@@ -2,7 +2,7 @@
 
 动画图编辑器窗口的 UI 由工具栏、视口、属性面板和曲面图组成。
 
-![动画图编辑器](media/anim-graph-editor-ui.jpg)
+![动画图编辑器](/manual/media/anim-graph-editor-ui.jpg)
 
 1. 工具栏
 2. 视口
@@ -15,14 +15,14 @@
 
 | 图标                                                | 描述                             |
 | --------------------------------------------------- | -------------------------------- |
-| ![图标](media/anim-graph-editor-ui-toolstrip-1.png) | 在 *内容* 窗口中显示并选择该资源 |
-| ![图标](media/anim-graph-editor-ui-toolstrip-2.png) | 将资源保存到文件                 |
-| ![图标](media/anim-graph-editor-ui-toolstrip-3.png) | 在曲面上显示整个材质图           |
-| ![图标](media/anim-graph-editor-ui-toolstrip-4.png) | 显示蒙皮模型的骨骼结构           |
+| ![图标](/manual/media/anim-graph-editor-ui-toolstrip-1.png) | 在 *内容* 窗口中显示并选择该资源 |
+| ![图标](/manual/media/anim-graph-editor-ui-toolstrip-2.png) | 将资源保存到文件                 |
+| ![图标](/manual/media/anim-graph-editor-ui-toolstrip-3.png) | 在曲面上显示整个材质图           |
+| ![图标](/manual/media/anim-graph-editor-ui-toolstrip-4.png) | 显示蒙皮模型的骨骼结构           |
 
 ## 视口
 
-![视口](media/anim-graph-viewport.png)
+![视口](/manual/media/anim-graph-viewport.png)
 
 视口面板显示当前动画的预览。在编辑图（删除节点、连接框等）过程中，动画图会实时更新，所有更改都可以在视口中看到。
 
@@ -32,7 +32,7 @@
 
 ## 属性面板
 
-![属性](media/anim-graph-properties.png)
+![属性](/manual/media/anim-graph-properties.png)
 
 此面板包含所有动画图资源参数，并允许编辑它们。
 面板底部有一个下拉菜单和 *添加参数* 按钮。它用于添加新的图参数。只需从菜单中选择新参数类型，然后按下按钮即可生成新参数。
@@ -43,11 +43,11 @@
 
 ## 曲面
 
-![曲面](media/anim-graph-surface.png)
+![曲面](/manual/media/anim-graph-surface.png)
 
 动画图编辑器窗口最重要的部分是**曲面**。此面板包含属于它的所有动画节点的图。默认情况下，每个图都包含一个 `Animation Output` 节点。该节点有一个主要的 *姿态* 输入，用于评估动画模型的姿态（如下图所示）。输出节点还包含根运动模式下拉菜单。
 
-![动画输出节点](media/output-node.png)
+![动画输出节点](/manual/media/output-node.png)
 
 # 导航控制
 
@@ -85,5 +85,5 @@
 
 要添加新的动画图节点，请右键单击曲面背景，然后从弹出菜单中选择节点类型，或输入其名称以查找它。
 
-![添加新节点](media/graph-context-menu-1.png)
-![添加新节点](media/graph-context-menu-2.png)
+![添加新节点](/manual/media/graph-context-menu-1.png)
+![添加新节点](/manual/media/graph-context-menu-2.png)

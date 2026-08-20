@@ -1,6 +1,6 @@
 # 后期处理效果
 
-![后期处理效果](media/postFx.png)
+![后期处理效果](/manual/media/postFx.png)
 
 **后期处理效果**（或称 **PostFx**）通常应用于渲染后的场景图像，但在 UI 绘制之前。
 你可以使用后期处理效果来确立场景的外观，并为它们增添更多真实感。
@@ -25,4 +25,4 @@
 
 如下图所示，使用后期处理效果可以极大地改变游戏的外观。
 
-![后期处理效果](media/postFx-compare.png)
+![后期处理效果](/manual/media/postFx-compare.png)

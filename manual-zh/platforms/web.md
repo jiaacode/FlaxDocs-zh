@@ -1,6 +1,6 @@
 # Web
 
-![Web](media/web.png)
+![Web](/manual/media/web.png)
 
 > [!Warning]
 > 警告！Web 支持尚处于实验阶段，并非所有引擎功能都已实现（例如 C# 支持）。
@@ -84,7 +84,7 @@ Flax 编辑器支持在 Windows、Linux 和 Mac 上为 Web 构建游戏。请按
 
 ## 提供文件服务
 
-![Web 导出文件](media/web-export-files.png)
+![Web 导出文件](/manual/media/web-export-files.png)
 
 Flax 会构建一个独立的网站，以便轻松托管游戏，其中包含 `index.html`、JavaScript 文件、WebAssembly 文件、包含游戏内容的 `files.data` 和 `favicon.ico`。输出文件已准备好压缩并上传到流行的 Web 发布商店，例如 [itch.io](https://itch.io/)。只要服务器符合 [Emscripten 指南](https://emscripten.org/docs/compiling/WebAssembly.html#web-server-setup)，游戏也可以自行托管。
 

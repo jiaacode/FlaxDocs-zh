@@ -1,6 +1,6 @@
 # 动画模型
 
-![动画模型](media/animated-model.gif)
+![动画模型](/manual/media/animated-model.gif)
 
 **动画模型** 是一种 Actor 类型，用于执行动画并渲染蒙皮模型。
 它使用动画图实例来评估蒙皮模型的骨骼变换。
@@ -17,7 +17,7 @@
 
 ## 模块化角色
 
-![Flax 引擎动画中的模块化角色](media/modular-character.gif)
+![Flax 引擎动画中的模块化角色](/manual/media/modular-character.gif)
 
 在处理高度可定制的角色时，通常会将蒙皮模型拆分为使用相同骨骼的模块化部件。这允许构建可定制的角色（例如自定义玩家皮肤或随机化的敌人外观）。动画模型支持链接到其他实例以复制骨骼姿态，而不是重新评估它。使用 `SetMasterPoseModel` 方法可以创建此类链接，如下面的示例脚本所示：
 
@@ -45,7 +45,7 @@ public class ModularCharacter : Script
 
 ## 属性
 
-![动画模型属性](media/animated-model-properties.png)
+![动画模型属性](/manual/media/animated-model-properties.png)
 
 | 属性               | 描述                                                         |
 | ------------------ | ------------------------------------------------------------ |

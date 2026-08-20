@@ -1,6 +1,6 @@
 # 载具
 
-![汽车载具](media/wheeled-vehicle.gif)
+![汽车载具](/manual/media/wheeled-vehicle.gif)
 
 Flax 支持基于[刚体](rigid-bodies.md)和[碰撞体](colliders/index.md)创建基于物理的载具，例如汽车和船只。本文档部分解释了此主题中的某些方面。
 
@@ -10,7 +10,7 @@ Flax 支持基于[刚体](rigid-bodies.md)和[碰撞体](colliders/index.md)创�
 
 ### 属性
 
-![载具属性](media/wheeled-vehicle-properties.png)
+![载具属性](/manual/media/wheeled-vehicle-properties.png)
 
 要配置载具驾驶体验，请使用 **引擎**、**差速器** 和 **变速箱** 类别下的属性分组。请参阅属性标签的工具提示，了解有关每个设置及其单位的更多信息。
 
@@ -18,7 +18,7 @@ Flax 支持基于[刚体](rigid-bodies.md)和[碰撞体](colliders/index.md)创�
 
 ### 车轮
 
-![载具车轮](media/wheel-properties.png)
+![载具车轮](/manual/media/wheel-properties.png)
 
 要描述载具车轮配置，**车轮** 数组包含每个车轮的属性列表。确保链接正确的 **碰撞体** 并定义车轮 **类型**。每个车轮都描述为圆柱体形状（半径、宽度），应近似于车轮碰撞体的尺寸。每个车轮可以通过调整 **最大转向角** 来使用转向。车轮也可以使用刹车和手刹（使用适当的属性来定义扭矩）。
 
@@ -61,23 +61,23 @@ Flax 支持基于[刚体](rigid-bodies.md)和[碰撞体](colliders/index.md)创�
 
 对于选定的车轮载具，车轮以红色绘制，质心位置以蓝色线框球体绘制。
 
-![载具调试形状](media/car-debug-shapes.png)
+![载具调试形状](/manual/media/car-debug-shapes.png)
 
 ### 如何设置载具？
 
 1) 创建新的 **轮式载具** Actor（默认选项配置为通用四轮载具）
-![添加轮式载具](media/add-wheeled-vehicle.png)
+![添加轮式载具](/manual/media/add-wheeled-vehicle.png)
 
 2) 添加网格以可视化载具车身（模型或蒙皮模型）
 
 3) 为载具车身物理碰撞添加碰撞体（凸包网格或一组基本形状——不支持三角形网格）——作为载具的子级
-![添加载具车身](media/car-body.png)
+![添加载具车身](/manual/media/car-body.png)
 
 4) 添加车轮碰撞体（例如球体碰撞体）——作为载具的子级，并在 **车轮** 列表中设置它们
-![添加载具车轮](media/car-wheels.png)
+![添加载具车轮](/manual/media/car-wheels.png)
 
 5) 将车轮设置在不同于车身的[层](../editor/game-settings/layers-and-tags-settings.md)上，并在[物理设置](physics-settings.md)中禁用它们之间的碰撞
-![载具层碰撞矩阵设置](media/car-body-layers-matrix.png)
+![载具层碰撞矩阵设置](/manual/media/car-body-layers-matrix.png)
 
 6) 添加脚本来控制载具——你可以使用下面的脚本并设置摄像机、载具和摄像机目标（摄像机目标是摄像机旋转的根）。
 

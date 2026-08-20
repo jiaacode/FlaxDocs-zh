@@ -1,6 +1,6 @@
 * # UI
 
-  ![UI](media/title.jpg)
+  ![UI](/manual/media/title.jpg)
 
   **UI** 是游戏中最重要的组件之一。Flax 中的 UI 系统允许你在编辑器中或通过代码快速直观地创建用户界面。请参阅本文档部分，了解如何使用 UI 控件并在游戏中使用它们。
 

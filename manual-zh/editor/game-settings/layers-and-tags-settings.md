@@ -10,14 +10,14 @@ Flax 允许定义无限数量的[标签](../../scripting/advanced/tags.md)和最
 
 ## 设置 Actor 标签/层
 
-![设置 Actor 层](media/actor-layer-tag.jpg)
+![设置 Actor 层](/manual/media/actor-layer-tag.jpg)
 
 你可以为每个 Actor 分配一个游戏标签和层。
 这可以在编辑器内（使用 *属性* 窗口）完成，也可以在运行时使用 [Actor.Layer](https://docs.flaxengine.com/api/FlaxEngine.Actor.html#FlaxEngine_Actor_Layer) 和 [Actor.Tags](https://docs.flaxengine.com/api/FlaxEngine.Actor.html#FlaxEngine_Actor_Tags) 属性完成。
 
 ## 属性
 
-![Flax 层与标签设置](media/layers-and-tags-settings.png)
+![Flax 层与标签设置](/manual/media/layers-and-tags-settings.png)
 
 | 属性     | 描述            |
 | -------- | --------------- |

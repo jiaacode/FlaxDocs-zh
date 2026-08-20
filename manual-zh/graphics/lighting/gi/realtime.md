@@ -1,6 +1,6 @@
 # 实时全局光照
 
-![Flax 引擎中的实时 GI](media/realtime-gi.png)
+![Flax 引擎中的实时 GI](/manual/media/realtime-gi.png)
 
 在创建大型世界或光照条件不断变化的动态环境时（例如由于一天中的时间变化），你可以使用 **实时全局光照** 来渲染穿过场景的间接光线。
 
@@ -12,7 +12,7 @@
 
 ## 动态漫反射全局光照
 
-![Flax 引擎中的 DDGI](media/ddgi.png)
+![Flax 引擎中的 DDGI](/manual/media/ddgi.png)
 
 [动态漫反射全局光照](https://morgan3d.github.io/articles/2019-04-01-ddgi/)（**DDGI**）是 Flax 中实现的一种算法，用于渲染带有间接光照的动态全局光照。
 
@@ -24,7 +24,7 @@ DDGI 探针放置在摄像机周围，并分为一系列级联以覆盖整个场
 
 Flax 对 DDGI 算法的实现使用了自定义的 **软件光线追踪** 解决方案和最多 **4 级联** 的自动 **滚动探针体积**。观看以下视频，了解有关此渲染功能的技术和艺术方面的更多信息：
 
-<center><a href="https://www.gdcvault.com/play/1026182/" target="_blank"><img src="media/ddgi-video-icon.jpg" style="width:80%; border:4px solid #000"></a></center>
+<center><a href="https://www.gdcvault.com/play/1026182/" target="_blank"><img src="/manual/media/ddgi-video-icon.jpg" style="width:80%; border:4px solid #000"></a></center>
 
 实现基于以下论文：
 * "Dynamic Diffuse Global Illumination with Ray-Traced Irradiance Probes", Journal of Computer Graphics Tools, April 2019, Zander Majercik, Jean-Philippe Guertin, Derek Nowrouzezahrai, and Morgan McGuire
@@ -33,7 +33,7 @@ Flax 对 DDGI 算法的实现使用了自定义的 **软件光线追踪** 解决
 
 ### 使用 DDGI
 
-![在图形设置中启用 DDGI](media/ddgi-enabled-settings.png)
+![在图形设置中启用 DDGI](/manual/media/ddgi-enabled-settings.png)
 
 在 [图形设置](../../../editor/game-settings/graphics-settings.md) 或 [后期处理效果体积](../../post-effects/post-fx-volumes.md) 的后期处理 *全局光照* 设置中，将 **模式** 设置为 **DDGI**。
 
@@ -59,7 +59,7 @@ Flax 对 DDGI 算法的实现使用了自定义的 **软件光线追踪** 解决
 
 ### 光线追踪反射
 
-![DDGI 光线追踪反射](media/ddgi-reflections.png)
+![DDGI 光线追踪反射](/manual/media/ddgi-reflections.png)
 
 除了漫反射光照之外，还可以通过在 *屏幕空间反射* 类别（在图形设置或后期处理效果体积中）将 **追踪模式** 更改为 **软件追踪**，使用全局光照来改善镜面反射光照。
 
@@ -79,7 +79,7 @@ Flax 对 DDGI 算法的实现使用了自定义的 **软件光线追踪** 解决
 
 ### 调试可视化
 
-![全局表面图集调试预览](media/ddgi-global-surface-atlas.png)
+![全局表面图集调试预览](/manual/media/ddgi-global-surface-atlas.png)
 
 上图显示了全局表面图集的调试可视化（在任何 3D 视口中通过 **视图 -> 调试视图 -> 全局表面图集** 访问）。
 
@@ -91,7 +91,7 @@ Flax 对 DDGI 算法的实现使用了自定义的 **软件光线追踪** 解决
 
 ### 调试表面图集
 
-![调试全局表面图集](media/ddgi-surface-atlas-debug.png)
+![调试全局表面图集](/manual/media/ddgi-surface-atlas-debug.png)
 
 在 Flax 中使用 DDGI 时，一个常见问题是全局表面图集中对象表面的表示效率低下。在许多情况下，这是由不准确的 SDF 网格表示引起的，在较少见的情况下，图集中对象的表示是缺失的。
 
@@ -104,7 +104,7 @@ Flax 对 DDGI 算法的实现使用了自定义的 **软件光线追踪** 解决
 
 ### 调试 DDGI 探针
 
-![调试 DDGI 探针](media/ddgi-probes.png)
+![调试 DDGI 探针](/manual/media/ddgi-probes.png)
 
 使用 **视图 -> 调试视图 -> 全局光照** 在视口中预览 DDGI 探针。这对于查看自动探针重定位是否导致问题非常有用。
 

@@ -1,12 +1,12 @@
 # 地形编辑
 
-![地形编辑](media/terrain_pic_05.gif)
+![地形编辑](/manual/media/terrain_pic_05.gif)
 
 Flax 支持直接在编辑器内编辑地形几何体。在[创建](tutorials/create-terrain.md)或[导入](tutorials/import-terrain.md)地形后，你可以选择它，然后使用 **工具箱** 窗口中的 **地形** 选项卡来修改地形。它支持 3 种工作模式：**Sculpt**、**Paint** 和 **Edit**。
 
 ## 雕刻模式
 
-![雕刻工具](media/sculpt-tool.png)
+![雕刻工具](/manual/media/sculpt-tool.png)
 
 使用 **雕刻** 工具进行地形高度图编辑，允许使用笔刷创建山脉、丘陵、山谷和任何其他景观形状。此工具提供了下面描述的多种编辑模式。选择所需的工具模式，编辑强度和其他模式属性，然后使用笔刷编辑地形。
 
@@ -33,7 +33,7 @@ Flax 支持直接在编辑器内编辑地形几何体。在[创建](tutorials/cr
 
 ## 孔洞
 
-![地形孔洞](media/terrain_pic_07.gif)
+![地形孔洞](/manual/media/terrain_pic_07.gif)
 
 地形孔洞创建工具模式通过更改笔刷影响的区域来编辑地形孔洞遮罩。使用它可以向高度图添加孔洞，或按住 **Control** 键移除它们。
 
@@ -48,12 +48,12 @@ Flax 支持直接在编辑器内编辑地形几何体。在[创建](tutorials/cr
 
 ## 编辑模式
 
-![编辑工具](media/edit-tool.png)
+![编辑工具](/manual/media/edit-tool.png)
 
 使用 **编辑** 工具进行地形高度图编辑，允许添加或移除地形图块，并修改单个地形块的属性。使用它可以扩展你的地形或移除未使用的地形部分。此外，使用 *编辑块* 模式，你可以选择单个地形块，查看其位置并覆盖材质。
 
 ### 导出地形
 
-![导出地形](media/terrain-export-heightmap.jpg)
+![导出地形](/manual/media/terrain-export-heightmap.jpg)
 
 在编辑器中创建的地形可以使用 **导出地形** 模式导出为图像文件。选择地形后，你可以使用导出按钮选择地形高度图的输出目录。导出的地形高度图使用 16 位 PNG 文件格式，将高度存储为归一化到 0-1 范围的灰度值。

@@ -99,4 +99,4 @@ public:
 
 例如，工具提示特性可用于向其他用户显示有关参数的文档说明。范围和滑块特性可以帮助自定义标量值的编辑，而编辑器组和编辑器顺序可以组织参数列表。要了解特性类型，请参阅[此页面](../../scripting/attributes.md)。
 
-![参数特性](media/parameter-attribute.png)
+![参数特性](/manual/media/parameter-attribute.png)

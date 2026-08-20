@@ -60,4 +60,4 @@ public class TestScript : Script
 
 现在在你的游戏 Content 文件夹中应该有一个 `My Scene Anim` 资源。打开它并查看创建的场景动画。
 
-![从代码创建的场景动画](media/scene-animation-from-code.png)
+![从代码创建的场景动画](/manual/media/scene-animation-from-code.png)

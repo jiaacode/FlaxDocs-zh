@@ -26,7 +26,7 @@ public class MySettings
 然后指定其名称，并选取类型为所创建类的类型名称（在本示例中为 `MySettings`）。
 点击 **创建** 按钮，即可使用该类型的默认值生成文件。
 
-![新建资源选择器](media/new-settings-asset-picker.png)
+![新建资源选择器](/manual/media/new-settings-asset-picker.png)
 
 此外，您也可以使用脚本代码（Start 方法）、[自定义编辑器](custom-editor.md)或[自定义编辑器窗口](custom-window.md)来执行此操作。
 
@@ -60,7 +60,7 @@ Editor.ContentDatabase.AddProxy(assetProxy);
 
 现在您可以使用 Flax 编辑器打开并编辑这些设置。只需在 **内容窗口** 中**双击资源**，即可打开编辑器窗口并修改设置。
 
-![编辑自定义设置](media/custom-settings-edit.png)
+![编辑自定义设置](/manual/media/custom-settings-edit.png)
 
 ### 4. 在运行时访问设置
 

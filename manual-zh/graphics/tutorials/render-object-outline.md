@@ -11,7 +11,7 @@
 * 添加类型为 **GPUTexture** 的新参数 **CustomDepth**。
 * 按下图所示设置材质图（下载图像以放大查看）。
 
-![后期处理轮廓材质](media/outline-material.png)
+![后期处理轮廓材质](/manual/media/outline-material.png)
 
 ### 2. 创建脚本
 
@@ -90,10 +90,10 @@ public class OutlineRenderer : PostProcessEffect
 
 现在，将创建的脚本添加到摄像机 Actor，将脚本的 **Material** 属性链接到创建的轮廓后期处理材质，并将要绘制轮廓的对象链接到 **Actors** 列表中。你还可以调整轮廓的颜色。
 
-![对象轮廓渲染摄像机设置](media/object-outline-camera.png)
+![对象轮廓渲染摄像机设置](/manual/media/object-outline-camera.png)
 
 ### 4. 测试！
 
 最后，启动游戏并查看结果。
 
-![鼠标点击生成贴花](media/object-outline.gif)
+![鼠标点击生成贴花](/manual/media/object-outline.gif)

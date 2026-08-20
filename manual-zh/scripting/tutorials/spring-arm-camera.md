@@ -113,4 +113,4 @@ public class SpringArmCamera : Script
 
 最后，启动游戏并测试结果。
 
-![Spring Arm Camera Script Flax Engine](media/spring-arm-camera.gif)
+![Spring Arm Camera Script Flax Engine](/manual/media/spring-arm-camera.gif)

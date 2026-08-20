@@ -1,6 +1,6 @@
  * # 场景动画
 
-   ![场景动画](media/scene-anims-cut-scenes.gif)
+   ![场景动画](/manual/media/scene-anims-cut-scenes.gif)
 
    **场景动画** 是一个内置工具，用于在场景中制作对象的动画。例如，创建过场动画、游戏对象动画、UI 动画等。Flax 提供了各种工具，用于在游戏项目中开发和使用场景动画。请参阅本文档部分，了解如何在场景中为对象制作动画。
 

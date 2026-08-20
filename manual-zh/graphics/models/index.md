@@ -1,12 +1,12 @@
 # 模型
 
-![模型](media/title.png)
+![模型](/manual/media/title.png)
 
 **模型** 是游戏最重要的组成部分之一。玩家角色和整个环境都可以使用它们来创建。Flax 支持导入使用最常见的 3D 建模软件（例如 Maya、3dsMax、Blender）创建的模型文件，或生成程序化几何体。
 
 模型资源包含一个 **细节级别**（缩写为 *LOD*）集合和 **材质槽**。每个 LOD 包含要绘制的网格集合。在模型渲染期间，每个网格使用一个特定的材质槽，该材质槽可以保存默认值或被[静态模型](static-model.md)覆盖。
 
-![模型设计](media/ModelDesign.png)
+![模型设计](/manual/media/ModelDesign.png)
 
 > [!Note]
 > 模型的最大细节级别数量为 `6`。此外，每个 LOD 最多可以包含 `4096` 个网格。
@@ -17,11 +17,11 @@
 
 Flax 支持基于模型实例屏幕尺寸（百分比）的动态模型 LOD 切换。以下是此功能的示例：
 
-![模型 LOD 切换](media/model_lods_switching.gif)
+![模型 LOD 切换](/manual/media/model_lods_switching.gif)
 
 通过在模型材质上启用 **使用抖动 LOD 过渡** 选项，你可以使用平滑的 LOD 过渡，减少突变的伪影，并产生一种无缝的方式来降低场景中的几何复杂度。
 
-![平滑模型 LOD 切换](media/lod_transition.gif)
+![平滑模型 LOD 切换](/manual/media/lod_transition.gif)
 
 在某些情况下，例如在过场动画期间，可能需要提高场景的视觉质量并忽略较低的 LOD。为实现此目的，你可以使用以下 C# 代码按视图应用模型 LOD 偏差：
 
@@ -39,7 +39,7 @@ MainRenderTask.Instance.View = view;
 
 Flax 支持在源资源导入期间**自动生成 LOD**。导入模型文件时，只需勾选 **生成 LOD** 属性（在 *细节级别* 组下）并调整设置即可。
 
-![自动模型 LOD](media/automatic-model-lod.gif)
+![自动模型 LOD](/manual/media/automatic-model-lod.gif)
 
 ## 使用模型
 
@@ -66,7 +66,7 @@ Flax 使用灵活的模型数据格式。网格最多可以有 3 个顶点缓冲
 
 ### 模型顶点布局
 
-![模型顶点布局](media/vertex-layout.png)
+![模型顶点布局](/manual/media/vertex-layout.png)
 
 你可以在导入模型的 *网格* 选项卡下的 *顶点布局* 部分检查顶点格式。
 

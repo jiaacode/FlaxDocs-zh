@@ -195,7 +195,7 @@ private void SendHelloWorld()
 
 ## 6. Testing
 
-![Network Client Server Setup Scripts](media/network-server-client-scripts.png)
+![Network Client Server Setup Scripts](/manual/media/network-server-client-scripts.png)
 
 Finally, the scripts can be tested. You can add them to an actor on a scene to quickly preview it in Editor in action. Later you can implement a custom logic that would run Server or Client depending on some configuration or game build.
 
@@ -207,7 +207,7 @@ The logic flow:
 * Server receives *Hello World* message, prints it and responds with a similar message
 * Client receives *Hello World* message and prints it too
 
-![Network Client Server Debug Log Output](media/network-server-client-output.png)
+![Network Client Server Debug Log Output](/manual/media/network-server-client-output.png)
 
 As you can see it's a very basic example of how to implement server and client peers using the networking layer in Flax. To see a more advanced example of networking for a game see [Network Sample](../network-sample.md) project that features players synchronization and game lobby with chat. It uses player listin
 

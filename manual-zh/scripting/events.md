@@ -37,7 +37,7 @@ Flax 中的脚本不像传统程序那样在循环中持续运行直到结束。
 
 脚本事件按以下顺序调用：
 
-![脚本事件顺序](media/script-events.png)
+![脚本事件顺序](/manual/media/script-events.png)
 
 ### 初始化
 

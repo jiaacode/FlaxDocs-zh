@@ -1,6 +1,6 @@
 # 体积雾
 
-![体积雾](media/volumetric-fog.png)
+![体积雾](/manual/media/volumetric-fog.png)
 
 **体积雾** 是一项渲染功能，模拟光线在包含雾（灰尘、烟雾、粒子、蒸汽等）的场景中的传输。该效果本身是使用一组附加到摄像机的 3D 纹理（体积纹理）实现的，这些纹理用于计算每个单元的雾粒子密度、反照率和光照。这些信息用于估算光线穿过体积到达摄像机的散射量。这产生了逼真的雾效，并提供了非常好的性能质量比。
 
@@ -21,7 +21,7 @@
 * 低分辨率 3D 纹理（例如 150x80x64）
 * 输出具有累积光照和透射率的 3D 纹理
 
-![体积雾 3D 纹理](media/volumetric-fog-3d-texture.jpg)
+![体积雾 3D 纹理](/manual/media/volumetric-fog-3d-texture.jpg)
 
 算法步骤：
 1. 初始化体积属性
@@ -43,18 +43,18 @@
 
 ## 展示
 
-![Flax 引擎体积雾](media/volumetric_fog_2.gif)
+![Flax 引擎体积雾](/manual/media/volumetric_fog_2.gif)
 
 ## 通过体积雾粒子实现局部雾
 
 指数高度雾 Actor 控制场景中雾的全局属性，例如 *反照率*、*密度* 和 *自发光*。要创建局部雾效果，例如烟雾、灰尘或薄雾，请使用带有 **体积雾渲染** 模块的粒子。
 
-![粒子体积雾渲染模块](media/particles-fog-render-module.png)
+![粒子体积雾渲染模块](/manual/media/particles-fog-render-module.png)
 
 确保将材质着色器分配給使用 **体积粒子** 领域创建的材质。然后使用 **颜色** 输入定义雾的反照率颜色，使用 **自发光** 输入定义光发射，使用带有 **不透明度** 的 **遮罩** 定义雾粒子的形状（例如，使用世界对齐的噪点纹理为雾添加更逼真的外观）。
 
-![粒子材质体积着色器](media/particle-volumetric-fog-material.jpg)
+![粒子材质体积着色器](/manual/media/particle-volumetric-fog-material.jpg)
 
 体积雾粒子使用 **球体** 形状进行渲染，因此使用每个粒子的 **半径** 属性来控制粒子的大小。
 
-![体积雾粒子展示](media/volumetric-fog-particles.gif)
+![体积雾粒子展示](/manual/media/volumetric-fog-particles.gif)

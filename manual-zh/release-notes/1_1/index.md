@@ -4,11 +4,11 @@
 
 ### Linux 版编辑器
 
-![在 Linux 上使用 Vulkan 的 Flax 编辑器](media/flax-editor-linux-vulkan.png)
+![在 Linux 上使用 Vulkan 的 Flax 编辑器](/manual/media/flax-editor-linux-vulkan.png)
 
 此版本的主要功能之一是对 **Linux 版 Flax 编辑器** 的完全支持！它在 Ubuntu 上运行良好，并包含所有功能，例如使用 C++/C# 热重载的实时脚本、Visual Code 集成、场景编辑器、游戏烘焙、地形编辑、植被编辑等。它与 Windows 版编辑器在功能上持平，使 Linux 上的游戏开发者能够使用 Flax 创建出色的项目！
 
-![在 Linux 上使用 Vulkan 的 Flax 编辑器运行模式](media/editor-playing-on-linux-vulkan.gif)
+![在 Linux 上使用 Vulkan 的 Flax 编辑器运行模式](/manual/media/editor-playing-on-linux-vulkan.gif)
 
 要了解如何使用它，请参阅[入门](../../get-started/linux.md)部分。我们使用 **Vulkan** 进行渲染（旧的 *OpenGL* GPU 将无法工作）。
 
@@ -16,11 +16,11 @@
 
 ### 样条线
 
-![样条线编辑](media/splines-editing.gif)
+![样条线编辑](/manual/media/splines-editing.gif)
 
 在创建游戏时，程序员、关卡设计师和美术师通常需要更强大的工具来进行对象放置和场景布置。这正是新的 **样条线工具** 发挥作用的好例子。样条线是由带有切线的 3D 点组成的贝塞尔曲线，在编辑器中非常容易创建和设置。这些可以用于创建沿路径移动的对象（如上所示）、在样条曲线上绘制模型、构建道路和河流，或创建动态游戏组件（如下所示的链条）。
 
-![样条线链](media/spline-chain.gif)
+![样条线链](/manual/media/spline-chain.gif)
 
 要了解有关样条线的更多信息，请参阅专门的[文档及教程](../../graphics/splines/index.md)。
 
@@ -32,7 +32,7 @@
 
 ### 导航功能
 
-![导航功能 NavMesh](media/dynamic-navmesh.gif)
+![导航功能 NavMesh](/manual/media/dynamic-navmesh.gif)
 
 随着我们看到越来越多的项目使用 Flax，我们努力改进引擎的各个领域。这次我们为导航系统添加了许多新功能，例如：
 * 多导航网格支持
@@ -49,21 +49,21 @@
 
 现在，你可以在可视化脚本中绑定 **事件** 来处理触发体积或碰撞事件，如下所示（参见[教程](../../scripting/visual/events.md)）。
 
-![可视化脚本事件处理](media/visual-script-event-trigger-handler.png)
+![可视化脚本事件处理](/manual/media/visual-script-event-trigger-handler.png)
 
 其他功能包括 **自动节点格式化**，它可以排列节点使其更有条理（使用上下文菜单中的 *Format node(s)* 按钮）和用于连接组织的 **绕行节点**（双击连接以插入它）。
 
-![Visject 中的绕行节点](media/reroute-node-visject.gif)
+![Visject 中的绕行节点](/manual/media/reroute-node-visject.gif)
 
 ### 第三人称射击示例
 
-![Flax 示例中的第三人称射击](media/third-person-shooter.gif)
+![Flax 示例中的第三人称射击](/manual/media/third-person-shooter.gif)
 
 [Flax 示例](../../samples-tutorials/samples/index.md) 是一个很好的项目集合，可以在开始使用 Flax 时参考。最近我们添加了一个带有第三人称摄像机的射击项目（社区贡献）。可以用作你未来游戏项目的基础。试试看！
 
 ### 编辑器改进
 
-![Flax 编辑器中的实时粒子](media/particles-in-editor.gif)
+![Flax 编辑器中的实时粒子](/manual/media/particles-in-editor.gif)
 
 在 1.0 和 1.1 更新之间的大部分时间里，我们致力于 **提高质量** 和 **可用性** 编辑器。这包括修复了大量问题（超过 140 个 bug），改进了稳定性、更好的 Gizmo、更好的 UI 编辑、更好的预制体工具、更好的所有功能。
 需要强调的重要事项是：
@@ -78,17 +78,17 @@
 * 选项中的构建按钮配置
 * 优化的 C#/C++ 代码热重载性能（通过缓存脚本 API 反射数据）
 
-![Flax 编辑器中的堆栈跟踪调试日志](media/stack-trace-debug-log.png)
+![Flax 编辑器中的堆栈跟踪调试日志](/manual/media/stack-trace-debug-log.png)
 
 ### 精灵渲染器
 
-![精灵渲染器](media/sprite-render.png)
+![精灵渲染器](/manual/media/sprite-render.png)
 
 新的内置 Actor，可以在 3D 或 2D 中绘制精灵。高度可定制，即开即用。请参阅文档[此处](../../ui/sprite-render/index.md)。
 
 ### 体积雾粒子
 
-![体积雾粒子渲染](media/volumetric-fog-particles.gif)
+![体积雾粒子渲染](/manual/media/volumetric-fog-particles.gif)
 
 体积雾的一个重要方面是能够在场景的局部区域调整其密度和颜色。为了实现这一点，我们向粒子添加了一个新的绘制模块，称为：体积雾渲染。它将粒子绘制到体积雾中，它们可以修改雾的反照率、密度和自发光。请参阅文档[此处](../../graphics/fog-effects/volumetric-fog.md)了解更多信息。
 

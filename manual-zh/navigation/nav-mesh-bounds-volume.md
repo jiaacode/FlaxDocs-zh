@@ -1,5 +1,5 @@
 # 导航网格边界体积
 
-![导航网格边界体积](media/nav-mesh-bounds-volume.jpg)
+![导航网格边界体积](/manual/media/nav-mesh-bounds-volume.jpg)
 
 **导航网格边界体积** 是一种 Actor 类型，它是一种特殊的体积类型，用于定义场景中生成导航网格的区域。将这些体积放置在场景中，以定义你的 AI 可以在其中移动的区域。

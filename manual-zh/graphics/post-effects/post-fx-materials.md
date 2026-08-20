@@ -1,6 +1,6 @@
 # 后期处理材质
 
-![后期处理材质](media/post-fx-materials.jpg)
+![后期处理材质](/manual/media/post-fx-materials.jpg)
 
 **后期处理材质** 管线是一项功能，允许游戏开发者创建自己的后期和中间图像效果。
 例如，你可以为玩家受伤创建视觉屏幕效果，或改变游戏的整体外观。
@@ -16,29 +16,29 @@
 1. 创建新材质并打开它。
 
 2. 将 **领域** 更改为 **后期处理**（请参阅[材质属性](../materials/material-properties/index.md)以了解更多信息）。
-    <br>![后期处理材质教程](media/post-fx-material-tutorial-0.jpg)
+    <br>![后期处理材质教程](/manual/media/post-fx-material-tutorial-0.jpg)
 
 3. 添加 **Color**（*Color* 类型）和 **Chromatic**（*Float3* 类型）参数。
-    <br>![后期处理材质教程](media/post-fx-material-tutorial-1.jpg)
+    <br>![后期处理材质教程](/manual/media/post-fx-material-tutorial-1.jpg)
 
 4. 创建三个 **场景颜色** 节点，从每个节点使用单个通道（使用 **Pack Float3** 节点打包为 *RGB*），并将其乘以 **Color**（使用常量或参数）。将输出连接到 **自发光** 输入。
-    <br>![后期处理材质教程](media/post-fx-material-tutorial-2.jpg)
+    <br>![后期处理材质教程](/manual/media/post-fx-material-tutorial-2.jpg)
 
 5. 重新创建以下图，该图根据 **Chromatic** 参数值除以屏幕大小来偏移颜色样本（在屏幕空间中）。
-    <br>![后期处理材质教程](media/post-fx-material-tutorial-3.jpg)
+    <br>![后期处理材质教程](/manual/media/post-fx-material-tutorial-3.jpg)
 
 6. 材质已准备就绪！
-    <br>![后期处理材质教程](media/post-fx-material-tutorial-4.jpg)
+    <br>![后期处理材质教程](/manual/media/post-fx-material-tutorial-4.jpg)
 
 ## 应用后期处理材质
 
 有几种方法可以应用后期处理材质。最简单的方法是使用 [后期处理效果体积](post-fx-volumes.md)。只需创建一个新的 Actor，选择它，然后在 **后期处理材质** 组下将 **大小** 设置为 `1`。然后将你的后期处理材质拖放到空槽中。
 
-![后期处理材质教程](media/post-fx-material-tutorial-5.jpg)
+![后期处理材质教程](/manual/media/post-fx-material-tutorial-5.jpg)
 
 将摄像机移动到体积内以查看最终效果。
 
-![后期处理材质教程](media/post-fx-material-tutorial-6.jpg)
+![后期处理材质教程](/manual/media/post-fx-material-tutorial-6.jpg)
 
 >[!Note]
 >单个 *后期处理效果体积* 最多可以使用 `8` 个后期处理材质，但你可以堆叠它们并使用无限数量的后期处理材质。然而，请记住保持稳定的游戏性能，因为渲染全屏效果可能会降低游戏速度。
@@ -47,7 +47,7 @@
 
 ## 后期处理输入
 
-![后期处理材质输入纹理](media/postfx-material-nodes.png)
+![后期处理材质输入纹理](/manual/media/postfx-material-nodes.png)
 
 作为主要输入，后期处理材质接收 **场景颜色**，其中包含当前传递给后期处理的输入缓冲区内的像素。默认情况下，它是最终渲染帧，但如果你更改材质位置，它可以在应用任何 AA 或透明度之前包含渲染场景，并且采用 HDR 格式。
 

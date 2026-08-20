@@ -1,12 +1,12 @@
 # 导航
 
-![导航](media/navmesh-agent.gif)
+![导航](/manual/media/navmesh-agent.gif)
 
 Flax 提供了可用于各种类型游戏的导航和寻路工具。你可以使用导航系统来控制 AI 角色和其他对象如何在不撞墙和避开障碍物的情况下在游戏环境中导航。
 
 ## 导航网格
 
-![导航网格](media/navmesh-dynamic-rebuild.gif)
+![导航网格](/manual/media/navmesh-dynamic-rebuild.gif)
 
 导航网格（缩写为 navmesh）是多边形表面，用于定义场景的“可行走”区域。它们用于查询路径，以便对象在游戏关卡中导航。
 Flax 支持运行时生成的导航网格和在编辑器中预构建的导航网格。导航网格构建过程是异步的，不会阻塞游戏逻辑线程。也支持进度报告。

@@ -7,7 +7,7 @@ Flax 中的脚本使用 **C#** 语言编写（扩展名为 `.cs` 的源文件）
 
 Flax 编辑器为游戏脚本和编辑器插件生成解决方案文件（`.sln`）和 C# 项目文件（`.csproj`）。
 
-![工作区](media/scripts-workspace.jpg)
+![工作区](/manual/media/scripts-workspace.jpg)
 
 > [!Note]
 > 我们建议使用安装了 [Flax Engine Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=Flax.FlaxVS) 的 Visual Studio 进行代码编辑。
@@ -15,7 +15,7 @@ Flax 编辑器为游戏脚本和编辑器插件生成解决方案文件（`.sln`
 # 创建脚本
 
 1. 在 *内容* 窗口中，导航到 '&lt;project_name&gt;/Source/&lt;game_module_name&gt;'。
-	<br>![步骤 1](media/new-script.gif)
+	<br>![步骤 1](/manual/media/new-script.gif)
 	
 2. 双击以打开脚本。等待 Flax 打开你的 IDE，然后它将打开新脚本。
 
@@ -29,14 +29,14 @@ Flax 编辑器为游戏脚本和编辑器插件生成解决方案文件（`.sln`
 1. 选择一个 Actor 以向其添加脚本（注意 *属性* 窗口中 **脚本** 组中的标签 *将脚本拖放到此处*）
 2. 将脚本拖放到 **将脚本拖放到此处** 区域
 3. 脚本已准备就绪（包含 3 个公共字段的示例脚本）
-   <br>![步骤 1](media/attach-script.gif)
+   <br>![步骤 1](/manual/media/attach-script.gif)
 
 Flax 编辑器使用一个专用组（在 `Scripts` 组内）显示公共脚本属性和字段。每个脚本组标题显示脚本类类型名称、**右侧的设置按钮** 和 **左侧的脚本切换复选框**。你可以使用此复选框启用或禁用脚本。
 
 要 **移除**、**编辑** 或 **重新排序** 脚本，请使用 **设置按钮**，它会显示一个包含各种选项的弹出窗口。
 
-![脚本设置](media/script-settings.png)
+![脚本设置](/manual/media/script-settings.png)
 
 你还可以轻松地选择对脚本的引用或重新排序它。只需单击并拖动 **三杠图标按钮**，如下方 GIF 所示：
 
-![重新排序脚本](media/script-reorder-with-drag.gif)
+![重新排序脚本](/manual/media/script-reorder-with-drag.gif)

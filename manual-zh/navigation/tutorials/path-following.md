@@ -6,7 +6,7 @@
 
 首先，你需要准备关卡，设置导航网格和要移动的对象（我们的代理）。
 
-![示例场景](media/sample-scene.jpg)
+![示例场景](/manual/media/sample-scene.jpg)
 
 ## 2. 创建代理逻辑脚本
 
@@ -105,7 +105,7 @@ public class Agent007 : Script
 
 ## 3. 将脚本添加到对象并链接 `Move To Target`
 
-![设置代理](media/setup-agent.jpg)
+![设置代理](/manual/media/setup-agent.jpg)
 
 ## 4. 查看结果
 

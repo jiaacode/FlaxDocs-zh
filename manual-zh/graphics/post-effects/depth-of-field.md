@@ -1,12 +1,12 @@
 # 景深
 
-![景深](media/depth-of-field.png)
+![景深](/manual/media/depth-of-field.png)
 
 **景深** 效果模拟了现实摄像机镜头对物体聚焦的行为。此效果会模糊失焦的图像区域，并生成 Bokeh（散景）形状。它确实有助于创建逼真的场景，并且是游戏过场动画中最重要的部分之一。
 
 ## 属性
 
-![属性](media/depth-of-field-properties.jpg)
+![属性](/manual/media/depth-of-field-properties.jpg)
 
 | 属性                   | 描述                                                         |
 | ---------------------- | ------------------------------------------------------------ |
@@ -19,7 +19,7 @@
 | **深度限制**           | 受景深影响的最大像素深度（以世界单位为单位）。用于停止对天空和天空盒的效果。 |
 | **启用散景**           | 如果勾选，将渲染散景形状。                                   |
 | **散景大小**           | 控制散景形状的大小。                                         |
-| **散景形状**           | 定义散景形状的类型。可能的选项：<table><tbody><tr><th>选项</th><th>描述</th></tr><tr><td>**六边形**</td><td>六边形形状。<br>![六边形](media/Bokeh/Bokeh_Hex.png)</td></tr><tr><td>**八边形**</td><td>八边形形状。<br>![八边形](media/Bokeh/Bokeh_Oct.png)</td></tr><tr><td>**圆形**</td><td>圆形形状。<br>![圆形](media/Bokeh/Bokeh_Circle.png)</td></tr><tr><td>**十字形**</td><td>十字形形状。<br>![十字形](media/Bokeh/Bokeh_Cross.png)</td></tr><tr><td>**自定义**</td><td>自定义纹理形状（使用 *散景形状自定义纹理* 属性）。</td></tr></tbody></table> |
+| **散景形状**           | 定义散景形状的类型。可能的选项：<table><tbody><tr><th>选项</th><th>描述</th></tr><tr><td>**六边形**</td><td>六边形形状。<br>![六边形](/manual/media/Bokeh/Bokeh_Hex.png)</td></tr><tr><td>**八边形**</td><td>八边形形状。<br>![八边形](/manual/media/Bokeh/Bokeh_Hex.png)</td></tr><tr><td>**圆形**</td><td>圆形形状。<br>![圆形](/manual/media/Bokeh/Bokeh_Hex.png)</td></tr><tr><td>**十字形**</td><td>十字形形状。<br>![十字形](/manual/media/Bokeh/Bokeh_Hex.png)</td></tr><tr><td>**自定义**</td><td>自定义纹理形状（使用 *散景形状自定义纹理* 属性）。</td></tr></tbody></table> |
 | **散景形状自定义纹理** | 如果 *散景形状* 设置为 **自定义**，则此纹理将用于散景形状。为获得最佳性能，请使用小型、压缩的灰度纹理（例如 32px）。 |
 | **散景亮度阈值**       | 生成散景的最小像素亮度。亮度较低的像素将被跳过。             |
 | **散景模糊阈值**       | 控制散景形状模糊阈值。                                       |

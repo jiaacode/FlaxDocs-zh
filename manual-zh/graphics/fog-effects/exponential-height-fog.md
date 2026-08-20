@@ -1,6 +1,6 @@
 # 指数高度雾
 
-![指数高度雾](media/exponential-height-fog.png)
+![指数高度雾](/manual/media/exponential-height-fog.png)
 
 **指数高度雾** Actor 用于创建云层等雾效，但其密度与雾的高度相关。它渲染的雾，其密度根据高度和衰减参数呈指数增长。它支持调整雾的散射颜色、密度、起始距离和其他艺术参数。
 
@@ -8,7 +8,7 @@
 
 ## 属性
 
-![贴花属性](media/exponential-height-fog-properties.png)
+![贴花属性](/manual/media/exponential-height-fog-properties.png)
 
 | 选项               | 描述                                                         |
 | ------------------ | ------------------------------------------------------------ |

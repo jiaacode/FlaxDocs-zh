@@ -20,13 +20,13 @@
 
 现在，将脚本添加到场景中的一个 Actor 上（选中该 Actor，然后使用 **添加脚本** 按钮）。
 
-![从代码切换场景](media/change-scene-1.png)
+![从代码切换场景](/manual/media/change-scene-1.png)
 
 ## 4. 指定场景
 
 然后，将您要从 **内容窗口** 加载的场景*拖放*到资源选择器中。
 
-![从代码切换场景](media/change-scene-2.png)
+![从代码切换场景](/manual/media/change-scene-2.png)
 
 ## 5. 进行测试
 

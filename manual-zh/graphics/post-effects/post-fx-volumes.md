@@ -1,6 +1,6 @@
 # 后期处理效果体积
 
-![后期处理效果体积](media/post-fx-volumes.png)
+![后期处理效果体积](/manual/media/post-fx-volumes.png)
 
 **后期处理效果体积** 是一种特殊的 Actor，用于覆盖空间中已定义体积内的默认后期处理设置。
 通过使用它，你可以修改体积内的景深、泛光或其他效果。
@@ -10,7 +10,7 @@
 
 ## 属性
 
-![属性](media/post-fx-volumes-properties.jpg)
+![属性](/manual/media/post-fx-volumes-properties.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |
@@ -27,7 +27,7 @@
 
 要覆盖设置，只需勾选其专用的复选框，然后调整值，如下图所示。
 
-![属性](media/post-fx-volumes-edit.jpg)
+![属性](/manual/media/post-fx-volumes-edit.jpg)
 
 ## 默认设置
 

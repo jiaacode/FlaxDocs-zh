@@ -4,7 +4,7 @@
 
 ### 高级网络
 
-![Flax 引擎更新中的高级网络](media/title.png)
+![Flax 引擎更新中的高级网络](/manual/media/title.png)
 
 完整的 **多人游戏支持** 现已登陆 Flax！这是最受期待的功能之一，现在它已准备好在游戏中使用。在此更新中，我们实现了 *高级网络* 层，其中包括网络上的 **对象复制**、远程过程调用（**RPC**）、**对象所有权** 概念以及服务器权威模型。
 
@@ -14,7 +14,7 @@
 
 ### Arizona 框架
 
-![Arizona 框架示例](media/arizona-sample.gif)
+![Arizona 框架示例](/manual/media/arizona-sample.gif)
 
 **Arizona 框架** 是一个即用型开源框架，用于在 Flax 中创建游戏，可在 [Github](https://github.com/FlaxEngine/ArizonaFramework) 上获取。它作为一个插件创建，可以添加到你的游戏项目中。Arizona 框架具有游戏开发中常用的核心游戏架构概念，例如 `Game Mode`、`Game State`、`Game System`、`Player State`、`Player Pawn`、`Player Controller`、`Player UI` 等。它易于扩展，并内置了对多人游戏的支持（包括高级网络和本地合作）。
 
@@ -22,13 +22,13 @@
 
 ### ImGui 插件
 
-![Flax 引擎的 ImGui 插件](media/imgui-flax-engine.png)
+![Flax 引擎的 ImGui 插件](/manual/media/imgui-flax-engine.png)
 
 [Dear ImGui](https://github.com/ocornut/imgui) 是一个无冗余的 C++ 图形用户界面库，常用于游戏开发中的工具和调试界面创建。我们创建并发布了一个用于 Flax 游戏的[官方插件](https://github.com/FlaxEngine/ImGui)，以集成 ImGui 并在 C++/C# 脚本中使用它。请参阅仓库自述文件，了解如何在你的游戏项目中使用它。
 
 ### 性能优化
 
-![性能优化 Flax 引擎 CPU 性能作业系统](media/scene-drawing-cpu-job-system-optimize.png)
+![性能优化 Flax 引擎 CPU 性能作业系统](/manual/media/scene-drawing-cpu-job-system-optimize.png)
 
 每次 Flax 更新都会带来各种性能改进。这次我们专注于游戏渲染的 CPU 优化。现在，渲染器使用 **多线程绘制调用** 收集（通过 *作业系统*），材质着色器常量被分离为 *每视图* 和 *每绘制* 数据，**阴影渲染与主视图批处理**，网格绘制更快，等等。这为大型场景（10k+ 网格）或具有许多阴影光源的关卡带来了巨大的性能提升。场景渲染完全多线程化，吞吐量更大。此外，现有的图形功能，如 [DDGI](../../graphics/lighting/gi/realtime.md) 或 [全局 SDF](../../graphics/models/sdf.md)，已针对更大的游戏制作进行了优化。
 
@@ -36,7 +36,7 @@
 
 ### 层级标签
 
-![游戏开发的新层级标签](media/hierarchical-tags.png)
+![游戏开发的新层级标签](/manual/media/hierarchical-tags.png)
 
 新游戏标签现已登陆 Flax！带有命名空间的 **层级标签** 可以增强游戏编程。现在，Actor 拥有这些标签的列表，使它们更易于使用。此外，新的编辑器支持简单的标签选择，可以在其他游戏系统中使用（例如，玩家武器、动画或能力设置）。标签是一种轻量级且可扩展的解决方案，适用于组织良好的游戏制作。
 
@@ -48,7 +48,7 @@
 
 ### 编辑器改进
 
-![GPU 内存性能分析器](media/gpu-memory-profiler.png)
+![GPU 内存性能分析器](/manual/media/gpu-memory-profiler.png)
 
 Flax 编辑器正在持续开发中，旨在成为最佳游戏编辑器，这次我们主要致力于：
 

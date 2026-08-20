@@ -53,7 +53,7 @@ public class MyScriptEditor : GenericEditor
 
 导航到 `Source/<module_name>` 目录，并创建新的 `MyWindow` 脚本。或者，您也可以使用额外的编辑器专用脚本模块，如[此处](add-scripts-module.md)的教程所示。
 
-![教程](media/custom-window-tutorial-1.jpg)
+![教程](/manual/media/custom-window-tutorial-1.jpg)
 
 ### 3. 实现编辑器窗口
 
@@ -96,12 +96,12 @@ button.Button.Clicked += () => new MyWindow().Show();
 
 返回编辑器，等待脚本重新加载，然后选择附加了 `MyScript` 的对象。
 
-![教程](media/custom-window-tutorial-2.jpg)
+![教程](/manual/media/custom-window-tutorial-2.jpg)
 
 然后按下按钮。您的自定义窗口应当会显示出来。它像其他编辑器窗口一样工作，因此您可以拖拽和停靠它，或将其移动到任意位置。
 
-![教程](media/custom-window-tutorial-3.jpg)
+![教程](/manual/media/custom-window-tutorial-3.jpg)
 
 现在在文本框中输入一些内容，然后点击蓝色按钮，即可看到显示所输入文本的消息框。如果您想关闭此窗口，只需点击右上角的叉号图标。
 
-![教程](media/custom-window-tutorial-4.jpg)
+![教程](/manual/media/custom-window-tutorial-4.jpg)

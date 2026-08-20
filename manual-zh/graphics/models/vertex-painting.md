@@ -6,17 +6,17 @@ Flax 支持存储每个顶点的 4 通道 RGBA（32 位）颜色。此颜色可�
 
 ## 如何在编辑器中绘制模型？
 
-![工具箱顶点绘制](media/toolbox-vertex-colors.png)
+![工具箱顶点绘制](/manual/media/toolbox-vertex-colors.png)
 
 [工具箱](../../editor/windows/toolbox.md) 窗口包含一个带有顶点绘制工具的选项卡。选择它，然后在场景中选择一个模型进行绘制。该窗口包含许多用于调整笔刷和绘制选项的选项。
 
 选择模型和选项卡后，编辑器将显示其顶点颜色。你可以使用 **预览模式** 选项预览单个颜色通道或禁用调试视图。
 现在，你可以在编辑器视口中使用鼠标左键用球形笔刷绘制顶点。
 
-![Flax 编辑器中的顶点绘制](media/vertex-painting.gif)
+![Flax 编辑器中的顶点绘制](/manual/media/vertex-painting.gif)
 
 ## 如何在材质中访问顶点颜色？
 
 要读取绘制的顶点颜色，你可以在材质中使用 **顶点颜色** 节点。这可用于调整对象的外观。
 
-![顶点颜色节点](media/vertex-color-node.png)
+![顶点颜色节点](/manual/media/vertex-color-node.png)

@@ -4,7 +4,7 @@
 
 ## 属性
 
-![属性](media/fixed-joint-properties.jpg)
+![属性](/manual/media/fixed-joint-properties.jpg)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |

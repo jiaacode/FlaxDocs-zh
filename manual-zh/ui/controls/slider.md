@@ -1,6 +1,6 @@
 # 滑块
 
-![滑块](media/slider.png)
+![滑块](/manual/media/slider.png)
 
 **滑块** 响应用户的值更改事件以改变数值。
 

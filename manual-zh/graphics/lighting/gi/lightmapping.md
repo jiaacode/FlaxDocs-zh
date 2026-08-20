@@ -1,6 +1,6 @@
 # 光照烘焙
 
-![在Flax中烘焙光照贴图](media/bake_lightmaps.gif)
+![在Flax中烘焙光照贴图](/manual/media/bake_lightmaps.gif)
 
 Flax支持使用一种**完全在GPU上运行**的自定义算法来烘焙光照贴图纹理。通过这种方式，它非常高效，并且在烘焙期间不会使你的计算机卡顿。
 

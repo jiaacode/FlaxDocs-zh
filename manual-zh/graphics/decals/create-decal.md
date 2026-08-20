@@ -10,13 +10,13 @@
 
 下一步是打开材质编辑器，并将材质的 **领域** 更改为 **Decal**，如下图所示。
 
-![将领域设置为贴花](media/tutorial1.png)
+![将领域设置为贴花](/manual/media/tutorial1.png)
 
 ## 3. 添加贴花纹理
 
 现在拖放你想要用作贴花绘制的纹理。然后将其连接到材质的颜色和不透明度属性，如下图所示。你还可以在材质预览面板中查看贴花的预览。
 
-![添加贴花纹理](media/tutorial2.png)
+![添加贴花纹理](/manual/media/tutorial2.png)
 
 ## 4. 保存材质
 
@@ -26,16 +26,16 @@
 
 现在向场景中添加一个新的 [贴花](decal.md) Actor。你可以从 *工具箱窗口*（**可视化** 选项卡）中拖放它，或使用 *场景树窗口* 和专用的上下文菜单。
 
-![添加贴花](media/tutorial3.png)
+![添加贴花](/manual/media/tutorial3.png)
 
 ## 6. 分配材质
 
 选择已创建的贴花 Actor，并将材质分配給其 **材质** 属性。
 
-![设置贴花材质](media/tutorial4.png)
+![设置贴花材质](/manual/media/tutorial4.png)
 
 ## 7. 查看结果
 
-![贴花就绪](media/tutorial5.png)
+![贴花就绪](/manual/media/tutorial5.png)
 
 你的贴花已准备就绪。你可以在游戏中使用它。此外，贴花可以在运行时通过 C# 脚本生成，你可以创建一个虚拟的动态材质实例来修改贴花参数，例如：在超时后淡出贴花。

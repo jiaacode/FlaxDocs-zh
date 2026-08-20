@@ -4,7 +4,7 @@
 
 ### 车辆
 
-![Flax 物理车辆](media/wheeled-vehicle.gif)
+![Flax 物理车辆](/manual/media/wheeled-vehicle.gif)
 
 此版本增加了对 **车辆** 的支持。现在，你可以使用自定义物理形状、车轮和引擎设置来创建汽车。我们使用 Nvidia PhysX 驱动模拟，并公开了大量高度可配置的属性来调整车辆。它可以用于制作简单的汽车，甚至是高级的逼真赛车游戏。此外，非官方地说，Flax 中的汽车驾驶体验比《赛博朋克 2077》更好。
 
@@ -12,23 +12,23 @@
 
 ### Nintendo Switch 支持
 
-![Nintendo Switch Flax 引擎支持移植](media/switcher.jpg)
+![Nintendo Switch Flax 引擎支持移植](/manual/media/switcher.jpg)
 
 我们很高兴地宣布，我们正在开发 Nintendo Switch 平台支持。很快 Flax 将可供 Switch 开发者使用。一旦准备就绪，我们将通过我们的开发者博客通知你。敬请期待，我们已接近完成。
 
 ### 低级网络
 
-![网络示例项目多人游戏](media/network-sample-menu.png)
+![网络示例项目多人游戏](/manual/media/network-sample-menu.png)
 
 在此版本中，我们为多人游戏的 **网络** 功能带来了更多特性。我们实现了一个低级网络系统，其特点是使用网络对等端创建多人会话，并带有网络消息传输层。默认网络驱动程序使用 ENet，并允许使用你想要的任何库（如 ValveSockets、SteamRelay、SteamP2P、Photon Realtime 等）。
 
 与此一起，我们发布了一个开源的[网络示例](../../networking/network-sample.md)项目，以帮助你开始在 Flax 中制作多人游戏。它具有一个游戏服务器-客户端，包含游戏会话、聊天和玩家大厅。我们还有一个简单的[分步教程](../../networking/tutorials/network-client-server.md)，帮助你开始在 Flax 中使用网络。
 
-![网络示例玩家大厅](media/network-sample-players.jpg)
+![网络示例玩家大厅](/manual/media/network-sample-players.jpg)
 
 ### 本地化
 
-![Flax 编辑器本地化工具预览](media/localization-preview.gif)
+![Flax 编辑器本地化工具预览](/manual/media/localization-preview.gif)
 
 创建面向全球市场并支持多种语言的游戏可能是一个挑战。在 1.2 中，我们发布了用于游戏内部化的新 **本地化工具**。这包括 UI 语言本地化、值区域设置（数字、货币和日期格式）以及为不同语言创建翻译。我们添加了新的本地化设置，这是一个包含许多工具的仪表板，例如添加新语言区域、在代码或内容中搜索本地化字符串。如上图 GIF 所示，编辑器具有当前语言区域的实时预览选项。
 
@@ -36,13 +36,13 @@
 
 ### 新编辑器图标
 
-![Flax 编辑器 UI](media/editor-ui.png)
+![Flax 编辑器 UI](/manual/media/editor-ui.png)
 
 启动 1.2 更新后，你可能首先注意到的是 Flax 编辑器有了新图标。我们 **提高了图标集的分辨率和样式**，使其更清晰。新的 UI 只是 *感觉更好*。
 
 ### 作业系统和任务图
 
-![Flax 引擎性能作业系统任务图](media/animated-models-5k.gif)
+![Flax 引擎性能作业系统任务图](/manual/media/animated-models-5k.gif)
 
 最新的 1.2 更新为大型世界带来了 **巨大的性能提升**。这里是一个示例，展示了 5,000 个动画模型播放动画并以稳定的 60 FPS 渲染（在中档 i5 CPU 上测试）。为了实现这一性能水平，我们创建了一个 **作业系统**，它在每个 CPU 核心上运行一个工作线程，以异步方式执行大量计算。对于游戏系统或引擎系统使用的更高级计算，我们实现了 **任务图**。它可以更好地并行化游戏，并支持异步系统之间的依赖关系。
 
@@ -50,7 +50,7 @@
 
 ### Tracy 性能分析器
 
-![Flax 引擎 Tracy 性能分析器](media/async-particles.png)
+![Flax 引擎 Tracy 性能分析器](/manual/media/async-particles.png)
 
 为了优化引擎或游戏，开发者需要合适的性能分析工具。内置性能分析器对此有帮助，但对于更高级的优化，我们需要更强大的工具。现在，Flax 支持开源的 [Tracy](https://github.com/wolfpld/tracy) 性能分析器，用于 CPU 仪器化和性能分析。它可以分析游戏和编辑器，支持远程性能分析，并可用于捕获性能分析会话以进行比较。此外，Flax 会自动为 C# 和可视化脚本方法插入性能分析区域，因此游戏性能分析现在更加容易。
 
@@ -58,7 +58,7 @@
 
 ### 纹理流式传输
 
-![Flax 引擎纹理流式传输性能质量](media/textures-streaming.gif)
+![Flax 引擎纹理流式传输性能质量](/manual/media/textures-streaming.gif)
 
 另一个令人兴奋的功能是 **纹理流式传输配置**。新的流式传输设置资源包含 **纹理组**，用于在运行时管理纹理质量和流式传输选项（每个纹理资源都可以定义其所属的纹理组）。
 
@@ -66,13 +66,13 @@
 
 ### AMD FidelityFX 超分辨率
 
-![适用于 Flax 引擎的 AMD FidelityFX 超分辨率](media/amd-fsr-flax.jpg)
+![适用于 Flax 引擎的 AMD FidelityFX 超分辨率](/manual/media/amd-fsr-flax.jpg)
 
 [AMD Fidelity FX 超分辨率](https://gpuopen.com/fidelityfx-superresolution/) 是一种尖端的超优化空间升采样技术，可在快速帧速率下产生令人印象深刻的图像质量。我们发布了一个适用于 Flax 引擎的开源插件，实现了 FSR 效果，可以轻松集成到 Flax 游戏中。请访问[此仓库](https://github.com/FlaxEngine/FidelityFX-FSR)了解更多信息。
 
 ### 更多功能
 
-![UI 渲染的 9-Slicing 支持](media/9slicing.gif)
+![UI 渲染的 9-Slicing 支持](/manual/media/9slicing.gif)
 
 每次更新都会带来许多大型功能，但也包含大量重要的细节。我们继续致力于 **提高质量** 和 **可用性** 编辑器。以下是一些值得注意的列表：
 
@@ -92,7 +92,7 @@
 * 将默认更新率更改为 60
 * 碰撞几何体的调试视图（见下图）
 
-![编辑器物理碰撞预览](media/editor-collision-preview.png)
+![编辑器物理碰撞预览](/manual/media/editor-collision-preview.png)
 
 ## 更新日志
 

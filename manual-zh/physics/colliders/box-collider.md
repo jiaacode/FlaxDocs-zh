@@ -1,12 +1,12 @@
 # 盒体碰撞体
 
-![盒体碰撞体](media/box.png)
+![盒体碰撞体](/manual/media/box.png)
 
 一种盒形的基本碰撞体。
 
 ## 属性
 
-![属性](media/box-properties.jpg)
+![属性](/manual/media/box-properties.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |

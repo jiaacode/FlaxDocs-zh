@@ -2,7 +2,7 @@
 
 Flax 支持从高度图图像导入地形。使用 **创建地形** 对话框，你可以指定输入的 **高度图**、**高度图缩放** 和 **泼溅贴图**。
 
-![导入地形](tutorials/media/import-terrain-dialog.png)
+![导入地形](/manual/tutorials/media/import-terrain-dialog.png)
 
 要了解有关导入地形的更多信息，请参阅相关教程[此处](tutorials/import-terrain.md)。
 

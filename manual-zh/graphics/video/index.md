@@ -1,6 +1,6 @@
 # 视频
 
-![视频](media/video.gif)
+![视频](/manual/media/video.gif)
 
 视频播放器允许加载 `.mp4` 文件并播放其中的视频和音频。本文档描述了如何在项目中导入和使用视频。
 
@@ -8,13 +8,13 @@
 
 使用内容窗口的导入功能，或将视频文件**拖放到内容窗口**中，以将源文件复制到项目中。视频文件通过项目文件夹中的路径（相对于根文件夹）进行标识，引擎不会为它们使用任何资源 ID 或元数据文件。
 
-![视频文件预览](media/video-preview.png)
+![视频文件预览](/manual/media/video-preview.png)
 
 然后你可以**双击资源项以打开窗口**，该窗口可以播放视频进行预览。
 
 ## 视频播放器
 
-![视频播放器](media/video-player.png)
+![视频播放器](/manual/media/video-player.png)
 
 `VideoPlayer` 是用于播放视频的 Actor。它可以添加到场景中、添加到预制体中、附加到 UI，或从代码中动态生成。`Url` 属性定义了要播放的视频路径。它可以是本地文件、绝对路径或 HTTP URL。编辑器在 URL 文本字段旁边提供了一个小的下拉按钮，其中显示了项目中可供选择的视频文件列表。
 
@@ -51,11 +51,11 @@
 
 ## 视频画笔
 
-![新建视频画笔](media/video-brush-new.png)
+![新建视频画笔](/manual/media/video-brush-new.png)
 
 `VideoBrush` 实现了 `IBrush` 接口，用于在 UI 内显示 VideoPlayer 的图像。这可以用于 `Image` 控件（或任何其他使用画笔的控件）来显示基于视频的加载画面、游戏工作室开场动画、预渲染的过场动画或游戏结束字幕。视频画笔需要引用视频播放器来访问 GPU 纹理——通过 `Player` 属性分配它。
 
-![编辑视频画笔](media/video-brush-edit.png)
+![编辑视频画笔](/manual/media/video-brush-edit.png)
 
 ## 材质
 

@@ -1,6 +1,6 @@
 # 纹理
 
-![纹理](media/parallax-texture.png)
+![纹理](/manual/media/parallax-texture.png)
 
 **纹理** 是包含由像素数据组成的图像资源。它们主要用于材质中覆盖表面。
 
@@ -37,13 +37,13 @@ Flax 引擎支持导入以下列表中的文件类型作为纹理：
 
 导入一个或多个纹理的最简单方法是将它们从文件 *资源管理器* 窗口（MacOS 上为 *Finder*）拖放到 *内容* 窗口。
 
-![导入纹理](media/import-texture.jpg)
+![导入纹理](/manual/media/import-texture.jpg)
 
 或者，你可以使用 *内容* 窗口工具栏中的 **导入** 按钮，然后选择要导入的文件。
 
 选择文件后，将显示 **导入文件设置** 对话框。它用于为每个纹理指定导入选项。在大多数情况下，默认值即可，你只需按下 **导入** 按钮。
 
-![导入纹理](media/import-settings-textures.jpg)
+![导入纹理](/manual/media/import-settings-textures.jpg)
 
 > [!Note]
 > * Flax 会根据纹理名称自动检测导入的纹理类型。例如：*Chair_Normal.png* 将被检测为法线贴图，*Chair_AO.png* 将被检测为灰度纹理（因为它包含单通道环境光遮蔽数据）。
@@ -63,7 +63,7 @@ Flax 引擎支持导入以下列表中的文件类型作为纹理：
 
 ## 程序化纹理
 
-![程序化纹理](media/cubeResult.png)
+![程序化纹理](/manual/media/cubeResult.png)
 
 Flax API 公开了几种方法，使你能够从代码中创建和使用程序化纹理。要了解如何使用这些功能，请参阅相关教程：[如何生成程序化纹理](generate-texture.md)。
 

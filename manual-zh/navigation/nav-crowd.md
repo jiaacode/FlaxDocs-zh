@@ -6,7 +6,7 @@
 
 | 之前                                         | 之后                                        |
 | -------------------------------------------- | ------------------------------------------- |
-| ![无人群](media/nav-agents-crowd-before.gif) | ![有人群](media/nav-agents-crowd-after.gif) |
+| ![无人群](/manual/media/nav-agents-crowd-before.gif) | ![有人群](/manual/media/nav-agents-crowd-before.gif) |
 
 ## 设置
 

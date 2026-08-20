@@ -13,13 +13,13 @@ Flax 引擎中所有可用控制台命令的完整列表请[参见此处](debug-
 
 ### 输出日志
 
-![输出日志中的调试命令](media/debug-commands-output-log.gif)
+![输出日志中的调试命令](/manual/media/debug-commands-output-log.gif)
 
 [输出日志](../../editor/windows/output-log.md) 是显示完整日志的编辑器窗口。在该窗口的底部，有一个输入命令字段，可用于运行命令。你可以输入命令，并会自动弹出搜索框，根据输入的值显示类似的命令。使用方向键在弹出列表中导航。Tab 键可用于根据最佳匹配自动补全命令。最后，当输入为空时，你可以使用向上方向键在命令历史记录中导航并重新尝试其中的一个。
 
 ### 游戏内控制台
 
-![游戏内调试命令](media/debug-commands-in-game.png)
+![游戏内调试命令](/manual/media/debug-commands-in-game.png)
 
 调试命令可以出现在游戏内控制台或调试工具中。例如，[Arizona 框架](https://github.com/FlaxEngine/ArizonaFramework) 通过 [ImGui](https://github.com/FlaxEngine/ImGui) 实现了控制台。此类工具在为主机等需要运行时调整游戏配置的各种平台和设备开发游戏时非常有用。
 

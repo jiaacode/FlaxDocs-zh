@@ -2,7 +2,7 @@
 
 蒙皮模型编辑器窗口的 UI 由工具栏、视口和属性面板组成。
 
-![材质编辑器](media/editor-ui.jpg)
+![材质编辑器](/manual/media/editor-ui.jpg)
 
 1. 工具栏
 2. 属性面板
@@ -14,9 +14,9 @@
 
 | 图标                                     | 描述                             |
 | ---------------------------------------- | -------------------------------- |
-| ![图标](media/editor-ui-toolstrip-1.png) | 在 *内容* 窗口中显示并选择该资源 |
-| ![图标](media/editor-ui-toolstrip-2.png) | 将资源保存到文件                 |
-| ![图标](media/editor-ui-toolstrip-3.png) | 显示骨骼层级结构                 |
+| ![图标](/manual/media/editor-ui-toolstrip-1.png) | 在 *内容* 窗口中显示并选择该资源 |
+| ![图标](/manual/media/editor-ui-toolstrip-2.png) | 将资源保存到文件                 |
+| ![图标](/manual/media/editor-ui-toolstrip-3.png) | 显示骨骼层级结构                 |
 
 ## 视口
 
@@ -30,7 +30,7 @@
 
 ## 属性面板
 
-![属性](media/skinned-model-properties.gif)
+![属性](/manual/media/skinned-model-properties.gif)
 
 此面板显示模型资源属性，并组织为单独的选项卡。
 

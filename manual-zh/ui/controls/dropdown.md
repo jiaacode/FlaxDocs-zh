@@ -1,6 +1,6 @@
 # 下拉菜单
 
-![下拉菜单](media/dropdown.png)
+![下拉菜单](/manual/media/dropdown.png)
 
 **下拉菜单** 控件允许用户从选项列表中选择一个选项。控件会显示当前选中的选项。
 

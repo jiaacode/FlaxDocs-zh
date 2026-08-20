@@ -1,19 +1,19 @@
 # 粒子系统
 
-![粒子系统](media/particle-system.png)
+![粒子系统](/manual/media/particle-system.png)
 
 **粒子系统** 资源使用带有粒子发射器轨道的时间线来定义视觉特效的播放。它可以包含单个粒子发射器进行模拟，也可以是高级效果组合来创建令人惊叹的视觉效果。轨道可以划分到文件夹中，以组织层级结构并帮助内容制作。
 
 ## 创建系统
 
-![创建粒子系统](media/particle-system-create-new.jpg)
+![创建粒子系统](/manual/media/particle-system-create-new.jpg)
 
 第一步是创建一个新资源。它是一个二进制文件，包含时间线数据。使用 `Content` 窗口创建新资源。右键单击并选择选项 **新建 -> 粒子 -> 粒子系统**。指定其名称并按回车确认。
 双击创建的资源以对其进行修改。
 
 ## 编辑器窗口
 
-![粒子系统窗口](media/particle-system-window.jpg)
+![粒子系统窗口](/manual/media/particle-system-window.jpg)
 
 粒子系统编辑器窗口包含：
 1. 工具栏

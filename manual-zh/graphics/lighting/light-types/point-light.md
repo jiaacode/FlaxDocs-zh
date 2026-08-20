@@ -1,12 +1,12 @@
 # 点光源
 
-![点光源](media/point-light.png)
+![点光源](/manual/media/point-light.png)
 
 **点光源** 从单个点向所有方向发射光线。点光源适用于模拟局部光源，例如灯具和灯泡。
 
 ## 光照属性
 
-![点光源属性](media/point-light-properties.jpg)
+![点光源属性](/manual/media/point-light-properties.jpg)
 
 | 属性                 | 描述                                                         |
 | -------------------- | ------------------------------------------------------------ |
@@ -24,17 +24,17 @@
 
 通过使用 **源半径** 和 **源长度** 属性，你可以更改点光源的构造尺寸。这允许模拟区域光并为场景带来更多真实感。
 
-![区域光](media/area-lights.png)
+![区域光](/manual/media/area-lights.png)
 
 ## 光照衰减
 
-![光照衰减](media/light-fall-off.png)
+![光照衰减](/manual/media/light-fall-off.png)
 
 Flax 为光照衰减提供了两种模式。可以使用自定义的 **指数** 参数，或使用 **平方反比衰减** 模式。平方反比模式提供更基于物理的距离衰减，其中 **半径** 仅用于限制光照的贡献。然而，使用手动光照衰减指数提供了更多的自定义选项。
 
 ## 阴影属性
 
-![点光源属性](media/shadow-light-properties.jpg)
+![点光源属性](/manual/media/shadow-light-properties.jpg)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |
@@ -55,7 +55,7 @@ Flax 为光照衰减提供了两种模式。可以使用自定义的 **指数** 
 
 ## 体积雾属性
 
-![点光源属性](media/volumetric-fog-properties.jpg)
+![点光源属性](/manual/media/volumetric-fog-properties.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |

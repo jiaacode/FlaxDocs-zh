@@ -1,6 +1,6 @@
 # 骨骼调试
 
-![骨骼调试](media/bones-debugging.jpg)
+![骨骼调试](/manual/media/bones-debugging.jpg)
 
 Flax 编辑器提供了骨骼层级调试工具。
 所有显示动画模型的窗口，包括：
@@ -14,4 +14,4 @@ Flax 编辑器提供了骨骼层级调试工具。
 
 你还可以使用选项在 3D 中显示骨骼节点：
 
-![骨骼节点调试](media/skeleton-names-debug.png)
+![骨骼节点调试](/manual/media/skeleton-names-debug.png)

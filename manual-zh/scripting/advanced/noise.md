@@ -4,17 +4,17 @@ Flax 包含了用于采样不同噪声函数的多种工具，例如：
 
 | **噪声类型** | **预览**                                 |
 | ------------ | ---------------------------------------- |
-| Perlin       | ![Perlin 噪声](media/noise-perlin.png)   |
-| Simplex      | ![Simplex 噪声](media/noise-simplex.png) |
-| Worley       | ![Worley 噪声](media/noise-worley.png)   |
-| Voronoi      | ![Voronoi 噪声](media/noise-voronoi.png) |
-| Custom       | ![自定义噪声](media/noise-custom.png)    |
+| Perlin       | ![Perlin 噪声](/manual/media/noise-perlin.png)   |
+| Simplex      | ![Simplex 噪声](/manual/media/noise-simplex.png) |
+| Worley       | ![Worley 噪声](/manual/media/noise-worley.png)   |
+| Voronoi      | ![Voronoi 噪声](/manual/media/noise-voronoi.png) |
+| Custom       | ![自定义噪声](/manual/media/noise-custom.png)    |
 
 这些可以通过脚本 `FlaxEngine.Utilities.Noise` 静态类访问，并用于丰富程序化生成的世界和内容。
 
 ## 材质/粒子中的噪声
 
-![材质图噪声节点](media/noise-shader.png)
+![材质图噪声节点](/manual/media/noise-shader.png)
 
 所有可视化图（材质、粒子、动画）都可以在 CPU 和 GPU 上采样噪声函数，以丰富内容。所有噪声函数返回归一化到 0-1 范围内的结果。其中一些返回更多噪声分量，例如 Voronoi 噪声，其中 `X=minDistToCell`、`Y=randomColor`、`Z=minEdgeDistance`。根据上下文，可以只使用一个分量，甚至使用所有分量。请遵循每个节点的文档工具提示。
 

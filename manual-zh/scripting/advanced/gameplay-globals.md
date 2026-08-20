@@ -8,11 +8,11 @@
 
 使用 *内容窗口* 并 *右键单击*，然后选择 **新建 -> 游戏全局变量**，输入资源名称并按回车确认。然后 *双击* 打开资源编辑器。
 
-![游戏全局变量编辑器](media/gameplay-globals-1.png)
+![游戏全局变量编辑器](/manual/media/gameplay-globals-1.png)
 
 现在，你可以指定参数类型并使用添加按钮。添加新参数后，你可以通过双击名称标签来重命名它，并编辑默认值。在运行模式下，编辑器窗口显示当前的运行时值，可以预览或编辑。你也可以使用工具栏上的最后一个按钮恢复默认值。
 
-![游戏全局变量值](media/gameplay-globals-2.png)
+![游戏全局变量值](/manual/media/gameplay-globals-2.png)
 
 要移除游戏全局变量，请右键单击其名称标签并按下删除按钮。
 
@@ -23,13 +23,13 @@
 
 游戏全局变量可以在所有基于图的资源中访问，例如：材质、粒子发射器和动画图。为此，请使用 **获取游戏全局变量** 节点。
 
-![获取游戏全局变量](media/gameplay-globals-3.png)
+![获取游戏全局变量](/manual/media/gameplay-globals-3.png)
 
 然后选择资源并选择要读取的全局变量。
 
-![粒子中的游戏全局变量](media/gameplay-globals-4.png)
+![粒子中的游戏全局变量](/manual/media/gameplay-globals-4.png)
 
-![材质中的游戏全局变量](media/gameplay-globals-5.png)
+![材质中的游戏全局变量](/manual/media/gameplay-globals-5.png)
 
 ## 在代码中使用
 

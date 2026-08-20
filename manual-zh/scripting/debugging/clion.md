@@ -1,6 +1,6 @@
 # CLion
 
-![CLion](media/clion.png)
+![CLion](/manual/media/clion.png)
 
 你可以从[此处](https://www.jetbrains.com/clion/)下载 CLion。
 

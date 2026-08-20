@@ -13,7 +13,7 @@ public int CoolVariable;
 
 ***
 
-![示例](media/HideInEditor.jpg)
+![示例](/manual/media/HideInEditor.jpg)
 
 ### ShowInEditor
 
@@ -62,7 +62,7 @@ public int CoolVariable;
 
 ***
 
-![示例](media/Tooltip.jpg)
+![示例](/manual/media/Tooltip.jpg)
 
 ### Limit
 
@@ -86,7 +86,7 @@ public int CoolVariable;
 
 ***
 
-![示例](media/Range.jpg)
+![示例](/manual/media/Range.jpg)
 
 ### Header
 
@@ -99,7 +99,7 @@ public int CoolVariable;
 
 ***
 
-![示例](media/Header.jpg)
+![示例](/manual/media/Header.jpg)
 
 ### Space
 
@@ -112,7 +112,7 @@ public int CoolVariable;
 
 ***
 
-![示例](media/Space.jpg)
+![示例](/manual/media/Space.jpg)
 
 ### EditorDisplay
 
@@ -128,7 +128,7 @@ public int CoolVariable;
 
 ***
 
-![示例](media/EditorDisplay.jpg)
+![示例](/manual/media/EditorDisplay.jpg)
 
 ### EditorOrder
 
@@ -163,7 +163,7 @@ public string CoolVariable;
 
 ***
 
-![示例](media/MultilineText.jpg)
+![示例](/manual/media/MultilineText.jpg)
 
 ### AssetReference
 
@@ -176,7 +176,7 @@ public Texture CoolVariable;
 
 ***
 
-![示例](media/AssetReference.jpg)
+![示例](/manual/media/AssetReference.jpg)
 
 ### Collection
 
@@ -194,7 +194,7 @@ public int[] CoolVariable = new int[]
 
 ***
 
-![示例](media/Collection.jpg)
+![示例](/manual/media/Collection.jpg)
 
 ### Button
 
@@ -213,7 +213,7 @@ private void CallMe()
 
 ***
 
-![示例](media/Button.png)
+![示例](/manual/media/Button.png)
 
 ### CustomEditor
 

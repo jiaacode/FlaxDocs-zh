@@ -1,12 +1,12 @@
 # 球体碰撞体
 
-![球体碰撞体](media/sphere.png)
+![球体碰撞体](/manual/media/sphere.png)
 
 一种球形的原始碰撞体。
 
 ## 属性
 
-![属性](media/sphere-properties.jpg)
+![属性](/manual/media/sphere-properties.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |

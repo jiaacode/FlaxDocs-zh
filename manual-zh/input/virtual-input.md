@@ -8,7 +8,7 @@
 
 使用虚拟输入的第一步是准备适当的配置。这是通过 **输入设置** 资源完成的。你可以在[输入设置](input-settings.md)页面上了解有关创建和使用这些设置的更多信息。如果你使用 *Flax 模板* 之一，它应该已经在 `Content/Settings/Input Settings.json` 中包含了一个适当的配置文件。在编辑器中打开此资源。
 
-![虚拟输入配置](media/virtual-input-config.jpg)
+![虚拟输入配置](/manual/media/virtual-input-config.jpg)
 
 如上图所示，可以有多个虚拟输入，并且每个虚拟输入可以绑定多个输入。例如，`Fire` 操作被设置为在 `鼠标左键` 和 `游戏手柄按钮 A` 上触发。此操作设置为 `按下` 模式，这意味着当操作被激活时，它将触发一个事件。
 
@@ -65,4 +65,4 @@ public override void OnDestroy()
 
 如果你在编辑器中选择了带有此脚本的 Actor，你可以在不编辑代码的情况下修改 `FireEvent` 和 `MouseX` 的名称。
 
-![虚拟输入脚本](media/virtual-input-script-example.jpg)
+![虚拟输入脚本](/manual/media/virtual-input-script-example.jpg)

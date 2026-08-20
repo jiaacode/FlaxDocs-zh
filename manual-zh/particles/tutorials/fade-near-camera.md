@@ -10,4 +10,4 @@
 
 现在，在曲面上添加一个新的 **摄像机深度淡出** 节点，并将其输出连接到粒子不透明度输入。然后你可以调整淡出距离和偏移量，以匹配所需的过渡。
 
-![摄像机深度淡出](media/camera-depth-fade.jpg)
+![摄像机深度淡出](/manual/media/camera-depth-fade.jpg)

@@ -1,12 +1,12 @@
 # 铰链关节
 
-![铰链关节](media/hinge-joint.gif)
+![铰链关节](/manual/media/hinge-joint.gif)
 
 **铰链关节** 从其两个连接的刚体上移除除了单个旋转自由度之外的所有自由度（例如门铰链）。
 
 ## 属性
 
-![属性](media/hinge-joint-properties.jpg)
+![属性](/manual/media/hinge-joint-properties.jpg)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |

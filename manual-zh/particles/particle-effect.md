@@ -1,6 +1,6 @@
 # 粒子特效
 
-![粒子特效](media/particle-effect.jpg)
+![粒子特效](/manual/media/particle-effect.jpg)
 
 **粒子特效** 是一种 Actor 类型，用于在场景中播放粒子模拟。用它来为你的游戏添加粒子效果。
 
@@ -14,7 +14,7 @@
 
 ## 属性
 
-![粒子特效属性](media/particle-effect-properties.png)
+![粒子特效属性](/manual/media/particle-effect-properties.png)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |

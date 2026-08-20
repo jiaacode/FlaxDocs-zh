@@ -1,6 +1,6 @@
 # 摄像机
 
-![摄像机](media/camera.png)
+![摄像机](/manual/media/camera.png)
 
 **摄像机** 捕获场景并将其显示给用户。它定义了屏幕空间中的视图。摄像机的位置和旋转定义了 *视口* 和 *视图方向*。这些属性用于渲染场景对象并将其呈现给用户。
 
@@ -21,7 +21,7 @@ Camera.OverrideMainCamera = MyCamera;
 在 *场景* 树窗口中，右键单击并选择 **新建 -> 摄像机**。
 编辑器将使用默认属性创建新的摄像机 Actor。
 
-![新建摄像机](media/new-cam.jpg)
+![新建摄像机](/manual/media/new-cam.jpg)
 
 ## 在脚本中创建摄像机
 
@@ -45,7 +45,7 @@ public class MyScript : Script
 
 ## 摄像机属性
 
-![摄像机属性](media/camera-properties.png)
+![摄像机属性](/manual/media/camera-properties.png)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |
@@ -62,7 +62,7 @@ public class MyScript : Script
 
 ## 遮罩对象层
 
-![摄像机渲染层遮罩](media/render-layers-masking.gif)
+![摄像机渲染层遮罩](/manual/media/render-layers-masking.gif)
 
 场景上的每个 Actor 都有一个分配的 **层** 属性。摄像机可以使用每层遮罩进行渲染，以包括或排除某些对象不被绘制。
 
@@ -80,7 +80,7 @@ public class MyScript : Script
 
 | 视野：50                    | 视野：80                    |
 | --------------------------- | --------------------------- |
-| ![视野 50](media/fov_1.png) | ![视野 80](media/fov_2.png) |
+| ![视野 50](/manual/media/fov_1.png) | ![视野 80](/manual/media/fov_1.png) |
 
 ## 正交缩放（仅正交模式）
 
@@ -90,7 +90,7 @@ public class MyScript : Script
 
 | 正交缩放：0.3                       | 正交缩放：1                         |
 | ----------------------------------- | ----------------------------------- |
-| ![视野 50](media/ortho_scale_1.png) | ![视野 80](media/ortho_scale_2.png) |
+| ![视野 50](/manual/media/ortho_scale_1.png) | ![视野 80](/manual/media/ortho_scale_1.png) |
 
 ## 近平面和远平面
 
@@ -102,7 +102,7 @@ public class MyScript : Script
 
 | 近平面：300                     | 远平面：800                     |
 | ------------------------------- | ------------------------------- |
-| ![视野 50](media/nearFar_1.png) | ![视野 80](media/nearFar_2.png) |
+| ![视野 50](/manual/media/nearFar_1.png) | ![视野 80](/manual/media/nearFar_1.png) |
 
 ## 将摄像机渲染到纹理
 

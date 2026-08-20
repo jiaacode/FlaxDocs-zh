@@ -9,7 +9,7 @@ Flax 使用 Microsoft Visual C++ 编译器为 Windows 平台编译。它使用 *
 
 ## 构建选项
 
-![构建选项](media/build-windows.jpg)
+![构建选项](/manual/media/build-windows.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |
@@ -19,7 +19,7 @@ Flax 使用 Microsoft Visual C++ 编译器为 Windows 平台编译。它使用 *
 
 ## 平台设置
 
-![设置](media/settings-windows.jpg)
+![设置](/manual/media/settings-windows.jpg)
 
 | 属性                | 描述                                                         |
 | ------------------- | ------------------------------------------------------------ |

@@ -12,7 +12,7 @@
 
 ### 下载技术演示
 
-![Flax 引擎 2022 技术演示 GI](media/demo-shot.jpg)
+![Flax 引擎 2022 技术演示 GI](/manual/media/demo-shot.jpg)
 
 为了展示新的 **全局光照** 渲染的能力，我们制作了一个小型演示，展示了具有动态光照、动态对象和可调一日内时间的建筑可视化场景。这是一个小型沙盒，你可以在实际生产项目中测试 GI 的外观和性能。你可以从我们的服务器 **[立即下载](https://flaxengine.com/tech-demo-2022/)**，或从 Steam 获取。
 
@@ -28,7 +28,7 @@
 
 ### 64 位世界坐标
 
-![大世界——整个地球](media/large-worlds-support.gif)
+![大世界——整个地球](/manual/media/large-worlds-support.gif)
 
 Flax 引擎包含多种用于创建大型且丰富世界的功能，例如异步数据流式传输、不同的内容工具（用于植被和地形）以及优化的多线程。在此更新中，我们带来了 **世界坐标的 64 位精度支持**，以支持构建更大的世界。结合相对摄像机的渲染和物理场景原点偏移，大型世界可以被高效地模拟和渲染，这使得游戏场景可以像整个太阳系一样大，同时仍然保持良好的质量和精度。
 
@@ -36,7 +36,7 @@ Flax 引擎包含多种用于创建大型且丰富世界的功能，例如异步
 
 ### 全局 SDF
 
-![全局 SDF](media/global-sdf.jpg)
+![全局 SDF](/manual/media/global-sdf.jpg)
 
 为了实现实时 GI，我们需要一种 **在场景中进行光线追踪的方法**，以模拟漫反射光反弹和镜面反射光的传输。如今，最常见的方法是通过硬件光线追踪，但这仅限于高端 GPU。我们决定使用 **有符号距离场**，它为光线追踪提供了一种高效的方式。为此，我们将模型 SDF 光栅化为一个体积纹理数组（称为 *Global SDF*），以在 200 米或更远的距离内为摄像机附近提供高达 10 厘米的精度。这提供了场景几何体的粗略近似，可用于 **软件光线追踪**。
 
@@ -44,29 +44,29 @@ Flax 引擎包含多种用于创建大型且丰富世界的功能，例如异步
 
 #### 内容中的全局 SDF
 
-![粒子全局 SDF 碰撞](media/particles-global-sdf-collisions.gif)
+![粒子全局 SDF 碰撞](/manual/media/particles-global-sdf-collisions.gif)
 
 此外，维护整个场景的全局 SDF 的好处是能够在材质、粒子和着色器中使用它。我们向材质和粒子添加了新的 `Sample Global SDF` 和 `Sample Global SDF Gradient` 节点，用于在任何位置采样 SDF。此外，粒子发射器具有用于全局 SDF 碰撞和全局 SDF 力的新模块，以驱动逼真的 VFX 模拟。
 
-![粒子全局 SDF](media/particles-global-sdf.gif)
+![粒子全局 SDF](/manual/media/particles-global-sdf.gif)
 
 ### 人群导航
 
 | 之前                                               | 之后                                              |
 | -------------------------------------------------- | ------------------------------------------------- |
-| ![导航代理之前](media/nav-agents-crowd-before.gif) | ![导航代理之后](media/nav-agents-crowd-after.gif) |
+| ![导航代理之前](/manual/media/nav-agents-crowd-before.gif) | ![导航代理之后](/manual/media/nav-agents-crowd-before.gif) |
 
 对于使用基于导航网格的 AI 的游戏项目，我们添加了一个新的 `NavCrowd` 系统，该系统可以高效地模拟 **代理人群** 的寻路和规避。上面你可以看到 2 组简单的[导航网格代理](../../navigation/tutorials/path-following.md)正在相互碰撞。[NavCrowd](../../navigation/nav-crowd.md) 是一个用于一组代理的导航转向行为系统。它通过自适应的 RVO 采样计算来处理代理之间的规避。它可以用于使用导航网格实现人群的自动规避和移动，并支持异步计算，可以在我们的作业系统上运行（如文档所示）。
 
 ### 富文本格式
 
-![自定义文本样式富文本框](media/custom-text-styling.png)
+![自定义文本样式富文本框](/manual/media/custom-text-styling.png)
 
 在此版本中，我们改进了[富文本框](../../ui/controls/rich-text-box.md) GUI 控件，添加了带有样式、布局和内联图像支持的 HTML 标签格式化。这显著简化了 UI 中文本的样式设置，并允许创建更优雅的内容。我们简单的 HTML 解析器非常可扩展，可以使用自定义标签（例如由插件定义）。请参阅[文档](../../ui/controls/rich-text-box.md)了解支持哪些标签以及如何在项目中使用它们。
 
 ### 可视化脚本改进
 
-![可视化脚本字典](media/dictionaries-visual-script.png)
+![可视化脚本字典](/manual/media/dictionaries-visual-script.png)
 
 每次更新，我们都会为可视化脚本用户带来许多功能和改进。我们的目标是使其成为一个高度可扩展且可用的游戏脚本解决方案。这次我们添加了 **字典** 支持、新的编辑器功能以简化脚本编辑，以及查找器工具。**新的查找器工具** 允许你在图中快速搜索任何内容，甚至是在项目中的所有脚本中（在所有图编辑器中通过 `Ctrl+F` 打开）。这也可以用于在整个项目的所有材质、粒子和动画图中搜索某些内容（例如搜索特定纹理或方法的使用）。
 
@@ -74,25 +74,25 @@ Flax 引擎包含多种用于创建大型且丰富世界的功能，例如异步
 
 ## 透明材质的屏幕空间反射
 
-![SSR 透明度](media/ssr-transparency.png)
+![SSR 透明度](/manual/media/ssr-transparency.png)
 
 透明材质现在具有执行逐像素深度缓冲区光线追踪以渲染反射的新选项，这提高了水坑等水面的真实感。此外，透明度可以采样新的全局光照和/或使用非方向光照模式，这在创建烟雾、雾或灰尘粒子材质时非常有用（如下所示）。
 
-![体积粒子光照](media/volumetric-particles-lighting.gif)
+![体积粒子光照](/manual/media/volumetric-particles-lighting.gif)
 
 ## 嵌套动画
 
-![嵌套动画](media/nested-anim.png)
+![嵌套动画](/manual/media/nested-anim.png)
 
 动画可以在内部包含嵌套动画，以创建子片段或复合动画（也称为蒙太奇）。这允许轻松重用现有的动画资源（例如，为每个枪弹壳重复使用单次换弹动画三次）。
 
 ## 噪声工具
 
-![材质中的噪声节点](media/noise-nodes.png)
+![材质中的噪声节点](/manual/media/noise-nodes.png)
 
 现在，Flax 包含用于各种噪声函数的多种工具，例如：Perlin、Simplex、Worley、Voronoi、Custom。这些可以通过脚本 `FlaxEngine.Utilities.Noise` 静态类访问，并用于丰富程序化生成的世界和内容。
 
-![噪声示例](media/noise-examples.png)
+![噪声示例](/manual/media/noise-examples.png)
 
 所有可视化图（材质、粒子、动画）都可以在 CPU 和 GPU 上采样噪声函数，以丰富内容。所有噪声函数返回归一化到 0-1 范围内的结果。其中一些返回更多噪声分量，例如 Voronoi 噪声，其中 `X=minDistToCell`、`Y=randomColor`、`Z=minEdgeDistance`。根据上下文，可以只使用一个分量，甚至使用所有分量。请遵循每个节点的文档工具提示。
 
@@ -114,7 +114,7 @@ Flax 引擎包含多种用于创建大型且丰富世界的功能，例如异步
 
 向 Flax 添加 64 位精度的世界坐标是一项挑战。引擎和编辑器都具有非常复杂且成熟的系统和工具，因此我们希望使这种过渡无缝且稳定。目标之一是不仅仅通过将每个浮点值加倍来膨胀内存，而是升级与世界坐标相关的数据以支持非常大的世界。例如，32 位浮点数为我们提供了足够的精度来表示对象旋转和缩放，因此我们仅将 `Transform` 的 `Translation`（即 `Position`）升级为 64 位双精度向量。此外，UI 系统、网格数据、纹理转换器和其他引擎功能已更改，以出于性能原因明确保留 *Float* 向量。
 
-![带有 64 位坐标的大世界](media/world-coordinates-64-bit.png)
+![带有 64 位坐标的大世界](/manual/media/world-coordinates-64-bit.png)
 
 关于数据兼容性，我们为旧项目添加了自动升级支持，以及在 32 位和 64 位向量类型之间进行隐式转换，以确保游戏代码可以轻松更新到新的引擎版本。最后，此大世界坐标功能可以通过引擎配置参数启用（参见 `Flax.flaxproj`）。如果你的游戏需要 64 位浮点数，则可以使用自定义引擎构建（[文档](../../editor/large-worlds/index.md)）并启用该功能。
 

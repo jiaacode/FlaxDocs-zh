@@ -4,13 +4,13 @@
 
 ### 新 UI 编辑器
 
-![新 UI 编辑器小部件](media/ui_editor_resizing_widget.gif)
+![新 UI 编辑器小部件](/manual/media/ui_editor_resizing_widget.gif)
 
 我们终于做到了！新的编辑工具即将登陆 Flax。现在你可以在 **预制体或游戏窗口中轻松查看和修改用户界面布局**。这将改善 UI 开发的迭代时间。
 
 ### .NET 8 支持
 
-![Flax 引擎中的 .NET 8 支持](media/dotnet8.jpg)
+![Flax 引擎中的 .NET 8 支持](/manual/media/dotnet8.jpg)
 
 **.NET SDK 8 现在作为基础版本**（取代 `7`），支持 **C# 12** 和最新的性能改进。这是一个长期支持版本（`LTS`），意味着微软将维护它直到 `2026 年 11 月`。我们计划使用[官方的 .NET 发布周期](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core)，并在 Flax 工具生态系统中维护活跃的 .NET 版本。编辑器和启动器都将在启动编辑器时检查系统上是否有正确的 .NET 版本。在构建游戏时，请确保已[安装最新的 .NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)（尤其是在为 Android 或 iOS 烘焙游戏时）。
 
@@ -22,7 +22,7 @@ Flax 支持 ASTC `4x4`、`6x6` 和 `8x8` 块压缩格式，可以在平台构建
 
 ### 将模型文件导入预制体
 
-![将模型文件导入预制体](media/model-prefab.png)
+![将模型文件导入预制体](/manual/media/model-prefab.png)
 
 现在，在导入模型文件（例如 `.fbx`）时，你可以选择 `预制体` 选项。它将从源文件（导入到子目录）中导入所有网格、材质、纹理和动画，并创建一个包含源文件整个结构的预制体资源。这个工作流程的补充允许处理包含多个子对象的更大资源，并通过重新导入功能（新的 *Model Prefab* 脚本）缩短了迭代时间。
 
@@ -30,15 +30,15 @@ Flax 支持 ASTC `4x4`、`6x6` 和 `8x8` 块压缩格式，可以在平台构建
 
 ### 新的车辆功能
 
-![卡车车辆](media/truck-vehicle.gif)
+![卡车车辆](/manual/media/truck-vehicle.gif)
 
 物理模拟一直是 Flax 开发过程中的一个重要主题。这次我们添加了许多新选项，以实现更好的车辆驾驶控制，例如 `转向与速度`/`防侧倾杆` 配置和 **坦克车辆支持**。（[GH-2192](https://github.com/FlaxEngine/FlaxEngine/pull/2192)）
 
-![坦克车辆](media/tank-vehicle.gif)
+![坦克车辆](/manual/media/tank-vehicle.gif)
 
 ### 动画图调试
 
-![动画图调试](media/anim-graph-debug-playback.gif)
+![动画图调试](/manual/media/anim-graph-debug-playback.gif)
 
 动画图编辑器将展示 **动画的当前播放位置和状态机洞察**，以增强调试体验。此外，新的 `AnimatedModel.GetTraceEvents` 允许在游戏代码中收集动画播放信息。
 
@@ -46,23 +46,23 @@ Flax 支持 ASTC `4x4`、`6x6` 和 `8x8` 块压缩格式，可以在平台构建
 
 |                                                |                                        |
 | ---------------------------------------------- | -------------------------------------- |
-| ![根运动 Mixamo](media/root-motion-mixamo.gif) | ![根运动](media/root-motion-fixed.gif) |
+| ![根运动 Mixamo](/manual/media/root-motion-mixamo.gif) | ![根运动](/manual/media/root-motion-mixamo.gif) |
 
 ### 样条线改进
 
-![样条线改进](media/spline.gif)
+![样条线改进](/manual/media/spline.gif)
 
 样条线编辑器允许在按住 `Ctrl` 并单击鼠标右键时，根据鼠标屏幕位置添加新点。在按住 `Shift` 键移动点时，它还可以将样条线点吸附到其他样条线点（包括附近的其他样条线）。（[GH-1482](https://github.com/FlaxEngine/FlaxEngine/pull/1482)）
 
 ### 回退字体渲染
 
-![回退字体渲染](media/fallback-font.png)
+![回退字体渲染](/manual/media/fallback-font.png)
 
 我们为文本渲染添加了字体回退功能，以 **更好地支持 CJK 字符**（中文/日文/韩文字符）。它通过从包含这些字符的回退字体（例如 CJK 字体）中获取字符，来处理用于渲染的字体中任何缺失的字符。此功能在编辑器和游戏中都有效，因此有助于 Flax 项目的本地化和国际化。（[GH-2019](https://github.com/FlaxEngine/FlaxEngine/pull/2019)）
 
 ### 编辑器功能
 
-![世界单位](media/world-units.gif)
+![世界单位](/manual/media/world-units.gif)
 
 每次更新都会为编辑器带来更多功能和改进。这次我们添加了以下功能：
 * 保存属性面板中子组的面板折叠状态，
@@ -71,7 +71,7 @@ Flax 支持 ASTC `4x4`、`6x6` 和 `8x8` 块压缩格式，可以在平台构建
 * 输入字段中的 SI 单位，例如米、千克，用于显示和解析（[GH-2213](https://github.com/FlaxEngine/FlaxEngine/pull/2213)），
 * 直接从 *添加脚本* 按钮快速创建脚本（[GH-1827](https://github.com/FlaxEngine/FlaxEngine/pull/1827)）。
 
-![新集合编辑器 UI](media/new-collection-editor-ui.png)
+![新集合编辑器 UI](/manual/media/new-collection-editor-ui.png)
 
 ## 迁移指南
 

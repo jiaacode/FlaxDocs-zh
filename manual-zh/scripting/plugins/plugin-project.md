@@ -8,10 +8,10 @@ Flax 支持插件项目的概念。插件项目是一个独立的 Flax 项目，
 > 使用此工具创建第一个插件项目时需要互联网访问。
 
 打开插件窗口 **工具 -> 插件**。
-![插件菜单](media/plugin-menu.png)
+![插件菜单](/manual/media/plugin-menu.png)
 
 点击创建插件项目按钮，并填写插件项目的名称、版本和公司。
-![插件创建菜单](media/plugin-create-menu.png)
+![插件创建菜单](/manual/media/plugin-create-menu.png)
 
 点击提交按钮。
 
@@ -23,10 +23,10 @@ Flax 支持插件项目的概念。插件项目是一个独立的 Flax 项目，
 > 此工具需要互联网访问和 Git。
 
 打开插件窗口 **工具 -> 插件**。
-![插件菜单](media/plugin-menu.png)
+![插件菜单](/manual/media/plugin-menu.png)
 
 点击克隆插件项目按钮，并输入插件项目的 Git 地址。输入名称是可选的，仅会重命名包含插件项目的文件夹，否则将使用仓库名称。
-![插件克隆菜单](media/plugin-clone-menu.png)
+![插件克隆菜单](/manual/media/plugin-clone-menu.png)
 
 点击提交按钮。
 
@@ -65,4 +65,4 @@ options.PrivateDependencies.Add("MyPlugin");
 
 插件项目也可以引用其他项目，但不支持跨解决方案引用。
 
-![编辑器中的插件项目](media/plugin-projects.png)
+![编辑器中的插件项目](/manual/media/plugin-projects.png)

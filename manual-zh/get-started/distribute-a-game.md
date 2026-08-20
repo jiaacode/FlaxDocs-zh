@@ -14,11 +14,11 @@
 
 现在准备最终构建。请记住使用 **Release** 模式，并使用 [预处理器变量](../scripting/preprocessor.md) 移除任何调试/测试代码部分。使用 [Game Cooker](../editor/game-cooker/index.md) 工具为目标平台生成游戏文件。
 
-![Game Cooker](media/build-release.jpg)
+![Game Cooker](/manual/media/build-release.jpg)
 
 ## 4. 分发你的游戏
 
 每个平台都有其自己的构建过程和自定义输出数据格式，但在大多数情况下，只需从 *Output* 目录中获取文件即可。
 如何分发你的游戏取决于你自己。
 
-![游戏输出](media/build-output.jpg)
+![游戏输出](/manual/media/build-output.jpg)

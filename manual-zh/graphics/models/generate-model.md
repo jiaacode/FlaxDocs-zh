@@ -1,6 +1,6 @@
 # 操作指南：生成程序化模型
 
-![模型](media/sample-model-1.jpg)
+![模型](/manual/media/sample-model-1.jpg)
 
 在本教程中，你将学习如何创建一个简单的二十面体网格。
 
@@ -84,8 +84,8 @@ public override void OnDestroy()
 
 ### 4. 添加脚本并设置材质
 
-![模型](media/sample-model-2.jpg)
+![模型](/manual/media/sample-model-2.jpg)
 
 ### 5. 查看结果
 
-![模型](media/sample-model-1.jpg)
+![模型](/manual/media/sample-model-1.jpg)

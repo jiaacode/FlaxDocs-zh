@@ -4,11 +4,11 @@
 
 ## 如何创建材质函数
 
-![新建材质函数](media/new-material-function.png)
+![新建材质函数](/manual/media/new-material-function.png)
 
 第一步是在 *内容* 窗口中 *右键单击*，然后选择选项 **新建 -> 材质 -> 材质函数**。然后指定其名称并按 *回车* 确认。通过双击它打开资源编辑器。
 
-![空材质函数](media/material-function-empty.png)
+![空材质函数](/manual/media/material-function-empty.png)
 
 现在，你可以尽情发挥创造力，在这里实现几乎任何内容。材质函数是一个由普通材质节点组成的图，但它包含自定义的 **函数输出** 和 **函数输入** 节点，这些节点代表函数的参数和返回值。材质函数可以使用纹理，并在可重用的图中执行复杂的计算。
 
@@ -16,7 +16,7 @@
 
 下面是一个函数的示例，它获取类型为 *Vector3* 的 *Color* 输入，并将其乘以采样纹理的 *R* 通道。材质函数可以有多个输入和输出，它们接受基本类型和纹理引用。输入节点包含一个 **默认值** 框，该框是可选的，可用于在调用者未指定时分配输入的默认值。
 
-![材质函数](media/material-function.png)
+![材质函数](/manual/media/material-function.png)
 
 ## 如何使用材质函数
 
@@ -24,4 +24,4 @@
 
 最后，如果你修改了材质函数，Flax 将自动更新所有使用该材质函数的材质，因此你可以轻松地处理美术内容。
 
-![材质函数使用](media/material-function-usage.png)
+![材质函数使用](/manual/media/material-function-usage.png)

@@ -1,6 +1,6 @@
 # 图形
 
-![图形](media/title.jpg)
+![图形](/manual/media/title.jpg)
 
 Flax 提供了广泛的图形管线特性，以及一个包括延迟着色、全局光照、反射环境和后期处理的稳定渲染器。
 

@@ -8,23 +8,23 @@
 
 要生成 UI 画布，可以使用工具箱窗口，从 **GUI** 部分拖放 **UI Canvas**。或者，你也可以使用场景树窗口，通过专用的上下文菜单添加新的场景对象。
 
-![生成画布](media/spawn-canvas.png)
+![生成画布](/manual/media/spawn-canvas.png)
 
 ## 2. 创建 `UIControl`
 
 按照与上一步相同的步骤，但这次创建一个代表单个 GUI 控件的 [UI 控件](../control/index.md) Actor。将其作为子级添加到 *UI 画布* 中（如下图所示）。
 
-![生成控件](media/spawn-control.png)
+![生成控件](/manual/media/spawn-control.png)
 
 ## 3. 将控件类型设置为 `Progress Bar`
 
 创建的 GUI 将使用 `Progress Bar` 控件来可视化玩家的生命值。为此，选择生成的 **UI 控件**，然后使用 **设置类型** 按钮将其类型设置为 **Progress Bar**。从列表中选择项目或输入名称进行搜索。
 
-![设置类型](media/set-progress-bar.png)
+![设置类型](/manual/media/set-progress-bar.png)
 
 然后 `UI 控件` Actor 会将创建的控件链接到 GUI。显示 **游戏** 窗口选项卡以查看进度条。你可以使用 *设置类型* 按钮下方的面板调整其属性。
 
-![编辑进度条](media/created-progress-bar.gif)
+![编辑进度条](/manual/media/created-progress-bar.gif)
 
 ## 4. 创建 `PlayerHealth` 脚本
 
@@ -87,7 +87,7 @@ namespace Game
 
 选择玩家 Actor，然后将步骤 2 中创建的 `UIControl` Actor 拖放进去，为脚本分配对它的引用。
 
-![链接进度条](media/link-progress-bar.gif)
+![链接进度条](/manual/media/link-progress-bar.gif)
 
 ## 8. 测试！
 
@@ -95,4 +95,4 @@ namespace Game
 
 稍后你可以将现有的游戏逻辑链接起来，以可视化玩家的生命值，或为你的游戏创建更多 HUD。
 
-![测试生命值条](media/test-progress-bar.gif)
+![测试生命值条](/manual/media/test-progress-bar.gif)

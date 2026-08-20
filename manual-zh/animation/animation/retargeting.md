@@ -1,6 +1,6 @@
 - # 动画重定向
 
-  ![Flax 引擎中的动画重定向](media/anim-retargeting.gif)
+  ![Flax 引擎中的动画重定向](/manual/media/anim-retargeting.gif)
 
   动画重定向是一项允许**在不同骨骼上播放相同动画**的功能。这在开发大型游戏时非常有用，因为动画共享有助于减少开发时间和游戏构建大小。
 
@@ -12,7 +12,7 @@
 
   ## 自定义骨骼映射
 
-  ![Flax 编辑器中的动画重定向](media/animation-retarget-editor.png)
+  ![Flax 编辑器中的动画重定向](/manual/media/animation-retarget-editor.png)
 
   [蒙皮模型窗口](../skinned-model/index.md) 包含 **重定向** 选项卡，显示资源中现有重定向设置的列表。它允许为动画或其他蒙皮模型的骨骼添加新的重定向设置。
 
@@ -24,7 +24,7 @@
 
   | 重定向之前                                                | 重定向之后                                                   |
   | --------------------------------------------------------- | ------------------------------------------------------------ |
-  | ![动画重定向之前](media/animation-retargeting-before.gif) | ![Flax 中的动画重定向](media/animation-retargeting-after.gif) |
+  | ![动画重定向之前](/manual/media/animation-retargeting-before.gif) | ![Flax 中的动画重定向](/manual/media/animation-retargeting-before.gif) |
 
   动画重定向系统使用源骨骼的参考姿态（称为 *T-pose* 或 *A-pose*）来计算相对于该参考姿态的动画节点运动。然后，此运动被转换到目标骨骼并应用。这假设动画按比例播放到骨骼层级，因此看起来合适。在上面的左侧 GIF 中，你可以看到 4 对角色正在播放相同的动画，但该动画是为不同的骨骼创建的。应用重定向后，动画姿态会被正确应用，如右侧 GIF 所示。
 

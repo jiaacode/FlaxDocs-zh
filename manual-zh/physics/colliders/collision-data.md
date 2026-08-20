@@ -1,6 +1,6 @@
 # 碰撞数据
 
-![碰撞数据](media/collision-data.jpg)
+![碰撞数据](/manual/media/collision-data.jpg)
 
 **碰撞数据** 资源包含生成的网格碰撞数据，在运行时由[网格碰撞体](mesh-collider.md)使用。
 它支持**凸包网格**和**三角形网格**数据。
@@ -9,11 +9,11 @@
 
 要创建新的碰撞数据资源，请使用 *内容* 窗口。在 Content 目录中右键单击，然后选择选项 **新建 -> 物理 -> 碰撞数据**。然后指定名称并按 *Enter* 确认。
 
-![新建碰撞数据](media/new-collision-data.jpg)
+![新建碰撞数据](/manual/media/new-collision-data.jpg)
 
 现在打开资源（双击它），并分配要用于碰撞体形状的模型（设置 **模型** 属性）。然后按下 **生成** 按钮。
 
-![碰撞数据](media/collision-data2.jpg)
+![碰撞数据](/manual/media/collision-data2.jpg)
 
 ## 属性
 
@@ -33,13 +33,13 @@ Flax 允许你为碰撞数据生成凸包网格或三角形网格。
 
 凸包网格是 3D 对象的简化表示，其中所有内角都小于 `180` 度。这种简化产生的网格具有统一的形状，特别适合某些碰撞场景。
 
-![凸包碰撞体](media/convex.png)
+![凸包碰撞体](/manual/media/convex.png)
 
 #### 三角形网格
 
 三角形网格是 3D 对象更详细的表示，由相互连接的三角形组成。这种网格类型能够精确表示复杂和凹形形状，使其对精确碰撞很有价值（以性能为代价）。
 
-![三角形网格碰撞体](media/triangle-mesh.png)
+![三角形网格碰撞体](/manual/media/triangle-mesh.png)
 
 三角形网格提供了更多的精细度，能更好地表示网格，但这是有代价的：
 - 在内存和计算方面都更昂贵。

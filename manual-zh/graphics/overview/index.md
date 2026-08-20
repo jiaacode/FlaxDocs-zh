@@ -1,6 +1,6 @@
 # 渲染概述
 
-![渲染概述](media/title.jpg)
+![渲染概述](/manual/media/title.jpg)
 
 Flax 引擎中的渲染系统利用最新图形 API（DirectX 12、Vulkan 等）管线的全部功能来创建丰富的效果，包括延迟着色、全局光照、全场景反射和后期处理。
 
@@ -8,7 +8,7 @@ Flax 引擎中的渲染系统利用最新图形 API（DirectX 12、Vulkan 等）
 
 单帧渲染流程如下图所示。
 
-![渲染流程](media/RenderingFlow.jpg)
+![渲染流程](/manual/media/RenderingFlow.jpg)
 
 ## 使用渲染百分比进行升采样
 

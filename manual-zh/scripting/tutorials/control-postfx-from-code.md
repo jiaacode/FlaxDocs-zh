@@ -35,5 +35,5 @@ public class PostFxControl : Script
 
 最后，将脚本添加到场景中已创建的 PostFx Volume Actor 上。然后启动游戏并测试结果。
 
-![从 C# 代码控制 PostFx](media/control-postfx-from-code.gif)
+![从 C# 代码控制 PostFx](/manual/media/control-postfx-from-code.gif)
 

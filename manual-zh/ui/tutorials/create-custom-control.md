@@ -45,10 +45,10 @@ namespace Game
 现在在场景中生成一个新的 *UI 控件*，并将其类型设置为 **MyControl**，如下图所示。
 要了解如何操作，请参阅相关[教程](create-ui.md)。
 
-![将控件类型设置为 MyControl](media/set-control-to-my-control.png)
+![将控件类型设置为 MyControl](/manual/media/set-control-to-my-control.png)
 
 ## 4. 测试！
 
 最后，调整控件的公开属性并查看最终结果。
 
-![最终结果](media/custom-control-results.png)
+![最终结果](/manual/media/custom-control-results.png)

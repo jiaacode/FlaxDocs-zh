@@ -105,16 +105,16 @@ public class FoliageFromCode : Script
 
 将脚本拖放到空 Actor 上，或使用 *属性* 窗口和 **添加脚本** 按钮。
 
-![添加脚本](media/add-foliage-generator-script.png)
+![添加脚本](/manual/media/add-foliage-generator-script.png)
 
 ## 4. 设置植被类型
 
 通过指定植被类型模型和生成密度来添加植被类型描述符。
 
-![编辑植被类型属性](media/edit-foliage-types-properties.png)
+![编辑植被类型属性](/manual/media/edit-foliage-types-properties.png)
 
 ## 5. 在运行模式下测试
 
 按下工具栏上的 **播放** 按钮或按 *F5* 键查看结果。植被应在后台快速生成。你可以在需要在运行时或在编辑器中生成植被的游戏中使用它。
 
-![从代码创建植被结果](media/generated-foliage.png)
+![从代码创建植被结果](/manual/media/generated-foliage.png)

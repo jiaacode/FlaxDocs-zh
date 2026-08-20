@@ -1,6 +1,6 @@
 # 反射
 
-![反射](media/reflections.png)
+![反射](/manual/media/reflections.png)
 
 为场景带来真实感的关键方面之一是创建合适的 **反射环境**。
 许多材质，如金属、大理石或光泽塑料，都依赖于各个方向的反射。
@@ -8,7 +8,7 @@ Flax 引擎提供了广泛的功能来为场景设置反射。
 
 ## 环境探针
 
-![环境探针](media/env-probe.png)
+![环境探针](/manual/media/env-probe.png)
 
 向场景添加反射的最佳方式是使用 **环境探针** Actor。它是一个专用对象，用于捕获其原点周围的场景，并创建 360 度立方体贴图，随后用于计算材质上的逐像素反射。
 
@@ -28,11 +28,11 @@ Flax 引擎提供了广泛的功能来为场景设置反射。
 
 ## 可视化
 
-![反射调试](media/reflections-debug.png)
+![反射调试](/manual/media/reflections-debug.png)
 
 Flax 编辑器提供了一个内置选项，可以直接在编辑器视口中调试全场景反射。为此，请单击 **视图** 小部件，然后选择选项 **调试视图 -> 反射缓冲区**。这将更改视图模式。要还原，请选择 *默认* 选项。
 
-![反射调试](media/reflections-debug-option.jpg)
+![反射调试](/manual/media/reflections-debug-option.jpg)
 
 > [!Note]
 > 要了解有关 *调试视图* 和其他调试工具的更多信息，请参阅相关页面[此处](../../debugging-tools/debug-view.md)。

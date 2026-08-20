@@ -1,6 +1,6 @@
 # 天空盒
 
-![天空盒](media/skybox.png)
+![天空盒](/manual/media/skybox.png)
 
 使用**天空盒**可以为场景创建一个背景。典型的天空盒包含天空、云朵、山脉和其他远景。天空盒使用预渲染的立方体贴图纹理或全景纹理。
 
@@ -9,7 +9,7 @@
 
 ## 属性
 
-![天空盒属性](media/skybox-properties.jpg)
+![天空盒属性](/manual/media/skybox-properties.jpg)
 
 | 属性               | 描述                                         |
 | ------------------ | -------------------------------------------- |
@@ -21,7 +21,7 @@
 
 ## 全景纹理
 
-![全景天空盒](media/skybox-panoramic-usage.png)
+![全景天空盒](/manual/media/skybox-panoramic-usage.png)
 
 如果分配了全景纹理，它将被映射到球体的 360 度范围内。其分辨率比例应接近 2:1 - 经度/纬度（全景）天空盒：2:1 宽高比（例如 8192/4096、4096/2048、2048/1024）。
 
@@ -37,8 +37,8 @@
 
 以下是一个可用于简单**双色渐变天空**的示例材质：
 
-![天空材质示例](media/sky-material.jpg)
+![天空材质示例](/manual/media/sky-material.jpg)
 
 以下是一个可用于简单**立方体贴图天空**的示例材质：
 
-![天空材质示例](media/sky-material-2.jpg)
+![天空材质示例](/manual/media/sky-material-2.jpg)

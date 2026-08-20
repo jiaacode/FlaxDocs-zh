@@ -1,6 +1,6 @@
 * # 场景动画
 
-  ![场景动画](media/scene-anims-object-properties.gif)
+  ![场景动画](/manual/media/scene-anims-object-properties.gif)
 
   **场景动画** 是一种二进制资源，包含由一组轨道组成的时间线。各种类型的轨道可用于为对象制作动画、调用事件、播放音频或执行其他操作，例如屏幕淡入淡出。本文档页面描述了如何创建和编辑场景动画资源。要播放动画，请使用 [场景动画播放器](scene-animation-player.md) Actor。
 
@@ -8,11 +8,11 @@
 
   要创建新的动画资源，请使用 *内容* 窗口。在内容目录中右键单击，然后选择选项 **新建 -> 动画 -> 场景动画**。然后指定名称并按 Enter 确认。
 
-  ![新建场景动画](media/new-scene-animation.png)
+  ![新建场景动画](/manual/media/new-scene-animation.png)
 
   现在打开资源（双击它）并进行编辑。你可以将浮动窗口停靠在底部面板中，以便更好地概览，并同时编辑场景。
 
-  ![场景动画编辑器](media/scene-animation-editor.png)
+  ![场景动画编辑器](/manual/media/scene-animation-editor.png)
 
   ## 界面
 
@@ -22,7 +22,7 @@
   3. 时间线面板
   4. 播放控制
 
-  ![界面](media/timeline-interface.png)
+  ![界面](/manual/media/timeline-interface.png)
 
   编辑器窗口提供了各种功能来查看和编辑动画。左侧面板包含轨道的层级列表。你可以使用它来组织、重命名、编辑、静音或删除它们。窗口的右侧包含一个时间线，它与轨道的垂直层级相匹配，并包含它们的事件。你可以使用鼠标左键选择并拖动事件，或使用右键单击打开上下文菜单。
 
@@ -51,7 +51,7 @@
 
   要向时间线添加新轨道，请使用 **添加** 按钮。这将显示可以添加的轨道类型选择。你也可以将 **Actor 或脚本拖放** 到轨道面板中，为这些对象添加动画轨道。
 
-  ![添加新轨道](media/add-track.png)
+  ![添加新轨道](/manual/media/add-track.png)
 
   添加轨道后，你可以编辑其属性。这取决于轨道类型。例如，Actor 轨道允许你添加子轨道来为其属性或子脚本制作动画。要了解有关轨道类型的更多信息，请参阅下面的 *轨道* 部分。
 
@@ -93,7 +93,7 @@
 
   场景动画编辑器允许在编辑时播放和预览资源。要启用此功能，只需勾选工具栏上的实时预览图标。
 
-  ![场景动画实时预览按钮](media/scene-animation-live-preview-button.png)
+  ![场景动画实时预览按钮](/manual/media/scene-animation-live-preview-button.png)
 
   然后你将能够在时间线上拖动，并在场景中看到动画预览。你也可以播放动画。这改善了编辑过程，并有助于处理更复杂的过场动画。
 
@@ -101,14 +101,14 @@
 
   场景动画编辑器窗口支持在游戏期间预览动画播放。游戏必须在 Flax 编辑器中运行，动画播放才能工作。只需使用动画播放器 Actor 选择器，在 Flax 编辑器中启动游戏，你将能够预览其状态以及控制播放（通过播放/暂停按钮）并使用时间拖动。
 
-  ![播放预览选择器](media/anim-player-pickup.png)
+  ![播放预览选择器](/manual/media/anim-player-pickup.png)
 
   ## 渲染动画
 
-  ![场景动画渲染](media/scene-animation-rendering.png)
+  ![场景动画渲染](/manual/media/scene-animation-rendering.png)
 
   场景动画窗口支持**渲染过场动画**和游戏内序列。这对于直接在编辑器中录制游戏预告片或营销素材非常有用。此工具支持各种选项，例如动画渲染帧率和分辨率。通过这种方式，你可以以 4K@60FPS 预渲染你的过场动画。要使用它，只需单击工具栏按钮（下图），调整选项，然后单击 **渲染** 按钮。默认情况下，渲染的序列将位于你的项目子文件夹 `Output/Render` 中，但你也可以调整它。
 
-  ![场景动画渲染按钮](media/scene-animation-render-buton.png)
+  ![场景动画渲染按钮](/manual/media/scene-animation-render-buton.png)
 
   要从捕获的过场动画静态图像创建视频片段（例如 `.mp4` 文件），你可以使用工具 [FFmpeg](https://ffmpeg.org/) 和以下命令行（在输出文件夹内执行）：

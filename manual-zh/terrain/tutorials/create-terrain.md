@@ -10,16 +10,16 @@
 
 使用主菜单按钮 **场景 -> 创建地形**。
 
-![创建地形](media/create-terrain.png)
+![创建地形](/manual/media/create-terrain.png)
 
 ## 3. 调整选项
 
 使用此对话框调整初始地形属性。选择**块大小**和要创建的**图块**数量。以下大多数属性可以在之后调整。此窗口支持从导入的高度图和泼溅贴图创建地形，如[此教程](import-terrain.md)所示。
 
-![创建地形对话框](media/create-terrain-dialog.png)
+![创建地形对话框](/manual/media/create-terrain-dialog.png)
 
 ## 4. 创建地形
 
 按下 **创建** 按钮，查看添加到场景中的新地形。现在你可以[编辑](../editing.md)和[绘制](../painting.md)它了！
 
-![创建地形](media/created-terrain.jpg)
+![创建地形](/manual/media/created-terrain.jpg)

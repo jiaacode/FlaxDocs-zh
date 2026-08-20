@@ -20,9 +20,9 @@
 
 | 图标                                           | 描述                             |
 | ---------------------------------------------- | -------------------------------- |
-| ![图标](media/model-editor-ui-toolstrip-1.png) | 在 *内容* 窗口中显示并选择该资源 |
-| ![图标](media/model-editor-ui-toolstrip-2.png) | 保存已编辑的模型资源             |
-| ![图标](media/model-editor-ui-toolstrip-3.png) | 打开文档                         |
+| ![图标](/manual/media/model-editor-ui-toolstrip-1.png) | 在 *内容* 窗口中显示并选择该资源 |
+| ![图标](/manual/media/model-editor-ui-toolstrip-2.png) | 保存已编辑的模型资源             |
+| ![图标](/manual/media/model-editor-ui-toolstrip-3.png) | 打开文档                         |
 
 ### 视口
 

@@ -8,7 +8,7 @@ _tocTitle: 'Manual'
 
 # Flax 引擎手册
 
-![Manual](graphics/post-effects/media/postFx.png)
+![Manual](/manual/graphics/post-effects/media/postFx.png)
 
 这些页面包含了关于如何使用 Flax 引擎的信息。本手册将帮助你学习如何使用 Flax 编辑器及其相关工具。你可以从头到尾阅读，也可以将其作为参考文档使用。
 
@@ -18,37 +18,37 @@ _tocTitle: 'Manual'
 <div class="frontpage">
 
 <div class="frontpage-section">
-<a href="get-started/index.md"><img src="get-started/media/icon.jpg"></a>
+<a href="get-started/index.md"><img src="/manual/get-started/media/icon.jpg"></a>
 <h3><a href="get-started/index.md">入门</a></h3>
 <p>面向初次使用 Flax 引擎开发游戏的开发者的介绍。</p>
 </div>
 
 <div class="frontpage-section">
-<a href="editor/index.md"><img src="editor/media/icon.jpg"></a>
+<a href="editor/index.md"><img src="/manual/editor/media/icon.jpg"></a>
 <h3><a href="editor/index.md">编辑器手册</a></h3>
 <p>使用和配置 Flax 编辑器的指南。</p>
 </div>
 
 <div class="frontpage-section">
-<a href="samples-tutorials/index.md"><img src="samples-tutorials/media/icon.jpg"></a>
+<a href="samples-tutorials/index.md"><img src="/manual/samples-tutorials/media/icon.jpg"></a>
 <h3><a href="samples-tutorials/index.md">教程</a></h3>
 <p>示例项目和教程合集。</p>
 </div>
 
 <div class="frontpage-section">
-<a href="graphics/index.md"><img src="graphics/media/icon.jpg"></a>
+<a href="graphics/index.md"><img src="/manual/graphics/media/icon.jpg"></a>
 <h3><a href="graphics/index.md">图形</a></h3>
 <p>Flax 渲染功能文档。</p>
 </div>
 
 <div class="frontpage-section">
-<a href="scripting/index.md"><img src="scripting/media/icon.jpg"></a>
+<a href="scripting/index.md"><img src="/manual/scripting/media/icon.jpg"></a>
 <h3><a href="scripting/index.md">脚本</a></h3>
 <p>C# 脚本手册，包含教程和示例。</p>
 </div>
 
 <div class="frontpage-section">
-<a href="physics/index.md"><img src="physics/media/icon.jpg"></a>
+<a href="physics/index.md"><img src="/manual/physics/media/icon.jpg"></a>
 <h3><a href="physics/index.md">物理</a></h3>
 <p>Flax 物理引擎模拟手册。</p>
 </div>

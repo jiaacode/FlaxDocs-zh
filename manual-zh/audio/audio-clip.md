@@ -1,6 +1,6 @@
 # 音频片段
 
-![音频片段](media/audio-clip.png)
+![音频片段](/manual/media/audio-clip.png)
 
 **音频片段** 是一种包含音频数据的二进制资源。
 它支持动态数据流式传输和解压缩。
@@ -12,7 +12,7 @@
 
 ### 属性面板
 
-![属性](media/audio-clip-properties.jpg)
+![属性](/manual/media/audio-clip-properties.jpg)
 
 此面板显示音频片段的属性。
 

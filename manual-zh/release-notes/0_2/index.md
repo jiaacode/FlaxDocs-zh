@@ -12,7 +12,7 @@
 
 ### 运动模糊
 
-![运动模糊](media/motion_blur.gif)
+![运动模糊](/manual/media/motion_blur.gif)
 
 Flax 包含了内置的 **运动模糊** 效果，模拟了现实摄像机光圈的效果。现在，动态对象被渲染到运动向量缓冲区中，该缓冲区用于绘制逐对象（或蒙皮模型逐骨骼）的模糊。此外，任何摄像机移动都会提供逼真的模糊效果，有助于创建令人惊叹的视觉效果和过场动画。
 
@@ -24,13 +24,13 @@ Flax 包含了内置的 **运动模糊** 效果，模拟了现实摄像机光圈
 
 ### 次表面材质
 
-![次表面散射](media/subsurface_materials.gif)
+![次表面散射](/manual/media/subsurface_materials.gif)
 
 材质现在将使用 **着色模型** 属性来定义要使用的着色类型。支持的类型包括 **Unlit**、**Lit** 和 **Subsurface**。现在创建皮肤、蜡或植被材质变得更加容易，并提供了更多可能性。
 
 ### 细分和位移
 
-![细分和位移](media/tessellation_support.png)
+![细分和位移](/manual/media/tessellation_support.png)
 
 最新的 Flax 版本支持细分材质和位移贴图。使用此功能有助于实现逼真的地形或水面表面。
 
@@ -40,7 +40,7 @@ Flax 包含了内置的 **运动模糊** 效果，模拟了现实摄像机光圈
 
 ### 纹理 Mip 映射预览
 
-![纹理 Mip 映射预览](media/texture-mipmap-preview.png)
+![纹理 Mip 映射预览](/manual/media/texture-mipmap-preview.png)
 
 纹理窗口和立方体贴图纹理窗口现在包含专用小部件，用于预览单个纹理 Mip 映射，以及选择采样器（点采样或线性采样）的选项。这有助于高级游戏开发和处理纹理内容。
 

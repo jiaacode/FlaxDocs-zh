@@ -11,7 +11,7 @@
 > [!TIP]
 > 黑板或目标值可以是自定义结构或对象（`FlaxEngine.Object`/`ScriptingObject`）。对于小数值推荐使用结构，对于较大的数据容器请使用对象。
 
-![行为树节点选项](media/behavior-root-node.png)
+![行为树节点选项](/manual/media/behavior-root-node.png)
 
 ## 黑板
 

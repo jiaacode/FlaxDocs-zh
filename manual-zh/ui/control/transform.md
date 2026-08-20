@@ -1,18 +1,18 @@
 # 控件变换
 
-![UI 控件变换](media/control-transform.png)
+![UI 控件变换](/manual/media/control-transform.png)
 
 每个 GUI 控件都包含一组与控件在父容器内变换相关的属性。每个控件的位置都可以分配和固定，也可以依赖于父容器控件的尺寸。在编辑器中编辑选定的 **UI 控件** 时，使用属性组 **变换** 来调整其外观。所有这些选项也可以在运行时通过 C# 代码进行修改。
 
 ## 可视化编辑器
 
-![UI 编辑器](media/ui_editor.gif)
+![UI 编辑器](/manual/media/ui_editor.gif)
 
 **预制体编辑器** 窗口在打开 **UI 控件或 UI 画布**（在 *屏幕空间* 中）时显示 **UI 编辑工具**。鼠标左键单击可以选择或移动控件（按住 *Control* 键可添加/移除选择）。鼠标右键或鼠标中键可以平移视图。鼠标滚轮可以放大或缩小。鼠标光标下的控件会有轮廓线。选中的控件也会有轮廓线，包括尺寸调整小部件。
 
 ## 锚点
 
-![锚点预设](media/anchor-presets.png)
+![锚点预设](/manual/media/anchor-presets.png)
 
 控件具有 *锚点最小值* 和 *锚点最大值* 属性，可以手动设置或通过 *锚点预设* 编辑器设置。控件锚点是父控件中左上角和右下角的归一化（范围为 `0-1`）位置。
 
@@ -29,34 +29,34 @@
 
 控件左上角相对于其容器左上角的位置。
 
-![位置](media/location.jpg)
+![位置](/manual/media/location.jpg)
 
 ## 大小
 
 控件边界的大小。
 
-![大小](media/size.jpg)
+![大小](/manual/media/size.jpg)
 
 ## 缩放
 
 控件缩放参数。
 
-![缩放](media/scale.jpg)
+![缩放](/manual/media/scale.jpg)
 
 ## 枢轴
 
 控件旋转枢轴位置，以归一化控件大小表示。点 (0,0) 为左上角，(0.5,0.5) 为中心，(1,1) 为左下角。
 
-![枢轴](media/pivot.jpg)
+![枢轴](/manual/media/pivot.jpg)
 
 ## 剪切
 
 剪切变换角度 (x, y)。以度为单位定义。
 
-![剪切](media/shear.jpg)
+![剪切](/manual/media/shear.jpg)
 
 ## 旋转
 
 控件旋转角度（以度为单位）。
 
-![旋转](media/rotation.jpg)
+![旋转](/manual/media/rotation.jpg)

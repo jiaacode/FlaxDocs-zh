@@ -8,7 +8,7 @@
 
 按照[此](index.md)教程操作。或者，可以将样条线设置为 **循环** 以实现连续动画。
 
-![创建样条线编辑器](media/create-spline.gif)
+![创建样条线编辑器](/manual/media/create-spline.gif)
 
 ### 2. 创建脚本
 
@@ -63,10 +63,10 @@ public class SplineAnimation : Script
 选择样条线并单击 **添加脚本** 按钮。然后，选择你的新脚本并将其附加到样条线。
 最后，通过设置脚本上的 **Object To Move** 属性来选择要沿样条线移动的 Actor。
 
-![样条线动画设置编辑器](media/spline-animate-object-setup.png)
+![样条线动画设置编辑器](/manual/media/spline-animate-object-setup.png)
 
 ### 4. 测试！
 
 现在，点击 *播放* 按钮，观察对象沿样条线移动。你甚至可以在对象沿样条线移动时编辑样条线。
 
-![对象沿样条线动画](media/animate-object-over-spline.gif)
+![对象沿样条线动画](/manual/media/animate-object-over-spline.gif)

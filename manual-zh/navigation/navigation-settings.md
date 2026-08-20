@@ -4,7 +4,7 @@
 
 ## 属性
 
-![导航设置](media/navigation-settings.png)
+![导航设置](/manual/media/navigation-settings.png)
 
 | 属性                       | 描述                                                         |
 | -------------------------- | ------------------------------------------------------------ |
@@ -23,7 +23,7 @@
 
 ## 代理
 
-![导航设置导航代理导航网格](media/navigation-settings-agents.png)
+![导航设置导航代理导航网格](/manual/media/navigation-settings-agents.png)
 
 导航网格的配置。每个导航网格可以使用不同的代理属性（例如，一个导航网格用于小型 AI 机器人，另一个用于大型 Boss 敌人）。你还可以调整导航网格颜色，甚至通过使用旋转属性在墙壁上生成导航网格。
 
@@ -40,7 +40,7 @@
 
 ## 区域
 
-![导航设置导航区域](media/navigation-settings-areas.png)
+![导航设置导航区域](/manual/media/navigation-settings-areas.png)
 
 导航区域的配置。可用于通过[导航修改器体积](nav-modifier-volume.md)应用它们，以调整关卡区域的导航代价。
 

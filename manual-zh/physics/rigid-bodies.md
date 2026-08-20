@@ -1,6 +1,6 @@
 # 刚体
 
-![刚体](media/rigidbodies.gif)
+![刚体](/manual/media/rigidbodies.gif)
 
 **刚体** 是可以碰撞并提供物理行为的动态对象。它们的运动基于物理力，例如重力。通常，刚体是盒子、家具和障碍物等可移动或可推动物体的不错选择。刚体使用附加的[碰撞体](colliders/index.md)来定义其物理 *形状*。
 
@@ -8,7 +8,7 @@
 
 你可以使用 *工具箱* 窗口或 *场景* 窗口中的上下文菜单在编辑器内轻松生成刚体 Actor。
 
-![添加刚体](tutorials/media/spawn-rigidbody.jpg)
+![添加刚体](/manual/tutorials/media/spawn-rigidbody.jpg)
 
 你也可以在运行时从 C# 代码生成刚体。以下是一个生成并发射子弹的示例：
 
@@ -29,7 +29,7 @@ Destroy(ball, 5.0f);
 
 ## 属性
 
-![刚体属性](media/rigidbody-properties.jpg)
+![刚体属性](/manual/media/rigidbody-properties.jpg)
 
 | 属性                   | 描述                                                         |
 | ---------------------- | ------------------------------------------------------------ |

@@ -1,6 +1,6 @@
 # 视口
 
-![视口](media/viewport.jpg)
+![视口](/manual/media/viewport.jpg)
 
 **视口** 一词指的是**编辑器窗口**和**游戏窗口**。
 两者都用于预览关卡。
@@ -15,7 +15,7 @@
 
 编辑器视口包含一组小部件按钮。在左上角有一个 *视图* 按钮，允许你更改当前视口属性、调试渲染或生成新的摄像机 Actor。
 
-![编辑器视图小部件](media/viewport-view.jpg)
+![编辑器视图小部件](/manual/media/viewport-view.jpg)
 
 在右上角有一组小部件按钮，用于控制变换 Gizmo 和视口摄像机速度。
 要了解有关使用变换 Gizmo 的更多信息，请参阅[此页面](../../get-started/scenes/transforming-actors.md)。
@@ -45,11 +45,11 @@
 所有与关卡编辑窗口（视口、场景窗口、属性等）相关的快捷键都可用。例如，使用 **Ctrl + S** 保存所有更改。
 注意：某些输入配置可以通过编辑器选项更改。
 
-![编辑器小部件 2](media/viewport-widgets2.png)
+![编辑器小部件 2](/manual/media/viewport-widgets2.png)
 
 ### 顶点捕捉
 
-![顶点捕捉](media/vertex-snapping.gif)
+![顶点捕捉](/manual/media/vertex-snapping.gif)
 
 **顶点捕捉** 允许通过利用基于网格顶点位置的自动精确变换原点放置来快速构建场景。这允许使用顶点作为变换原点（例如围绕它旋转对象），或将对象捕捉到另一个网格的顶点。
 
@@ -71,10 +71,10 @@
 
 你可以在游戏窗口选项卡上使用 *右键单击* 来显示或隐藏游戏 UI 或 DebugDraw 形状。
 
-![游戏视口工具](media/game-viewport-debug-show.gif)
+![游戏视口工具](/manual/media/game-viewport-debug-show.gif)
 
 #### 游戏视口大小调整
 
 在游戏窗口选项卡上 *右键单击*，使用 **视口大小** 子菜单来覆盖视口宽高比或分辨率。例如，它可以用于在 16:9 宽高比下测试过场动画，或在 iPhone 或 Android 设备上测试移动游戏视口。你可以使用预定义的视口大小或添加自定义大小。
 
-![游戏视口大小调整](media/game-viewport-sizing.png)
+![游戏视口大小调整](/manual/media/game-viewport-sizing.png)

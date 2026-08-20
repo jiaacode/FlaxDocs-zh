@@ -30,39 +30,39 @@ Flax 引擎最终用户许可协议（**EULA**）已更新，在某些方面变�
 
 ### 布料
 
-![Flax 引擎中的布料](media/cloth.gif)
+![Flax 引擎中的布料](/manual/media/cloth.gif)
 
 在此版本中，我们添加了带有工具的 **物理布料模拟**。新的 *Cloth* Actor 使用网格的顶点作为布料粒子，并使用物理属性、力、约束和碰撞来模拟它们。在底层，我们使用 `NvCloth` 库，并通过作业系统异步运行模拟，即使在主动模拟多种布料时也能带来出色的性能。
 
-![Flax 编辑器中的布料绘制](media/cloth-paint.gif)
+![Flax 编辑器中的布料绘制](/manual/media/cloth-paint.gif)
 
 Flax 编辑器包含内置的布料绘制工具，带有逐顶点绘制笔刷。我们已将示例布料添加到 [Flax Samples](https://github.com/FlaxEngine/FlaxSamples) 中的 Physics Features Tour 项目中。要了解有关布料工具的更多信息，请参阅[此文档](../../physics/cloth.md)。
 
 ### 行为树
 
-![Flax 引擎中的行为树](media/behavior-tree.jpg)
+![Flax 引擎中的行为树](/manual/media/behavior-tree.jpg)
 
 此版本中的另一个重要功能是用于游戏编程的行为树系统。**行为树** 是一种流行的 AI 技术，用于许多计算机游戏中，以设计和模拟智能角色、代理或对象。行为树是许多不同 AI 技术的组合：层级状态机、规划、调度和动作执行。行为树的主要优点是它们非常容易理解，并且可以使用可视化编辑工具而不是仅代码来创建。
 
 行为树的设计使其非常易于通过游戏和插件进行扩展。你可以创建自定义节点类型，并通过黑板或目标（我们独特的行为数据概念）将任何数据包装到[行为知识](../../scripting/ai/behavior-trees/knowledge.md)中。最后，编辑器包含带有实时调试工具的行为树编辑器。
 
-![Flax 编辑器中的行为树调试](media/bt-debug.gif)
+![Flax 编辑器中的行为树调试](/manual/media/bt-debug.gif)
 
 要了解更多信息，请参阅[此文档](../../scripting/ai/behavior-trees/index.md)。
 
 ### 性能改进
 
-![Flax 性能大规模物理](media/perf-boxes-falling-physics.gif)
+![Flax 性能大规模物理](/manual/media/perf-boxes-falling-physics.gif)
 
 我们一直致力于卓越的性能。这次我们专注于大规模项目（例如具有 40k 个对象的场景）并改进我们自定义的 .NET 绑定代码，该代码将 C# 和 C++ 运行时链接在一起。具有数千个活动体的物理模拟在新的物理碰撞事件报告和新的委托事件表存储下更加稳定。
 
-![Flax 异步场景对象生成](media/async-scene-spawn.png)
+![Flax 异步场景对象生成](/manual/media/async-scene-spawn.png)
 
 我们已开始重构场景加载，以通过作业系统尽可能多地异步运行。现在，在 `1.7` 中，Actor 和脚本是通过作业系统创建的（如上图所示），这在大型世界或使用许多预制体的关卡中带来了巨大的性能优势。对于下一次更新（`1.8`），我们计划继续此工作，并通过作业系统实现异步场景对象反序列化。这将进一步提高性能。
 
 ### 编辑器改进
 
-![Flax 编辑器](media/editor-ui.png)
+![Flax 编辑器](/manual/media/editor-ui.png)
 
 每次更新都会带来许多大型功能，但也包含大量对编辑器重要的细节。以下是一些值得注意的列表：
 * 编辑器中的新插件项目创建工具（*插件窗口*，见下图），
@@ -73,9 +73,9 @@ Flax 编辑器包含内置的布料绘制工具，带有逐顶点绘制笔刷。
 * 缺失脚本工具，可快速重新添加编辑器中缺失的脚本（例如，在重命名类之后），
 * 在编辑器中保存 json 文件时自动应用游戏设置。
 
-![具有新功能的插件编辑器](media/plugins-window.png)
+![具有新功能的插件编辑器](/manual/media/plugins-window.png)
 
-![样条线编辑工具](media/editor-splines.png)
+![样条线编辑工具](/manual/media/editor-splines.png)
 
 ### 适用于 macOS 的改进编辑器
 

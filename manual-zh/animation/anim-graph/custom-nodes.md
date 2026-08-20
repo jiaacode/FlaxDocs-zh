@@ -110,8 +110,8 @@ public class MyScaleNode : AnimationGraph.CustomNode
 
 最后一步是测试创建的自定义节点。只需 *右键单击* 并从列表中选择你的节点，或输入名称进行搜索。
 
-![自定义动画图节点](media/custom-node-add.png)
+![自定义动画图节点](/manual/media/custom-node-add.png)
 
 结果：
 
-![动画图自定义节点](media/custom-node-results.gif)
+![动画图自定义节点](/manual/media/custom-node-results.gif)

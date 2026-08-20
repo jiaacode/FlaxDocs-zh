@@ -4,8 +4,8 @@
 
 ### 示例
 
-![动画实例数据](media/anim-instance-data.png)
+![动画实例数据](/manual/media/anim-instance-data.png)
 
 当图初始化时（或状态机中的状态图变为活动状态时），`动画实例数据` 获取 `初始化` 值（`Vector4`），然后可以通过 `获取` 输出访问该值。在此示例中，动画图为动画播放存储了初始时间位置，该位置在 0 到该动画长度之间随机化。这导致动画播放的随机化，使得使用此图的模型群体（例如使用长时间待机动画时）表现得更加自然。
 
-![动画实例数据](media/anim-instance-data.gif)
+![动画实例数据](/manual/media/anim-instance-data.gif)

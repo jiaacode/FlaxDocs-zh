@@ -16,7 +16,7 @@
 
 选择 **工具箱 -> 雕刻 -> 孔洞** 模式。
 
-![地形孔洞工具模式](media/holes-mode-tool.png)
+![地形孔洞工具模式](/manual/media/holes-mode-tool.png)
 
 现在，你可以在地形上绘制以添加孔洞。如果你想还原，可以使用 **撤销** 或按 **Control** 键从地形中移除孔洞。
 

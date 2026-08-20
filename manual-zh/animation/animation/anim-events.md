@@ -1,6 +1,6 @@
 # 动画事件
 
-![Flax 引擎中的动画事件 VFX](media/anim-event-vfx.gif)
+![Flax 引擎中的动画事件 VFX](/manual/media/anim-event-vfx.gif)
 
 动画时间线支持特殊的**动画事件**轨道，可以包含自定义的单次或连续事件。这些可用于播放脚步声、生成脚步贴花或将其他基于动画的效果应用到游戏玩法中。
 
@@ -135,11 +135,11 @@ DECLARE_SCRIPTING_TYPE(PlaySoundAnimEvent);
 
 动画事件在动画资源内部使用单独的轨道类型，可以轻松地放置在时间线上以在非常特定的时间位置触发。使用 *添加* 按钮并选择 *动画事件* 轨道。然后使用 `+` 按钮或 *右键单击* 该轨道以插入新的动画事件。
 
-![在编辑器中添加新动画事件](media/anim-event-new.png)
+![在编辑器中添加新动画事件](/manual/media/anim-event-new.png)
 
 然后你可以 *双击* 创建的事件或 *右键单击* 以编辑其属性。
 
-![在编辑器中编辑动画事件](media/anim-event-edit.png)
+![在编辑器中编辑动画事件](/manual/media/anim-event-edit.png)
 
 保存资源后，它将在动画播放期间使用创建的事件。
 
@@ -153,6 +153,6 @@ DECLARE_SCRIPTING_TYPE(PlaySoundAnimEvent);
 
 ## 事件颜色
 
-![编辑器中的动画事件颜色](media/anim-event-colors.png)
+![编辑器中的动画事件颜色](/manual/media/anim-event-colors.png)
 
 每种事件类型都可以调整 `Color` 字段以控制其在编辑器中的外观。这可用于在编辑更复杂的资源时区分 SFX、VFX 或其他事件。

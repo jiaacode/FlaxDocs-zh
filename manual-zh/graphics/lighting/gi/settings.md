@@ -7,7 +7,7 @@
 
 # 光照图设置
 
-![光照图设置](media/lightmap-settings.png)
+![光照图设置](/manual/media/lightmap-settings.png)
 
 选择[场景](../../../get-started/scenes/index.md) Actor 以编辑每个场景的光照贴图设置。
 

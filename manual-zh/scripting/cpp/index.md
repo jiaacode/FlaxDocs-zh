@@ -52,15 +52,15 @@ BuildNativeCode = true;
 
 现在，你可以**向项目添加新的 C++ 脚本**，它们将被编译为二进制库并由引擎加载。为此，在 *内容窗口* 中导航到该模块的源文件夹 `Source/<module_name>`，*右键单击* 并选择 **C++ 脚本** 选项。指定其名称并按 *Enter* 确认。
 
-![新建原生 C++ 脚本](media/new-cpp-script.png)
+![新建原生 C++ 脚本](/manual/media/new-cpp-script.png)
 
 在“文件”下，你可以选择 **生成脚本项目文件**，或右键单击游戏项目文件并选择类似选项。
 
-![生成脚本项目文件](media/project-files-generation.png)
+![生成脚本项目文件](/manual/media/project-files-generation.png)
 
 之后，打开代码项目（例如 Visual Studio Solution）。请确保使用 **Editor.Development** 配置和 **Win64** 平台（如果你在 Windows 上工作）。
 
-![Visual Studio 脚本项目](media/cpp-scripts-visual-studio.png)
+![Visual Studio 脚本项目](/manual/media/cpp-scripts-visual-studio.png)
 
 如你所见，编辑器从模板生成了一个简单的脚本，它重写了 `OnEnable`、`OnDisable` 和 `OnUpdate` 方法，类似于 C# 脚本。打开创建的 `.cpp` 文件，并在顶部添加以下代码以包含调试日志记录：
 
@@ -83,7 +83,7 @@ void CppScript::OnUpdate()
 
 返回编辑器，以便它可以自动编译脚本，或从 Visual Studio 中使用 **Local Windows Debugger** 按钮（即调试器启动）打开它（或按 *F5*）。现在，你可以将脚本添加到 Actor，并查看你自己的 C++ 脚本每帧在 *输出日志* 中打印的消息。
 
-![C++ 脚本运行时](media/cpp-script-run.png)
+![C++ 脚本运行时](/manual/media/cpp-script-run.png)
 
 尽情开始用 C++ 编写你的游戏逻辑吧！
 
@@ -225,4 +225,4 @@ someCppScript.CallMe();
 
 ## 祝你好运，玩的开心
 
-![Cpp Oh Boi](media/cpp-oh-boi.jpg)
+![Cpp Oh Boi](/manual/media/cpp-oh-boi.jpg)

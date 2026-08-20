@@ -1,12 +1,12 @@
 # 环境光遮蔽
 
-![环境光遮蔽](media/ambient-occlusion.png)
+![环境光遮蔽](/manual/media/ambient-occlusion.png)
 
 **环境光遮蔽** 效果用于向对象应用接触阴影。它模拟现实生活中的阴影，有助于在 3D 空间中创建关于对象位置的视觉感。
 
 ## 属性
 
-![属性](media/ambient-occlusion-properties.jpg)
+![属性](/manual/media/ambient-occlusion-properties.jpg)
 
 | 属性         | 描述                                       |
 | ------------ | ------------------------------------------ |

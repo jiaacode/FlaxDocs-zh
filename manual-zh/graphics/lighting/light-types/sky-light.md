@@ -1,6 +1,6 @@
 # 天光
 
-![天光](media/sky-light.png)
+![天光](/manual/media/sky-light.png)
 
 **天光** 绘制由[天空盒](../sky-skybox/skybox.md)、[天空](../sky-skybox/sky.md)或场景其他远处部分发出的环境光。它有助于[基于图像的光照（Wikipedia）](https://en.wikipedia.org/wiki/Image-based_lighting)。
 
@@ -8,7 +8,7 @@
 
 ## 光照属性
 
-![天光属性](media/sky-light-properties-1.jpg)
+![天光属性](/manual/media/sky-light-properties-1.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |
@@ -20,7 +20,7 @@
 
 ## 探针属性
 
-![天光属性](media/sky-light-properties-2.jpg)
+![天光属性](/manual/media/sky-light-properties-2.jpg)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |
@@ -35,7 +35,7 @@
 
 ## 体积雾属性
 
-![天光属性](media/volumetric-fog-properties.jpg)
+![天光属性](/manual/media/volumetric-fog-properties.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |

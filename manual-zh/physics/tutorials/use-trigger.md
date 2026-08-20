@@ -10,13 +10,13 @@
 
 首先，我们需要生成一个点光源（也可以是其他类型的光源），并将其放置在关卡中触发器附近的某个位置。这样玩家就可以看到灯光颜色的变化。
 
-![生成灯光](media/spawnlight-trigger-2.jpg)
+![生成灯光](/manual/media/spawnlight-trigger-2.jpg)
 
 ## 2. 创建碰撞体
 
 从 *工具箱* 窗口（*物理* 部分）拖放 **盒体碰撞体**，并调整其形状以匹配所需的区域。
 
-![创建碰撞体](media/create-trigger-step-1.jpg)
+![创建碰撞体](/manual/media/create-trigger-step-1.jpg)
 
 ## 3. 勾选 `Is Trigger`
 
@@ -95,7 +95,7 @@ public class TriggerSample : Script
 将脚本添加到创建的盒体碰撞体上，并附加对灯光的引用（编辑 **LightToControl** 属性）。
 你也可以使用 **LightOn** 复选框来测试它是否有效。
 
-![设置脚本](media/setup-scripttrigger-3.jpg)
+![设置脚本](/manual/media/setup-scripttrigger-3.jpg)
 
 ## 6. 测试！
 

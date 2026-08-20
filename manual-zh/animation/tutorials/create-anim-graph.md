@@ -4,31 +4,31 @@
 
 ## 1. 创建动画图
 
-![新建动画图](media/new-anim-graph.jpg)
+![新建动画图](/manual/media/new-anim-graph.jpg)
 
 使用 *内容* 窗口创建新的动画图资源。右键单击并选择选项 **新建 -> 动画 -> 动画图**。指定其名称并按 Enter 确认。
 
 ## 2. 打开动画图窗口
 
-![打开动画图窗口](media/open-anim-graph.jpg)
+![打开动画图窗口](/manual/media/open-anim-graph.jpg)
 
 下一步是双击创建的资源以打开专用编辑器窗口。要了解有关其界面的更多信息，请参阅专门页面[动画图窗口界面](../anim-graph/interface.md)。
 
 ## 3. 设置基础模型
 
-![设置动画图基础模型](media/set-base-model.gif)
+![设置动画图基础模型](/manual/media/set-base-model.gif)
 
 动画图资源需要设置 **基础模型** 属性，以便评估骨骼节点的动画姿态。此基础模型是对包含有效骨骼数据的[蒙皮模型](../skinned-model/index.md)资源的引用。只需将目标模型拖放到资源选择器中即可。
 
 ## 4. 添加动画
 
-![添加动画图](media/add-animation.gif)
+![添加动画图](/manual/media/add-animation.gif)
 
 现在你需要添加动画采样节点，该节点将为图提供要播放的动画。
 有几种方法可以做到这一点。你可以右键单击并选择 Animation 节点并选择资源，或者将动画**拖放**到曲面中。它将自动创建可用于播放动画的有效节点。
 
 ## 5. 查看结果
 
-![动画图播放](media/anim-walk-playback.gif)
+![动画图播放](/manual/media/anim-walk-playback.gif)
 
 最后一步是将动画节点与动画图输出节点连接。然后你就可以看到你的动画正在播放。要了解如何在游戏中使用它，请参阅下一个教程：[如何使用动画图](use-anim-graph.md)。

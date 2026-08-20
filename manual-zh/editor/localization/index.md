@@ -6,7 +6,7 @@ Flax 支持所有区域设置，并为 C++ 和 C# 实现了 `CultureInfo` 类型
 
 ## 本地化设置
 
-![本地化设置](media/localization-settings.png)
+![本地化设置](/manual/media/localization-settings.png)
 
 **本地化设置** 是一个 json 设置资源，包含本地化配置，并添加到[游戏设置](../game-settings/index.md)中。它是游戏翻译的根仪表板。
 
@@ -51,7 +51,7 @@ Flax 支持所有区域设置，并为 C++ 和 C# 实现了 `CultureInfo` 类型
 
 ## 本地化字符串表
 
-![本地化字符串表编辑器](media/localized-string-table.png)
+![本地化字符串表编辑器](/manual/media/localized-string-table.png)
 
 `LocalizedStringTable` 是一种 json 格式的资源，用于存储给定语言区域的本地化文本列表。它支持复数和多行条目。空字段以红色轮廓高亮显示，以标记为缺失（需要翻译）。
 
@@ -59,7 +59,7 @@ Flax 支持从 `.po` 文件**导入翻译后的字符串**到本地化字符串�
 
 ## 本地化字符串
 
-![本地化字符串编辑器](media/localized-string.png)
+![本地化字符串编辑器](/manual/media/localized-string.png)
 
 **本地化字符串** 是一种用于轻松进行文本本地化的脚本类型。它包含两个字段：`Id` 和 `Value`。*Id* 是本地化字符串标识符，*Value* 是自定义覆盖的文本值（如果设置了 *Value*，则不会使用 *Id*）。
 
@@ -109,7 +109,7 @@ auto number =  String::Format(TEXT("{0:n}"), 1234);
 
 使用本地化设置资源编辑器仪表板进行当前语言预览。
 
-![本地化预览](media/localization-preview.gif)
+![本地化预览](/manual/media/localization-preview.gif)
 
 # [C#](#tab/code-csharp)
 

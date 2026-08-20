@@ -69,4 +69,4 @@ namespace Game
 
 稍后你可以将现有的游戏逻辑链接起来，以可视化玩家的生命值，或为你的游戏创建更多 HUD。
 
-![测试生命值条](media/test-progress-bar.gif)
+![测试生命值条](/manual/media/test-progress-bar.gif)

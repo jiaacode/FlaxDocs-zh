@@ -1,6 +1,6 @@
 # 粒子参数
 
-![粒子参数](media/particle-parameters.gif)
+![粒子参数](/manual/media/particle-parameters.gif)
 
 每个粒子发射器都可以定义一组自定义参数，公开给外部进行额外定制。这些参数可以通过粒子系统轨道的名称（用作命名空间）按每个粒子特效进行访问。例如，如果粒子发射器有一个名为 *Color* 的参数，且粒子系统有 2 个使用此发射器的轨道，分别名为 *Smoke 1* 和 *Smoke 2*，那么你可以独立调整每个参数：*Smoke 1.Color* 和 *Smoke 2.Color*。
 

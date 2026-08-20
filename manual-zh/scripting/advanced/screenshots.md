@@ -22,10 +22,10 @@ FlaxEngine.Screenshot.Capture(MainRenderTask.Instance, path);
 
 ## 在编辑器中
 
-![编辑器视口屏幕截图](media/viewport-screenshot-2.png)
+![编辑器视口屏幕截图](/manual/media/viewport-screenshot-2.png)
 
 要截取聚焦的游戏视图或游戏编辑视图的屏幕截图，你可以使用 **F12** 键或主菜单选项 **工具 -> 截取屏幕截图**。
 
-![游戏视口屏幕截图](media/viewport-screenshot-1.png)
+![游戏视口屏幕截图](/manual/media/viewport-screenshot-1.png)
 
 如果你想截取游戏视口的**高分辨率**屏幕截图，可以 *右键单击* 停靠窗口选项卡，使用选项提高分辨率缩放（例如提高到 2），然后使用附加的屏幕截图选项。保存的图像存储在 **项目文件夹/Screenshots** 目录中。

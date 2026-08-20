@@ -1,6 +1,6 @@
 # 场景窗口
 
-![场景窗口](media/scene.jpg)
+![场景窗口](/manual/media/scene.jpg)
 
 **场景窗口** 显示一个树形控件，包含已加载场景的完整层级结构，并会自动更新且支持多场景编辑。
 在运行时生成或移除的 Actor 以及所有关卡更改都会实时更新。
@@ -14,7 +14,7 @@
 
 ## 上下文菜单
 
-![上下文菜单](media/scene-context-menu.jpg)
+![上下文菜单](/manual/media/scene-context-menu.jpg)
 
 使用 **右键单击** 将为选中的 Actor 节点显示上下文菜单。
 这允许你复制、粘贴、剪切、复制、删除和添加新的 Actor。

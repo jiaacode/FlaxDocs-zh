@@ -1,12 +1,12 @@
 # 滑动关节
 
-![滑动关节](media/slider-joint.gif)
+![滑动关节](/manual/media/slider-joint.gif)
 
 **滑动关节** 移除除了单个平移自由度之外的所有自由度。刚体被允许沿单个轴移动。
 
 ## 属性
 
-![属性](media/slider-joint-properties.jpg)
+![属性](/manual/media/slider-joint-properties.jpg)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |

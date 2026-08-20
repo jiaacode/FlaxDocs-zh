@@ -4,30 +4,30 @@
 
 ### 自定义着色模型
 
-![赛璐珞风格渲染](media/cel-shading.gif)
+![赛璐珞风格渲染](/manual/media/cel-shading.gif)
 
 现在，Flax 支持添加**自定义着色模型**用于光照计算，**无需修改引擎源代码**。为风格化游戏制作自定义卡通着色或逼真的各向异性着色比以往任何时候都更容易。上面的视频展示了一个简单的赛璐珞风格渲染，带有对世界光照变化做出反应的轮廓，这是在材质图内实现的。要了解更多信息，请参阅专门的[教程](../../graphics/shaders/cel-shading.md)。
 
 ### 贴花层
 
-![贴花层](media/decal-layers.png)
+![贴花层](/manual/media/decal-layers.png)
 
 此版本中的另一个重要功能是通过模板缓冲区在着色器中进行逐像素对象遮罩。这使我们能够**根据下方的对象来遮罩贴花**。这样的功能允许仅在地面环境上绘制弹孔贴花，使用遮罩通过湿水坑贴花来丰富地形表面细节，而不会影响附近的其他对象。后期处理着色器也可以访问这些数据，以创建对象轮廓或高亮。
 
 ### 新的内存性能分析器
 
-![编辑器中的新内存性能分析器](media/memory-profiler-editor.png)
+![编辑器中的新内存性能分析器](/manual/media/memory-profiler-editor.png)
 
 Flax 现在有了新的**低级内存跟踪**工具，可以注册和跟踪引擎或游戏进行的任何内存分配。分配被分组到层级类别中，以提供更好的概览和对各种系统（如图形、物理或脚本）的洞察。这个强大的系统在将游戏移植到内存有限的平台（如移动设备或掌机）时非常有用。
 
-![内存转储命令](media/memory-dump-command.png)
+![内存转储命令](/manual/media/memory-dump-command.png)
 
 此功能附带了一套出色的工具，例如编辑器性能分析器集成，将类别分组到带有高亮和图表的表格中。新的 `ProfilerMemory.Dump` 命令将内存分配统计信息（按组）转储到日志中，以便快速调查。
 
 ### GPU 粒子性能改进
 
 <center>
-<video src="media/flax-game-particles.mp4" autoplay muted loop width="100%"></video>
+<video src="/manual/media/flax-game-particles.mp4" autoplay muted loop width="100%"></video>
 <em>使用 Flax 制作的游戏在 Nintendo Switch 上运行。</em>
 </center><br>
 
@@ -36,24 +36,24 @@ Flax 现在有了新的**低级内存跟踪**工具，可以注册和跟踪引�
 
 ### 粒子发射器调试绘制
 
-![粒子发射器调试绘制](media/particle-shapes.png)
+![粒子发射器调试绘制](/manual/media/particle-shapes.png)
 
 粒子系统现在将为 `Set Position` 模块显示调试绘制形状。你可以通过取消选中粒子系统 Actor 上的 `Show Debug Draw` 复选框来隐藏它。
 
 对于更高级的效果，粒子发射器编辑器中的新 Layout 选项卡显示粒子的布局和内存信息。
 
-![粒子数据布局](media/particle-data-layout.png)
+![粒子数据布局](/manual/media/particle-data-layout.png)
 
 ### Tracy 中的 GPU 性能分析器
 
-![Tracy 中的 GPU 性能分析器](media/tracy-gpu.png)
+![Tracy 中的 GPU 性能分析器](/manual/media/tracy-gpu.png)
 
 在此版本中，我们添加了 GPU 性能分析与 [Tracy](../../editor/profiling/tracy.md) 性能分析器的集成。GPU 性能时间线中支持 D3D11、D3D12 和 Vulkan 图形 API。集成会自动插入计时器查询来计算各种事件的持续时间。此外，Tracy 还提供了显示与给定 GPU 工作事件相对应的 CPU 部分的功能。这可用于分析连接设备（包括移动设备和主机开发套件）上的渲染性能。
 
 ### Visject 改进
 
 <center>
-<video src="media/node-formatting-tools.mp4" autoplay muted loop height="400" />
+<video src="/manual/media/node-formatting-tools.mp4" autoplay muted loop height="400" />
 <em>新的节点格式化选项</em>
 </center><br>
 
@@ -68,7 +68,7 @@ Flax 有自己的图编辑工具，称为 Visject。它用于引擎的许多领�
 
 ### 视口图标缩放
 
-![编辑器图标](media/editor-icons.gif)
+![编辑器图标](/manual/media/editor-icons.gif)
 
 视口图标现在根据它们到摄像机的距离改变大小。当它们远离摄像机时，这大大提高了它们的可见性。
 
@@ -80,20 +80,20 @@ Flax 有自己的图编辑工具，称为 Visject。它用于引擎的许多领�
 
 ### 异步场景加载
 
-![异步场景加载](media/async-scenes-loading.png)
+![异步场景加载](/manual/media/async-scenes-loading.png)
 
 场景加载已重构，通过时间切片使用**时间预算（每帧）**。它是可配置的，并且**消除了打开地图或流式传输关卡时的卡顿**。这使加载大型关卡更加平滑，并且该代码的更多部分现在异步运行。默认情况下，它被配置为使用总帧时间的最大 30%（例如，在 60fps 下为 4.8ms），以确保游戏保持流畅。
 
 ### 层矩阵高亮
 
-![层矩阵高亮](media/layers-matrix.gif)
+![层矩阵高亮](/manual/media/layers-matrix.gif)
 
 当项目中有很多层时，层矩阵可能变得相当难以阅读。这就是为什么在 Flax 1.11 中，我们为鼠标当前悬停的复选框的行和列添加了高亮。
 
 ### 线程改进
 
 <center>
-<video src="media/falling-boxes.mp4" autoplay muted loop width="100%"></video>
+<video src="/manual/media/falling-boxes.mp4" autoplay muted loop width="100%"></video>
 <em>10,000 个下落盒子</em>
 </center><br>
 
@@ -103,7 +103,7 @@ Flax 有自己的图编辑工具，称为 Visject。它用于引擎的许多领�
 ### GPU 纹理预览
 
 <center>
-<video src="media/gputexture.mp4" autoplay muted loop height="200"></video>
+<video src="/manual/media/gputexture.mp4" autoplay muted loop height="200"></video>
 </center><br>
 
 
@@ -111,19 +111,19 @@ Flax 有自己的图编辑工具，称为 Visject。它用于引擎的许多领�
 
 ### UI 编辑器分辨率预览
 
-![UI 编辑器分辨率预览](media/ui-resolution-preset.png)
+![UI 编辑器分辨率预览](/manual/media/ui-resolution-preset.png)
 
 你现在可以在**小部件编辑器中以不同分辨率预览你制作的 UI**。这对移动开发特别有用。它还允许你添加自定义分辨率作为预设。
 
 ### 预制体差异改进
 
-![预制体差异改进](media/prefab-diff.png)
+![预制体差异改进](/manual/media/prefab-diff.png)
 
 **预制体更改视图现在显示添加和移除的 Actor**。你也可以通过 *Apply All* 按钮将更改应用到预制体，就像你在场景编辑器中对预制体进行的任何其他更改一样。
 
 ### 轮式车辆改进
 
-![轮式车辆改进](media/vehicle.png)
+![轮式车辆改进](/manual/media/vehicle.png)
 
 Flax 现在可以**显示轮式车辆每个车轮的名称和索引**。这使得分配和调试车轮及其碰撞体变得更加容易。
 

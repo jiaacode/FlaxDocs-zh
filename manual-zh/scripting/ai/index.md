@@ -1,6 +1,6 @@
 # 人工智能
 
-![人工智能](behavior-trees/media/bt-debug.gif)
+![人工智能](/manual/behavior-trees/media/bt-debug.gif)
 
 游戏中的**人工智能**（缩写为 **AI**）通常指创建可能看起来具有部分智能的角色或对象。通常，这种效果是通过组合多个不同的系统来实现的，例如：[行为树](behavior-trees/index.md)、[寻路](../../navigation/index.md)、[射线投射](../../physics/raycasting.md) 和游戏逻辑代码。
 

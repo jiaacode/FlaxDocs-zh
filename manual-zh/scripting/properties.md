@@ -10,7 +10,7 @@
 [!code-cpp[示例2](code-examples/properties.h)]
 ***
 
-![脚本属性](media/script-ui.png)
+![脚本属性](/manual/media/script-ui.png)
 
 # 特性
 

@@ -1,6 +1,6 @@
 # Linux 版编辑器
 
-![在 Linux 上使用 Vulkan 的 Flax 编辑器](media/flax-editor-linux-vulkan.png)
+![在 Linux 上使用 Vulkan 的 Flax 编辑器](/manual/media/flax-editor-linux-vulkan.png)
 
 ## 下载
 
@@ -99,7 +99,7 @@ sudo ln -s /usr/lib64/libcurl.so.4 /usr/lib64/libcurl-gnutls.so.4
 
 为了帮助你开始使用 Flax，请从 [https://github.com/FlaxEngine/FlaxSamples](https://github.com/FlaxEngine/FlaxSamples) 获取最新的 Flax 示例。该集合包含各种示例项目，展示了引擎功能，并可用作你未来 Flax 项目的基础。玩得开心！
 
-![在 Linux 上使用 Vulkan 的 Flax 编辑器运行模式](media/editor-playing-on-linux-vulkan.gif)
+![在 Linux 上使用 Vulkan 的 Flax 编辑器运行模式](/manual/media/editor-playing-on-linux-vulkan.gif)
 
 ## 新项目
 

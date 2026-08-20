@@ -1,6 +1,6 @@
 # 骨骼遮罩
 
-![骨骼遮罩](media/skeleton-mask.jpg)
+![骨骼遮罩](/manual/media/skeleton-mask.jpg)
 
 **骨骼遮罩** 是一种资源，包含骨骼的布尔遮罩数据。
 它用于 [动画图](anim-graph/index.md) 中，在指定遮罩下混合两个姿态。
@@ -12,12 +12,12 @@
 
 1. 要创建新的骨骼遮罩资源，只需在 *内容* 窗口中导航到 Content 目录，然后右键单击并选择选项 **新建 -> 动画 -> 骨骼遮罩**。指定其名称并按 *Enter* 键。
 
-	![创建新的骨骼遮罩](media/skeleton-mask-create.jpg)
+	![创建新的骨骼遮罩](/manual/media/skeleton-mask-create.jpg)
 
 2. 双击创建的资源。资源编辑器窗口将显示。然后将目标蒙皮模型拖放进来，以使用其骨骼作为遮罩的参考。之后，你可以使用骨骼结构中的复选框来编辑骨骼遮罩。请注意，在预览面板中你可以看到选中的骨骼结构。
 
-	![编辑骨骼遮罩](media/skeleton-mask-edit.jpg)
+	![编辑骨骼遮罩](/manual/media/skeleton-mask-edit.jpg)
 
 3. 下一步是直接在动画图中使用它。为此，请添加新的 **带遮罩混合** 节点，或将资源拖放到曲面中。然后连接姿态并设置混合。
 
-	![使用骨骼遮罩](media/skeleton-mask-use.jpg)
+	![使用骨骼遮罩](/manual/media/skeleton-mask-use.jpg)

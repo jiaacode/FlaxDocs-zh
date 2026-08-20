@@ -1,6 +1,6 @@
 # 编辑器内运行
 
-![编辑器内运行](media/play-in-editor.jpg)
+![编辑器内运行](/manual/media/play-in-editor.jpg)
 
 编辑器的主要功能之一是**编辑器内运行**模式。
 在此模式下，编辑器加载场景并执行完整的游戏模拟。
@@ -12,7 +12,7 @@
 
 在编辑器中运行游戏的最简单方法是按 **F5** 键，或使用[工具栏](windows/toolbar.md)上的 **播放** 按钮。要启动模拟，至少需要打开一个场景。编辑器将重新加载它并启动游戏。
 
-![编辑器内运行按钮](media/play-in-editor-button.jpg)
+![编辑器内运行按钮](/manual/media/play-in-editor-button.jpg)
 
 游戏启动后，你可以轻松地调试脚本并检查对象。要了解有关脚本开发和调试的更多信息，请参阅[脚本调试](../scripting/debugging/index.md)页面。
 

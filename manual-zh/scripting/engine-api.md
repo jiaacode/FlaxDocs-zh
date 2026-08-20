@@ -28,10 +28,10 @@ Flax 中使用的主要对象类型的层级关系图。
 
 在 C# 和可视化脚本 API 中，`FlaxEngine.Object` 类型映射为 `ScriptingObject`。
 
-![Flax 对象层级关系图](media/objects-hierarchy.png)
+![Flax 对象层级关系图](/manual/media/objects-hierarchy.png)
 
 ## 引擎架构
 
 下图显示了引擎和编辑器的简化架构。
 
-![Flax 引擎架构](media/engine-architecture.png)
+![Flax 引擎架构](/manual/media/engine-architecture.png)

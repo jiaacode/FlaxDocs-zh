@@ -4,7 +4,7 @@
 
 ### .NET 7
 
-![Flax 引擎中的 .NET 7](media/dotnet7.png)
+![Flax 引擎中的 .NET 7](/manual/media/dotnet7.png)
 
 我们做到了！Flax C# 脚本现在运行在最新的 .NET 7 运行时上，并包含所有新的闪亮功能，例如：
 * 更好的性能（新的 GC、新的 JIT、优化的标准库）
@@ -22,7 +22,7 @@
 
 ### iOS 支持
 
-![Flax 引擎中的 iOS 支持](media/ios.jpg)
+![Flax 引擎中的 iOS 支持](/manual/media/ios.jpg)
 
 随着 iOS 平台最终登陆 Flax，我们自豪地宣布 **Flax 是一个真正的多平台引擎**。我们支持和维护所有常见的游戏平台，包括桌面、主机和移动端。
 
@@ -32,23 +32,23 @@ Flax 通过 `MoltenVK` 使用 `Vulkan` 在 iOS 上渲染高质量的 3D 图形�
 
 ### macOS arm64 支持
 
-![macOS arm64 上的 Flax 编辑器](media/mac-arm64.png)
+![macOS arm64 上的 Flax 编辑器](/manual/media/mac-arm64.png)
 
 Flax 1.6 现在可在包括 macOS 在内的 arm64 Apple 设备上运行。M1/M2 芯片提供了出色的性能，因此 Flax 编辑器和 Flax 游戏具有出色的稳定性。
 
 ### 动画重定向
 
-![Flax 引擎中的动画重定向](media/anim-retargeting.gif)
+![Flax 引擎中的动画重定向](/manual/media/anim-retargeting.gif)
 
 动画重定向是一项允许 **在不同骨骼上播放相同动画** 的功能。这在开发大型游戏时非常有用，因为动画共享有助于减少开发时间和游戏构建大小。此更新在编辑器中添加了用于骨骼重定向的新工具。此外，引擎在蒙皮模型之间重用动画方面做得更好。请参阅[文档](../../animation/animation/retargeting.md)了解更多信息。
 
 | 之前                                                      | 之后                                                         |
 | --------------------------------------------------------- | ------------------------------------------------------------ |
-| ![动画重定向之前](media/animation-retargeting-before.gif) | ![Flax 中的动画重定向](media/animation-retargeting-after.gif) |
+| ![动画重定向之前](/manual/media/animation-retargeting-before.gif) | ![Flax 中的动画重定向](/manual/media/animation-retargeting-before.gif) |
 
 ### 动画图中的任意状态
 
-![状态机中的任意状态](media/any-state.png)
+![状态机中的任意状态](/manual/media/any-state.png)
 
 **任意** 状态是一个特殊节点，可以定义到状态的过渡，这些过渡将在状态机更新期间始终被检查。它可以改善创建更复杂角色动画时的工作流程（例如，可以从所有状态触发的角色 `Death` 状态）。
 

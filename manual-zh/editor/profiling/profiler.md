@@ -4,7 +4,7 @@
 
 ## 界面
 
-![性能分析器界面](media/profiler-layout.png)
+![性能分析器界面](/manual/media/profiler-layout.png)
 
 性能分析器窗口分为 3 个部分：
 * 工具栏

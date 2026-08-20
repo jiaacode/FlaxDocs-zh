@@ -3,11 +3,11 @@
 [音频片段](audio-clip.md) 资源由 [音频源](audio-source.md) 使用，用于在游戏过程中播放音频。
 要使用声音，请创建一个新的音频源（通过工具箱或场景窗口上下文菜单），并将片段绑定到它，或者直接将音频片段拖放到视口中。
 
-![使用音频片段](media/use-audio-clip.jpg)
+![使用音频片段](/manual/media/use-audio-clip.jpg)
 
 接下来，你可以勾选 **启动时播放** 属性，源将在游戏启动时立即开始播放声音。
 
-![在关卡启动时播放音频](media/play-on-start-audio.jpg)
+![在关卡启动时播放音频](/manual/media/play-on-start-audio.jpg)
 
 ## 播放音频
 

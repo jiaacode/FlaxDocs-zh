@@ -17,24 +17,24 @@ Flax 支持使用各种笔刷编辑和绘制地形，以便直接在编辑器中
 
 ### 平滑衰减
 
-![地形笔刷平滑](media/brush-smooth.png)
+![地形笔刷平滑](/manual/media/brush-smooth.png)
 
 一种线性衰减，经过平滑处理以消除衰减开始和结束处的尖锐边缘。
 
 ### 线性衰减
 
-![地形笔刷线性](media/brush-linear.png)
+![地形笔刷线性](/manual/media/brush-linear.png)
 
 一种尖锐的线性衰减，没有圆角边缘。
 
 ### 球形衰减
 
-![地形笔刷球形](media/brush-spherical.png)
+![地形笔刷球形](/manual/media/brush-spherical.png)
 
 一种半椭球形状的衰减，平滑开始并尖锐结束。
 
 ### 尖端衰减
 
-![地形笔刷尖端](media/brush-tip.png)
+![地形笔刷尖端](/manual/media/brush-tip.png)
 
 一种突然开始并平滑椭球结束的衰减。与球形衰减相反。

@@ -1,6 +1,6 @@
 # 音频源
 
-![音频源](media/audio-source-title.jpg)
+![音频源](/manual/media/audio-source-title.jpg)
 
 **音频源** 是一种 Actor 类型，代表用于发出音频的源。音频可以是空间化的（如枪声），也可以是常规的（如音乐）。每个音频源都必须有一个 [音频片段](audio-clip.md) 来播放，并且在空间（3D）音频的情况下还可以有位置。
 
@@ -8,7 +8,7 @@
 
 ## 属性
 
-![音频源属性](media/audio-source-properties.jpg)
+![音频源属性](/manual/media/audio-source-properties.jpg)
 
 | 属性           | 描述                                                         |
 | -------------- | ------------------------------------------------------------ |

@@ -1,6 +1,6 @@
 # 颜色分级
 
-![颜色分级](media/color-grading.png)
+![颜色分级](/manual/media/color-grading.png)
 
 **颜色分级**（或称**颜色校正**）是一种用于增强整体场景颜色的效果。Flax 引擎提供了强大的颜色分级工具，使美术师能够在编辑器内以实时预览的方式对过场动画和游戏玩法进行颜色校正。这为创建外观出色的游戏作品迈出了一大步。
 
@@ -8,7 +8,7 @@
 
 ## 色轮
 
-![色轮](media/color-grading-wheel.png)
+![色轮](/manual/media/color-grading-wheel.png)
 
 在 *颜色分级* 选项部分，你可以找到**色轮**（也称为**轨迹球**）。它们用于执行更具“艺术性”控制的*三向*颜色分级。
 
@@ -16,7 +16,7 @@
 
 ## 属性
 
-![属性](media/color-grading-properties.jpg)
+![属性](/manual/media/color-grading-properties.jpg)
 
 颜色分级轨迹球分为 4 组：
 
@@ -51,12 +51,12 @@
 Flax 中使用的 **LUT** 纹理必须是展开的 **256x16** 纹理，以无压缩、无 mipmap 且仅使用 RGB 通道的方式导入。
 
 LUT 纹理示例：
-![LUT 纹理](media/LUT_LateSunsetTable.png)
+![LUT 纹理](/manual/media/LUT_LateSunsetTable.png)
 
 要应用 LUT，只需添加一个 PostFx Volume Actor，并在 *颜色分级* 类别中分配纹理和权重。
-![LUT 纹理示例](media/lut-example.png)
+![LUT 纹理示例](/manual/media/lut-example.png)
 
 要制作自己的 LUT 纹理，你可以截取游戏视口的屏幕截图，然后执行自定义颜色校正以达到所需的外观。接下来，将相同的颜色分级应用于中性 LUT，并在引擎中将其用于颜色分级。
 
 你可以在此处下载中性 LUT：
-![中性 LUT 纹理](media/LUT_Neutral.png)
+![中性 LUT 纹理](/manual/media/LUT_Neutral.png)

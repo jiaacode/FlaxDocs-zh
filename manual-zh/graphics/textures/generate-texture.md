@@ -1,6 +1,6 @@
 # 操作指南：生成程序化纹理
 
-![纹理](media/cubeResult.png)
+![纹理](/manual/media/cubeResult.png)
 
 在本教程中，你将学习如何从 C# 脚本代码创建简单的纹理。
 
@@ -198,16 +198,16 @@ void TextureFromCodeCpp::OnDestroy()
 
 创建一个简单的材质，其中包含一个名为 `tex` 的公共纹理参数。脚本使用它来分配要绘制的纹理。
 
-![材质](media/material1.png)
+![材质](/manual/media/material1.png)
 
 ### 4. 链接材质和模型
 
 将创建的脚本 `TextureFromCode` 添加到场景中的 Actor（或为其创建一个新的 Actor）。然后选择该 Actor 并分配模型和创建的材质（如下图所示）。
 
-![链接材质和模型](media/textureFromCode1.png)
+![链接材质和模型](/manual/media/textureFromCode1.png)
 
 ### 5. 测试！
 
 按下 **播放**（或 *F5*）并查看结果！
 
-![结果](media/cubeResult.png)
+![结果](/manual/media/cubeResult.png)

@@ -4,13 +4,13 @@
 
 ## 使用资源的 Actor
 
-![选择使用此资源的 Actor](media/select-actors-using-this-asset.png)
+![选择使用此资源的 Actor](/manual/media/select-actors-using-this-asset.png)
 
 在 *内容* 窗口中，*右键单击* 某个资源，然后选择 **选择使用此资源的 Actor** 选项。编辑器将遍历所有已加载的场景和 Actor，以搜索选定资源的使用情况。然后所有使用它的 Actor 将被选中（如果未找到使用情况，则没有选中任何内容）。此功能在分析地图上特定资源（例如模型、纹理、音效、VFX 等）的使用情况时非常有用。
 
 ## 资源引用图
 
-![显示资源引用图](media/show-asset-references-graph.png)
+![显示资源引用图](/manual/media/show-asset-references-graph.png)
 
 在 *内容* 窗口中，*右键单击* 某个资源，然后选择 **显示资源引用图** 选项。它将打开一个窗口，其中包含一个图表，可视化显示引用此资源的资源以及此资源引用的资源。图表深度级别限制为 4，并且不显示重复项（即，如果资源 A 引用了 B 和 C，但 B 也引用了 C，则 C 不会第二次显示）。
 

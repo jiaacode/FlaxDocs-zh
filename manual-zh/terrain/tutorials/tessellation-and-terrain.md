@@ -10,7 +10,7 @@
 
 打开材质编辑器，并将 **细分模式** 设置为 **点法线** 或除 *无* 以外的任何选项。
 
-![启用细分](media/enable-tess.png)
+![启用细分](/manual/media/enable-tess.png)
 
 ## 3. 定义细分乘数
 
@@ -20,13 +20,13 @@
 
 在此示例中，我们将基于顶点到摄像机的距离执行线性插值。这将在摄像机附近产生漂亮的细分三角形，并在远离视图时保持较低的三角形密度以保持性能稳定。你可以随意调整此设置，为场景提供更高的质量。
 
-![地形细分材质](media/material-tessellation.png)
+![地形细分材质](/manual/media/material-tessellation.png)
 
 ## 4. 查看结果
 
 保存材质并将其应用于地形后，你将在摄像机视图附近看到更高质量的地形三角形数量，该数量基于到摄像机的距离平滑淡出。
 
-![地形细分结果](media/terrain-tessellation-compare.png)
+![地形细分结果](/manual/media/terrain-tessellation-compare.png)
 
 ## 5. 使用位移
 

@@ -5,7 +5,7 @@
 
 ## 属性
 
-![属性](media/spherical-joint-properties.jpg)
+![属性](/manual/media/spherical-joint-properties.jpg)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |

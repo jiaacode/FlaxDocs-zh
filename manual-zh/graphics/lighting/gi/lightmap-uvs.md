@@ -6,7 +6,7 @@
 
 模型光照图 UV 可以在资源编辑器的 **UV** 选项卡下查看。为获得最佳光照贴图效果，建议在图表中添加边距并分离对象接缝（如下图所示）。
 
-![模型光照图 UV](media/lightmap-uvs.jpg)
+![模型光照图 UV](/manual/media/lightmap-uvs.jpg)
 
 ## UV 质量预览
 
@@ -17,4 +17,4 @@
 * *绿色* - 密度良好
 * *蓝色* - 光照贴图密度过高（减少对象在光照贴图中的缩放比例）
 
-![光照图 UV 密度](media/lightmap-uvs-density.png)
+![光照图 UV 密度](/manual/media/lightmap-uvs-density.png)

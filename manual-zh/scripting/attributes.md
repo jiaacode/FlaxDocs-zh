@@ -103,7 +103,7 @@ static void CallMeTest()
 # [Visual Script](#tab/code-vs)
 右键单击函数节点标题，选择 *Edit attributes..* 菜单。然后添加新的 `Button Attribute` 并点击 *OK* 按钮。
 
-![可视化脚本中的 Button 特性](media/vs-button-attribute.png)
+![可视化脚本中的 Button 特性](/manual/media/vs-button-attribute.png)
 
 ***
 

@@ -4,7 +4,7 @@
 
 ## 属性
 
-![Flax 纹理流式传输设置](media/streaming-settings.jpg)
+![Flax 纹理流式传输设置](/manual/media/streaming-settings.jpg)
 
 | 属性       | 描述                                                         |
 | ---------- | ------------------------------------------------------------ |

@@ -10,7 +10,7 @@
 
 ### 完整源代码发布
 
-![Flax 引擎完整源代码 Github](media/github-repo.png)
+![Flax 引擎完整源代码 Github](/manual/media/github-repo.png)
 
 我们做到了！我们发布了 Flax 引擎的完整源代码，包括 **C++ 核心** 和 **C# 编辑器**，以及所有工具和平台支持。源代码可在 [Github 此处](https://github.com/FlaxEngine/FlaxEngine) 获取。该仓库使用 *Git LFS*，是我们内部服务器的镜像。从现在开始，之前的 FlaxAPI 仓库将被弃用，我们鼓励你在新的 FlaxEngine 仓库上报告问题。此外，我们欢迎 Pull Requests，所以 **请随意贡献**！
 
@@ -23,21 +23,21 @@
 
 ### 可视化脚本
 
-![Flax 引擎可视化脚本](media/vs-code.png)
+![Flax 引擎可视化脚本](/manual/media/vs-code.png)
 
 此版本的关键功能之一是全新的 **可视化脚本** 系统。可视化脚本可以像 C# 和 C++ 脚本一样，通过自定义属性来实现游戏逻辑。这使得游戏原型设计更加容易，并且对非程序员来说引擎也更容易上手。
 
 编辑器支持使用断点、调试器单步执行、局部变量和堆栈跟踪来调试可视化脚本的执行。
 
-![Flax 引擎可视化脚本调试](media/vs-debugging.gif)
+![Flax 引擎可视化脚本调试](/manual/media/vs-debugging.gif)
 
 我们还改进了用于材质、粒子、动画以及现在的可视化脚本编辑的 Visject Surface 的上下文菜单。它运行得更快，并为开发者提供了更多工具提示。
 
-![可视化脚本上下文菜单](media/vs-context-menu.png)
+![可视化脚本上下文菜单](/manual/media/vs-context-menu.png)
 
 ### Android 支持
 
-![Android](media/android.jpg)
+![Android](/manual/media/android.jpg)
 
 在今年，我们增加了对许多新平台的支持，例如 Linux、PS4 和 Xbox Series X/S。现在我们很高兴地宣布 **Android 平台** 支持。这包括所有引擎功能：C++、C#、可视化脚本、**Vulkan** 渲染器、立体音频、**多点触控** 输入、高 DPI UI、一键部署等等。
 
@@ -45,17 +45,17 @@
 
 我们更新了所有 Flax 示例项目，以支持触摸显示输入并在 Android 设备上流畅运行。
 
-![Flax 引擎中的 Android 支持](media/android-screen.jpg)
+![Flax 引擎中的 Android 支持](/manual/media/android-screen.jpg)
 
 ### 顶点绘制
 
-![顶点绘制](media/vertex-painting.gif)
+![顶点绘制](/manual/media/vertex-painting.gif)
 
 编辑器工具箱刚刚获得了用于在场景中 **为模型顶点着色** 的顶点绘制工具。通过使用它，美术师可以轻松丰富关卡内容，例如通过在材质中使用顶点颜色遮罩。Flax 已经支持导入顶点颜色的模型网格。
 
 ### 高度层混合
 
-![高度层混合](media/height-layer-blend-terrain.png)
+![高度层混合](/manual/media/height-layer-blend-terrain.png)
 
 材质图现在包含一个新的节点，用于使用高度图在两个材质层之间更轻松地进行混合，这 **提高了过渡质量**。这可以提升地形材质的质量。
 
@@ -65,13 +65,13 @@
 
 ### 接触阴影
 
-![接触阴影渲染](media/contact-shadows.gif)
+![接触阴影渲染](/manual/media/contact-shadows.gif)
 
 另一个令人兴奋的功能是 **接触阴影渲染**，它通过添加更精确的局部阴影来提高小物体的质量。它是使用深度缓冲区光线追踪实现的，类似于《赛博朋克 2077》中使用的技术。
 
 ### 更多编辑器功能
 
-![Flax 编辑器中的过场动画渲染](media/scene_animation_rendering.png)
+![Flax 编辑器中的过场动画渲染](/manual/media/scene_animation_rendering.png)
 
 每次更新都会为编辑器带来更多功能和工具。这次我们做了大量工作，添加了更多功能。一些新实用功能的示例：
 * 过场动画渲染

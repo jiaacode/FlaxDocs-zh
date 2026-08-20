@@ -4,7 +4,7 @@
 
 | 无根运动                                 | 启用根运动                              |
 | ---------------------------------------- | --------------------------------------- |
-| ![根运动关闭](media/root-motion-off.gif) | ![根运动开启](media/root-motion-on.gif) |
+| ![根运动关闭](/manual/media/root-motion-off.gif) | ![根运动开启](/manual/media/root-motion-off.gif) |
 
 ## 使用方法
 
@@ -12,11 +12,11 @@
 
 1. 在导入动画时启用根运动（可以从特定节点提取，也可以从整个骨骼姿态运动生成）
 
-	![根运动设置](media/root-motion-setup-1.jpg)
+	![根运动设置](/manual/media/root-motion-setup-1.jpg)
 
 2. 在动画图中启用根运动提取和应用
 
-	![根运动设置](media/root-motion-setup-2.jpg)
+	![根运动设置](/manual/media/root-motion-setup-2.jpg)
 
 ## 根运动模式
 

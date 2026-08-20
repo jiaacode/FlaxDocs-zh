@@ -10,11 +10,11 @@
 
 Flax 支持**任何高度图尺寸**作为高度图。
 
-![导入高度图选项](media/import-heightmap-options.png)
+![导入高度图选项](/manual/media/import-heightmap-options.png)
 
 如果你没有任何高度图，可以下载此图像：
 
-![示例高度图](media/heightmap4.png)
+![示例高度图](/manual/media/heightmap4.png)
 
 ## 2. 打开场景
 
@@ -24,7 +24,7 @@ Flax 支持**任何高度图尺寸**作为高度图。
 
 使用主菜单按钮 **场景 -> 创建地形**。
 
-![创建地形](media/create-terrain.png)
+![创建地形](/manual/media/create-terrain.png)
 
 ## 4. 调整选项
 
@@ -32,10 +32,10 @@ Flax 支持**任何高度图尺寸**作为高度图。
 
 要了解有关地形图块、块和技术细节的更多信息，请参阅相关文档[此处](../index.md)。
 
-![创建地形对话框](media/import-terrain-dialog.png)
+![创建地形对话框](/manual/media/import-terrain-dialog.png)
 
 ## 5. 生成地形
 
 按下 **创建** 按钮，查看添加到场景中的新地形。现在你可以[编辑](../editing.md)和[绘制](../painting.md)它了！
 
-![导入地形](media/imported-terrain.jpg)
+![导入地形](/manual/media/imported-terrain.jpg)

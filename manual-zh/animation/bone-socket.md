@@ -1,6 +1,6 @@
 # 骨骼插槽
 
-![骨骼插槽](media/bone-socket.gif)
+![骨骼插槽](/manual/media/bone-socket.gif)
 
 **骨骼插槽** 是一种 Actor 类型，用于链接到[动画模型](animated-model.md)的骨骼变换。它可以用于将玩家的武器链接到手部骨骼，或用于射线检测玩家脚部 IK 目标位置。它只是跟踪骨骼变换。
 
@@ -10,7 +10,7 @@
 
 ## 属性
 
-![骨骼插槽属性](media/bone-socket-properties.png)
+![骨骼插槽属性](/manual/media/bone-socket-properties.png)
 
 | 属性         | 描述                     |
 | ------------ | ------------------------ |

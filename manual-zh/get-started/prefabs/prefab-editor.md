@@ -1,6 +1,6 @@
 # 预制体编辑器
 
-![预制体](media/prefab-editor.jpg)
+![预制体](/manual/media/prefab-editor.jpg)
 
 **预制体编辑器窗口** 是预览和编辑预制体资源的主要工具。要显示它，只需在 *内容窗口* 中双击预制体即可。保存修改后的预制体资源会将更改同步到场景中已有的预制体实例，包括所有将此预制体用作嵌套预制体的预制体。
 
@@ -15,7 +15,7 @@
 
 ## 实时重载
 
-![预制体实时重载](media/nested_prefabs.gif)
+![预制体实时重载](/manual/media/nested_prefabs.gif)
 
 **实时重载** 是一项功能，可实时自动同步编辑的预制体修改。更新预制体实例非常快，因此当你编辑预制体资源时，可以非常频繁地执行实时重载。它默认启用，但可以使用专用的工具栏按钮禁用。
 
@@ -25,7 +25,7 @@
 
 预制体窗口的 UI 由工具栏、层级面板、视口和属性面板组成。
 
-![预制体窗口](media/prefab-editor-ui.jpg)
+![预制体窗口](/manual/media/prefab-editor-ui.jpg)
 
 1. 工具栏
 2. 层级面板
@@ -38,14 +38,14 @@
 
 | 图标                                            | 描述                                       |
 | ----------------------------------------------- | ------------------------------------------ |
-| ![图标](media/prefab-editor-ui-toolstrip-1.png) | 在 *内容窗口* 中显示并选择该资源。         |
-| ![图标](media/prefab-editor-ui-toolstrip-2.png) | 将预制体保存到文件并更新现有的预制体实例。 |
-| ![图标](media/prefab-editor-ui-toolstrip-3.png) | 撤销上一次场景修改操作（Ctrl+Z）。         |
-| ![图标](media/prefab-editor-ui-toolstrip-4.png) | 重做上一次场景修改操作（Ctrl+Y）。         |
-| ![图标](media/prefab-editor-ui-toolstrip-5.png) | 将 Gizmo 工具模式更改为 *平移*（1）。      |
-| ![图标](media/prefab-editor-ui-toolstrip-6.png) | 将 Gizmo 工具模式更改为 *旋转*（2）。      |
-| ![图标](media/prefab-editor-ui-toolstrip-7.png) | 将 Gizmo 工具模式更改为 *缩放*（3）。      |
-| ![图标](media/prefab-editor-ui-toolstrip-8.png) | 实时更改预览（修改时自动应用预制体更改）。 |
+| ![图标](/manual/media/prefab-editor-ui-toolstrip-1.png) | 在 *内容窗口* 中显示并选择该资源。         |
+| ![图标](/manual/media/prefab-editor-ui-toolstrip-2.png) | 将预制体保存到文件并更新现有的预制体实例。 |
+| ![图标](/manual/media/prefab-editor-ui-toolstrip-3.png) | 撤销上一次场景修改操作（Ctrl+Z）。         |
+| ![图标](/manual/media/prefab-editor-ui-toolstrip-4.png) | 重做上一次场景修改操作（Ctrl+Y）。         |
+| ![图标](/manual/media/prefab-editor-ui-toolstrip-5.png) | 将 Gizmo 工具模式更改为 *平移*（1）。      |
+| ![图标](/manual/media/prefab-editor-ui-toolstrip-6.png) | 将 Gizmo 工具模式更改为 *旋转*（2）。      |
+| ![图标](/manual/media/prefab-editor-ui-toolstrip-7.png) | 将 Gizmo 工具模式更改为 *缩放*（3）。      |
+| ![图标](/manual/media/prefab-editor-ui-toolstrip-8.png) | 实时更改预览（修改时自动应用预制体更改）。 |
 
 ### 层级面板
 

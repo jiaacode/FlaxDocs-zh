@@ -1,6 +1,6 @@
 # Android
 
-![Android](media/android.jpg)
+![Android](/manual/media/android.jpg)
 
 ## 技术信息
 

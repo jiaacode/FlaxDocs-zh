@@ -4,13 +4,13 @@
 
 ## 1. 创建动画图
 
-![动画图窗口](media/anim-walk-playback.gif)
+![动画图窗口](/manual/media/anim-walk-playback.gif)
 
 首先准备你的动画图资源。要了解如何设置，请参阅相关教程[如何创建动画图](create-anim-graph.md)。
 
 ## 2. 添加动画模型 Actor
 
-![添加动画模型](media/add-animated-model.gif)
+![添加动画模型](/manual/media/add-animated-model.gif)
 
 下一步是向场景中创建[动画模型](../animated-model.md) Actor。
 这种类型的 Actor 使用蒙皮模型资源和动画图来更新动画并渲染蒙皮模型。
@@ -18,12 +18,12 @@
 
 ## 3. 链接动画图
 
-![动画图分配](media/anim-graph-property-model.jpg)
+![动画图分配](/manual/media/anim-graph-property-model.jpg)
 
 生成动画模型后，它将链接蒙皮模型进行渲染，但你还需要分配之前创建的动画图资源。选择 Actor 并设置属性值。
 
 ## 4. 查看结果
 
-![播放动画](media/play-animated-mode.gif)
+![播放动画](/manual/media/play-animated-mode.gif)
 
 最后，只需按下 **播放** 按钮或按 **F5** 键。你应该会看到你的动画正在播放。

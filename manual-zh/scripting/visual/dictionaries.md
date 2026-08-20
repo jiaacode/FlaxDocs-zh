@@ -4,19 +4,19 @@
 
 ## 如何添加字典属性？
 
-![可视化脚本中的字典属性更改](media/dictionary-type-property.png)
+![可视化脚本中的字典属性更改](/manual/media/dictionary-type-property.png)
 
 字典属性的工作方式与任何其他脚本属性相同。要创建一个，只需添加一个给定类型的变量，例如 `Float`，然后使用 *右键单击* 选择 **类型 -> 字典**。这将把属性从单个值转换为字典。你可以使用此上下文菜单将其更改回来，或修改字典的键或值类型。
 
 ## 如何迭代字典？
 
-![可视化脚本中的字典 For Each 迭代](media/dictionary-for-each.png)
+![可视化脚本中的字典 For Each 迭代](/manual/media/dictionary-for-each.png)
 
 要迭代字典，你可以使用内置的 **Dictionary For Each** 节点，该节点允许遍历所有字典项，如上所示。它的工作方式类似于 **For Loop**，不同之处在于它适应字典内容，并在每个迭代步骤中公开当前的 *Key* 和 *Value*。
 
 ## 如何访问字典？
 
-![可视化脚本中的字典 API 访问节点](media/dictionary-api-nodes.png)
+![可视化脚本中的字典 API 访问节点](/manual/media/dictionary-api-nodes.png)
 
 **Dictionary** 组包含许多节点，例如：Count、Get、Set、Remove 等。这些节点对所有字典类型都是通用的，但会适应输入的字典类型。它们不会编辑引用的输入字典，而是返回修改后的字典值（请参见未命名的输出框）。
 

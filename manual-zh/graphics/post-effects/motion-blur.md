@@ -1,12 +1,12 @@
 # 运动模糊
 
-![运动模糊](media/motion_blur.gif)
+![运动模糊](/manual/media/motion_blur.gif)
 
 **运动模糊** 效果基于对象的运动来模拟其模糊效果。当摄像机拍摄的对象移动速度快于摄像机曝光时间时，对象边缘会出现模糊。这可能是由快速移动的物体或长曝光时间引起的。该效果本身基于 *运动向量* 缓冲区渲染，其中包含对象像素在屏幕上的移动信息。
 
 ## 属性
 
-![属性](media/motion-blur-properties.jpg)
+![属性](/manual/media/motion-blur-properties.jpg)
 
 | 属性                          | 描述                                                         |
 | ----------------------------- | ------------------------------------------------------------ |
@@ -17,13 +17,13 @@
 
 ## 运动向量调试
 
-![运动向量](media/motion_vectors_debug.gif)
+![运动向量](/manual/media/motion_vectors_debug.gif)
 
 编辑器支持通过勾选 **View -> Debug View -> Motion Vectors** 来渲染运动向量可视化。
 你可以使用它来预览和调试游戏对象的运动向量。
 
 ## 逐骨骼运动
 
-![逐骨骼运动模糊](media/per-bone-motion-blur.png)
+![逐骨骼运动模糊](/manual/media/per-bone-motion-blur.png)
 
 骨骼网格支持 **Per Bone Motion Blur**，用于处理动画模型骨骼变换变化的像素运动渲染。

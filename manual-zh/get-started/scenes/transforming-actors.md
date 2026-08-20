@@ -6,11 +6,11 @@
 
 如果选择了一个或多个 Actor，您可以在 *属性* 窗口中修改它们的属性。这包括编辑 **局部变换**。
 
-![Actor Transform](media/edit-actor-local-transform.jpg)
+![Actor Transform](/manual/media/edit-actor-local-transform.jpg)
 
 您还可以使用变换属性旁边的滑块来更快地编辑对象。
 
-![Actor Transform](media/local-transform-usage.gif)
+![Actor Transform](/manual/media/local-transform-usage.gif)
 
 ## 变换 Gizmo
 
@@ -19,16 +19,16 @@
 
 要切换变换 Gizmo 工具模式，请使用按键 **1**、**2** 和 **3**，或使用工具栏按钮：
 
-![Toolbar Buttons](media/transform-gizmo-mode.jpg)
+![Toolbar Buttons](/manual/media/transform-gizmo-mode.jpg)
 
 编辑器视口的右上角会显示一组按钮和选项。
 您可以使用它们来调整 Gizmo 设置。
 
-![Editor Viewport Widgets](media/gizmo-widgets.png)
+![Editor Viewport Widgets](/manual/media/gizmo-widgets.png)
 
 ### 平移工具
 
-![Translation widget](media/gizmo-translate.gif)
+![Translation widget](/manual/media/gizmo-translate.gif)
 
 **平移** Gizmo 沿特定轴（或平面）移动选中的对象。
 使用方法：单击某个轴（红色、绿色或蓝色）并拖动即可。
@@ -36,14 +36,14 @@
 
 ### 旋转工具
 
-![Rotation widget](media/gizmo-rotate.gif)
+![Rotation widget](/manual/media/gizmo-rotate.gif)
 
 **旋转** Gizmo 沿特定轴旋转选中的对象。
 使用方法：单击某个轴圈（红色、绿色或蓝色）并拖动即可。
 
 ### 缩放工具
 
-![Scale widget](media/gizmo-scale.gif)
+![Scale widget](/manual/media/gizmo-scale.gif)
 
 **缩放** Gizmo 沿特定轴缩放选中的对象。
 使用方法：单击某个轴（红色、绿色或蓝色）并拖动即可。
@@ -55,11 +55,11 @@
 
 您可以使用工具切换当前变换空间：
 
-![Toggle Transformation Space](media/transformation-space-toggle.png)
+![Toggle Transformation Space](/manual/media/transformation-space-toggle.png)
 
 | 世界                                  | 局部                                  |
 | ------------------------------------- | ------------------------------------- |
-| ![World Space](media/world-space.jpg) | ![Local Space](media/local-space.jpg) |
+| ![World Space](/manual/media/world-space.jpg) | ![Local Space](/manual/media/world-space.jpg) |
 
 ## 对齐（捕捉）
 
@@ -68,10 +68,10 @@
 变换对象时，按住 **Ctrl** 键即可对齐（捕捉）数值。
 捕捉设置可以通过工具按钮进行配置：
 
-![Snapping Options](media/widget-spanning.jpg)
+![Snapping Options](/manual/media/widget-spanning.jpg)
 
 ## 复制 Actor
 
 如果您在开始变换对象时按住 **Shift** 键，则可以使用变换 Gizmo 复制选中的对象。
 
-![Duplicate actors](media/duplicate-actors.gif)
+![Duplicate actors](/manual/media/duplicate-actors.gif)

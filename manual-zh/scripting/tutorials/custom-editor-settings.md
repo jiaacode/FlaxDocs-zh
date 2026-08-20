@@ -71,5 +71,5 @@ public class MyCustomPlugin : EditorPlugin
 
 现在，在编辑器中使用主菜单选项 **工具 -> 选项**，然后选择您的设置类别。
 
-![自定义编辑器选项](media/custom-editor-settings.png)
+![自定义编辑器选项](/manual/media/custom-editor-settings.png)
 

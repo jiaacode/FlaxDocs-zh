@@ -1,12 +1,12 @@
 # 胶囊碰撞体
 
-![胶囊碰撞体](media/capsule.png)
+![胶囊碰撞体](/manual/media/capsule.png)
 
 一种胶囊形的基本碰撞体。胶囊体是两端带有半球体的圆柱体。
 
 ## 属性
 
-![属性](media/capsule-properties.jpg)
+![属性](/manual/media/capsule-properties.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |

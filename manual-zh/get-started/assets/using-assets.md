@@ -25,7 +25,7 @@
 
 某些资源选择器较小，以降低 UI 复杂性：
 
-![小型选择器](media/small-settings.jpg)
+![小型选择器](/manual/media/small-settings.jpg)
 
 ## 脚本中的资源
 

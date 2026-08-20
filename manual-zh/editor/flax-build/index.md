@@ -1,6 +1,6 @@
 # Flax.Build
 
-![Flax.Build 构建工具](media/title.jpg)
+![Flax.Build 构建工具](/manual/media/title.jpg)
 
 **Flax.Build** 是一个内置工具，它是一个用 C# 编写的完整构建系统。它支持：
 

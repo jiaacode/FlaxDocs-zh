@@ -1,5 +1,5 @@
 # 按钮
 
-![按钮](media/button.png)
+![按钮](/manual/media/button.png)
 
 **按钮** 控件响应用户的鼠标点击事件，用于启动或确认某个操作。

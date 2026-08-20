@@ -1,6 +1,6 @@
 # 抗锯齿
 
-![抗锯齿](media/anti-aliasing.png)
+![抗锯齿](/manual/media/anti-aliasing.png)
 
 **抗锯齿** 效果是减少像素锯齿和平滑几何边缘最常用的方法之一。Flax 提供了多种适用于各种类型游戏的 AA 实现。活动的抗锯齿模式可以在每个关卡、每个摄像机或每个游戏的 PostFx Volume 中指定。
 

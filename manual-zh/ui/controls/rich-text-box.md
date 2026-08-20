@@ -1,6 +1,6 @@
 # 富文本框
 
-![富文本框](media/rich-text-box.png)
+![富文本框](/manual/media/rich-text-box.png)
 
 **富文本框** 控件允许使用高级样式选项显示格式化的文本。
 

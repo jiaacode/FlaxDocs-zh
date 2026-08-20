@@ -1,6 +1,6 @@
 # 色调映射
 
-![色调映射](media/tone-mapping.png)
+![色调映射](/manual/media/tone-mapping.png)
 
 **色调映射** 获取高动态范围（`HDR`）输入颜色，并将其重新映射为显示器可以显示的低动态范围（`LDR`）。这是后期处理帧的最后阶段。
 
@@ -15,7 +15,7 @@ Flax 引擎实现了由[学院颜色编码系统（ACES）](http://www.oscars.or
 
 使用色调映射器的选项可以调整最终的胶片 S 曲线形状和平衡色温。
 
-![属性](media/tone-mapping-properties.jpg)
+![属性](/manual/media/tone-mapping-properties.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |

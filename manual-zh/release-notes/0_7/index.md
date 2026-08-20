@@ -4,7 +4,7 @@
 
 ### 新项目格式
 
-![新项目格式](media/project-structure.png)
+![新项目格式](/manual/media/project-structure.png)
 
 在发布 0.7 更新之前，最重要的变化之一是对 Flax 项目格式和布局进行现代化改造，以确保它们能够在未来扩展。旧的 *Project.xml* 描述符被替换为 **&lt;project_name&gt;.flaxproj** 文件，该文件采用 Json 格式，包含所有基本项目信息以及 **项目引用**，这使得可以在游戏中使用外部插件项目。我们还添加了[脚本模块](../../scripting/index.md)，因此你的游戏代码可以是模块化的（类似于 Flax 引擎代码库）。
 
@@ -14,7 +14,7 @@ Flax 编辑器将 **自动升级旧项目**，并在任何操作之前要求进�
 
 ### C++ 脚本
 
-![C++ 脚本](media/cpp-scripting.png)
+![C++ 脚本](/manual/media/cpp-scripting.png)
 
 它终于实现了！你可以在 Flax 游戏中使用 **C++** 来编写游戏逻辑脚本。从本次更新开始，我们将分发引擎头文件和构建工具，用于在 Flax 中编译和运行原生代码。你所需要的只是安装带有编译器的平台相关工具集，然后就可以开始了！
 
@@ -26,7 +26,7 @@ Flax 支持 **无缝的 C++ 和 C# 脚本**。我们创建了一个开放生态�
 
 ### PlayStation 4 和 Xbox Scarlett 支持
 
-![Flax 上的 PlayStation 4](media/flax-ps4-gameplay.gif)
+![Flax 上的 PlayStation 4](/manual/media/flax-ps4-gameplay.gif)
 
 每次更新都将 Flax 推向 AAA 级引擎。这次我们将引擎移植到了 **PlayStation 4** 和即将推出的 **Xbox Scarlett**（即 Xbox Series X）。借助 Flax 的强大功能，你可以创造惊人的体验，并轻松将它们发布到多个平台。
 
@@ -34,7 +34,7 @@ Flax 对 PlayStation 4 和 Xbox Scarlett 平台的支持受 NDA 保护。如果�
 
 ### 使用着色器进行图形编程
 
-![Flax 中的自定义着色器和 GPU API](media/sharpen-filter-example.png)
+![Flax 中的自定义着色器和 GPU API](/manual/media/sharpen-filter-example.png)
 
 Flax 已经拥有使用材质图创建着色器的出色工具，但我们希望更进一步。在此更新中，你可以使用我们的低级图形抽象层，该层支持直接在 C++/C# 代码中使用 GPU。你可以创建和使用 GPU 资源，如纹理/缓冲区，并创建图形命令。
 
@@ -44,21 +44,21 @@ Flax 已经拥有使用材质图创建着色器的出色工具，但我们希望
 
 ### Gameplay Globals
 
-![Gameplay Globals 运行时](media/gameplay-globals-editing.gif)
+![Gameplay Globals 运行时](/manual/media/gameplay-globals-editing.gif)
 
 在创建依赖于内容的更复杂游戏系统或创建技术美术时，提供可以影响整个游戏玩法的全局参数通常很有用。例如，玩家队伍颜色、风向、风速或其他天气参数。**Gameplay Globals** 资源包含一个命名参数列表，可以在项目中全局访问，包括材质、动画和粒子。它们的值可以由美术师在编辑器中设置，或从代码驱动。这极大地提高了生产效率，并为游戏开发者提供了一个丰富其游戏内容的绝佳工具。
 
-![资源中的 Gameplay Globals](media/gameplay-globals-4.png)
+![资源中的 Gameplay Globals](/manual/media/gameplay-globals-4.png)
 
 ### UI 锚点和偏移
 
-![UI 锚点和偏移](media/anchor-presets.png)
+![UI 锚点和偏移](/manual/media/anchor-presets.png)
 
 我们对 UI 定位和锚点系统进行了现代化改造，使其更加灵活。控件现在具有锚点最小值和锚点最大值属性，可以手动设置或通过 *锚点预设* 编辑器设置。控件锚点是父控件中左上角和右下角的归一化（范围为 0-1）位置。这可用于将控件停靠在父容器内，使控件的位置/大小可以依赖于父容器的边界。
 
 ### 材质、粒子图和动画图函数
 
-![材质函数](media/material-function.png)
+![材质函数](/manual/media/material-function.png)
 
 在创建复杂材质、动画图或粒子系统时，通常需要多次重用图的相同部分。例如，三平面映射计算可以在多个地形着色器中重用，而无需复制粘贴。为了实现这一点，我们创建了一组新的资源：**材质函数**、**动画图函数** 和 **粒子图函数**。它们可以包含一组自定义的输入和输出，以及实现特定逻辑的图。然后，你可以在许多其他资源中重用该函数，Flax 将自动处理重载和实时内容编辑，使你的游戏开发过程更加顺畅。
 
@@ -70,13 +70,13 @@ Flax 支持为蒙皮模型导入和使用 Blend Shapes（即变形目标）。�
 
 ### 反向动力学
 
-![Two Bone IK](media/two-bone-ik.gif)
+![Two Bone IK](/manual/media/two-bone-ik.gif)
 
 此更新包含新的动画图节点：**Two Bone IK**，它在三个节点的链上执行反向动力学（例如玩家用手拾取枪支），以及 **Aim IK**，它旋转一个节点使其瞄准目标（例如用于玩家头部注视）。我们还改进了图中骨骼节点的变换，因此它运行得更快且更稳定。
 
 ### 自动模型 LOD
 
-![自动模型 LOD](media/automatic-model-lod.gif)
+![自动模型 LOD](/manual/media/automatic-model-lod.gif)
 
 另一个令人兴奋的功能是在源资源导入期间自动生成模型 LOD。在导入模型文件时，只需勾选 **Generate LODs** 属性（在 *Level Of Detail* 组下）并调整设置。导入的模型将包含简化的 LOD，这将优雅地提高游戏的性能。此选项也适用于蒙皮模型。Flax 还将为切换 LOD 选择更好的屏幕尺寸，以便玩家不会注意到 LOD 过渡（材质中的 *Dithered LOD Transition* 选项有助于隐藏突现伪影）。此外，较低的 LOD 可以使用不同的材质——例如，使用更少纹理的更优化材质，因此你可以开发性能更高的游戏。
 我们使用：<https://github.com/zeux/meshoptimizer> 库进行网格简化和生成几何体的优化。导入此模型的部分日志：
@@ -90,7 +90,7 @@ Generated LODs for 3 meshes in 17 ms
 
 ### 更多编辑器功能
 
-![编辑器中的模型纹理坐标预览](media/model-uv-preview.gif)
+![编辑器中的模型纹理坐标预览](/manual/media/model-uv-preview.gif)
 
 每次更新都为 Flax 编辑器带来更多稳定性、性能和闪亮的功能。最有趣的有：
 * **自定义编辑器主题** 支持（由 *stefnotch* 制作）
@@ -102,7 +102,7 @@ Generated LODs for 3 meshes in 17 ms
 * 从模型 **自动导入材质和纹理**
 * 内容窗口中的视图选项
 
-![自定义编辑器主题](media/editor-custom-theme.png)
+![自定义编辑器主题](/manual/media/editor-custom-theme.png)
 
 ### 最后的重构
 

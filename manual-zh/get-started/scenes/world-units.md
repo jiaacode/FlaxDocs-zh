@@ -1,6 +1,6 @@
 # 世界单位
 
-![World Grid](media/world-grid.png)
+![World Grid](/manual/media/world-grid.png)
 
 Flax 使用 **厘米** 作为长度单位，**千克** 作为重量单位。
 这些世界单位被物理引擎和渲染引擎所采用。您应当尽量使用符合现实的值，以便为对象创造稳定的视觉和物理表现。

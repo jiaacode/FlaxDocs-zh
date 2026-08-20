@@ -1,6 +1,6 @@
 # 让我们一起让游戏引擎再次伟大！
 
-![Flax 引擎](media/Screen5.png)
+![Flax 引擎](/manual/media/Screen5.png)
 
 我们始终欢迎协作参与和社区发展。
 我们相信开源项目拥有巨大的潜力，并为开发更好的软件提供了许多机会。
@@ -18,7 +18,7 @@
 
 ## 开源
 
-![Flax 引擎](media/repo-title-revized.png)
+![Flax 引擎](/manual/media/repo-title-revized.png)
 
 ### Flax 引擎
 

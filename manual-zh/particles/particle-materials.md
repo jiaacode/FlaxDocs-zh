@@ -1,26 +1,26 @@
 # 粒子材质
 
-![粒子材质](media/particle-material.png)
+![粒子材质](/manual/media/particle-material.png)
 
 粒子渲染使用专用的着色器领域，支持精灵、模型和带状粒子。要为你的粒子使用自定义材质，请确保在 *材质窗口* 中将 **领域** 设置为 **Particle**。
 
-![粒子材质领域](media/particle-material-domain.jpg)
+![粒子材质领域](/manual/media/particle-material-domain.jpg)
 
 ## 粒子属性
 
 粒子材质可以轻松访问所渲染粒子的任何属性。你可以使用预定义的节点，例如 **粒子颜色**、**粒子归一化生命周期** 或 **粒子质量**。如果你的粒子系统使用任何自定义属性，着色器可以通过 **粒子属性** 节点读取它们。只需指定属性名称和类型，数据即可用于读取。
 
-![粒子属性](media/particle-attribute.png)
+![粒子属性](/manual/media/particle-attribute.png)
 
 ## 精灵表单动画
 
 许多粒子系统（如烟雾、火焰和爆炸）使用精灵表单来随时间变化粒子纹理的动画。为此，只需使用 **翻页书** 节点，它实现了对精灵表单的采样。
 
-![精灵表单](media/sprite-sheet.png)
+![精灵表单](/manual/media/sprite-sheet.png)
 
 ## 体积粒子光照
 
-![体积粒子光照](media/volumetric-particles-lighting.gif)
+![体积粒子光照](/manual/media/volumetric-particles-lighting.gif)
 
 在创建体积粒子（如烟雾、灰尘或雾）时，光照应在没有方向性高光分量的情况下计算，以营造漫射体积介质的印象。为此，将 **透明光照模式** 更改为 **表面非方向**。这将禁用高光光照，并从阴影中移除方向性，从而使粒子看起来像体积。
 

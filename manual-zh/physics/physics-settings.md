@@ -7,23 +7,23 @@
 1. 在 *内容* 窗口中导航到 Content 目录
 
 2. 右键单击并选择选项 **新建 -> 设置**，指定资源名称（例如 *物理设置*）并按 *Enter*
-   <br>![教程](media/new-settings.png)
+   <br>![教程](/manual/media/new-settings.png)
 
 3. 选择选项 **物理设置** 并按下 **创建** 按钮
-   <br>![教程](media/physics-settings-new.png)
+   <br>![教程](/manual/media/physics-settings-new.png)
 
 4. 双击资源以打开并编辑它
-   <br>![教程](media/empty-physics-settings.png)
+   <br>![教程](/manual/media/empty-physics-settings.png)
 
 ## 使用物理设置
 
 你可以创建任意数量的物理设置资源（甚至每个平台的专用版本），但在游戏构建时只能使用一个。使用 **游戏设置** 资源（始终位于 `Content/GameSettings.json`）来链接物理选项。如果你的游戏使用更高级的配置，你可以从代码中的构建脚本编辑游戏设置（使用 C# API 中的 [GameSettings.Load](https://docs.flaxengine.com/api/FlaxEditor.Content.Settings.GameSettings.html#FlaxEditor_Content_Settings_GameSettings_Load) 和 [GameSettings.Save](https://docs.flaxengine.com/api/FlaxEditor.Content.Settings.GameSettings.html#FlaxEditor_Content_Settings_GameSettings_Save__1___0_)）。
 
-![使用物理设置](media/use-physics-settings.png)
+![使用物理设置](/manual/media/use-physics-settings.png)
 
 ## 模拟选项
 
-![模拟](media/physics-simulation-options.png)
+![模拟](/manual/media/physics-simulation-options.png)
 
 | 属性                 | 描述                                                         |
 | -------------------- | ------------------------------------------------------------ |
@@ -41,7 +41,7 @@
 
 ## 帧率选项
 
-![模拟](media/physics-framerate-options.png)
+![模拟](/manual/media/physics-framerate-options.png)
 
 | 属性             | 描述                                           |
 | ---------------- | ---------------------------------------------- |
@@ -52,7 +52,7 @@
 
 ## 层矩阵选项
 
-![模拟](media/physics-layers-options.png)
+![模拟](/manual/media/physics-layers-options.png)
 
 Flax 物理模拟支持基于层的碰撞检测。你可以为每个层指定碰撞遮罩，用于描述该层的对象是否可以与其他层的对象碰撞。
 
@@ -60,7 +60,7 @@ Flax 物理模拟支持基于层的碰撞检测。你可以为每个层指定碰
 
 ## 其他
 
-![其他](media/physics-other-options.png)
+![其他](/manual/media/physics-other-options.png)
 
 | 属性                       | 描述                                                         |
 | -------------------------- | ------------------------------------------------------------ |

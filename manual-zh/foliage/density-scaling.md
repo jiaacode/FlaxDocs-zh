@@ -4,10 +4,10 @@
 
 ## 使用密度缩放
 
-![使用密度缩放](media/use-density-scaling.png)
+![使用密度缩放](/manual/media/use-density-scaling.png)
 
 首先，在植被的指定类型上启用此功能。你还可以调整每种类型的缩放因子，以在某些情况下改善使用效果（例如，平衡不同类型草丛的缩放）。
 
 然后从游戏代码中控制 `Foliage.GlobalDensityScale`。默认值为 1，表示不进行任何缩放。将其设置为 0.5 可将可缩放植被的数量减少 2 倍。每个植被实例都有自己稳定的、序列化的随机数，用于此操作，因此密度缩放是稳定的。
 
-![植被密度缩放](media/foliage-density-scaling.gif)
+![植被密度缩放](/manual/media/foliage-density-scaling.gif)

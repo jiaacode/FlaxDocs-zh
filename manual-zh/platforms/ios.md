@@ -1,6 +1,6 @@
 # iOS
 
-![iOS](media/ios.jpg)
+![iOS](/manual/media/ios.jpg)
 
 ## 技术信息
 
@@ -27,11 +27,11 @@ iOS 不允许动态代码执行，因此 Flax 使用 [AOT](../scripting/csharp/r
 
 ## XCode 项目
 
-![Flax 的 XCode 项目](media/xcode-project.png)
+![Flax 的 XCode 项目](/manual/media/xcode-project.png)
 
 在为 iOS 构建游戏时，Flax 将编译游戏代码并将内容文件烘焙到 XCode 项目中，该项目可用于在 iOS 设备上进行部署和测试。如果 [构建设置](../editor/game-settings/build-settings.md) 中的 *Skip Packaging* 选项被禁用，则编辑器还将存档并导出游戏到一个 `.ipa` 包中，该包可以上传到 App Store 进行分发。
 
-![XCode 输出构建文件](media/xcode-files.png)
+![XCode 输出构建文件](/manual/media/xcode-files.png)
 
 要了解如何为应用程序构建、测试和分发设置 Apple Developer，请参阅[官方文档](https://developer.apple.com/documentation/)。
 

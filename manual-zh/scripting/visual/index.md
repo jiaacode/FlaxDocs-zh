@@ -1,6 +1,6 @@
 # 可视化脚本
 
-![可视化脚本](media/vs-sample.png)
+![可视化脚本](/manual/media/vs-sample.png)
 
 Flax 引擎完全支持可视化脚本，具有许多出色的功能，例如：热重载、完整的 API 访问、调试、Visject Surface UI 等等。总的来说，可视化脚本为快速原型设计提供了更 **稳健的开发**，同时保持了稳定的性能。
 
@@ -18,17 +18,17 @@ Flax 引擎完全支持可视化脚本，具有许多出色的功能，例如：
 
 **可视化脚本** 是一种内置的二进制资源，包含带有可视化脚本节点、属性和元数据的图。该图在运行时由引擎处理和执行。要创建新的可视化脚本，只需导航到 *内容* 目录，*右键单击* 并选择选项 **新建 -> 可视化脚本**。然后指定其名称并按 *Enter* 确认。
 
-![新建可视化脚本](media/new-visual-script.png)
+![新建可视化脚本](/manual/media/new-visual-script.png)
 
 现在，编辑器允许你选择可视化脚本的类型。你的资源将继承自指定的基类。默认选项是 **Script**，这在大多数情况下都适用。你也可以尝试扩展 Actor 或任何其他类型。包括自定义游戏 C++ 和 C# 类型，以实现更强大的脚本。
 
-![新建可视化脚本类型](media/new-visual-script-type.png)
+![新建可视化脚本类型](/manual/media/new-visual-script-type.png)
 
 使用 **创建** 按钮确认对话框，然后 *双击* 资源图标以打开编辑器窗口。
 
 ### 可视化脚本编辑器窗口
 
-![可视化脚本编辑器布局](media/visual-script-window-layout.png)
+![可视化脚本编辑器布局](/manual/media/visual-script-window-layout.png)
 
 可视化脚本编辑器窗口包含：
 1. **工具栏** - 实用按钮，例如保存或撤销控制
@@ -73,7 +73,7 @@ Flax 引擎完全支持可视化脚本，具有许多出色的功能，例如：
 要添加新节点，请 **右键单击** 曲面背景，然后从弹出菜单中选择节点类型，或输入其名称以查找它。可视化脚本可以像 C++ 和 C# 脚本一样使用引擎和游戏类型的 API。
 此外，当鼠标光标悬停在项目上时，工具提示将显示每个节点的文档注释详细信息。
 
-![添加新的可视化脚本节点](media/new-visual-script-node.png)
+![添加新的可视化脚本节点](/manual/media/new-visual-script-node.png)
 
 ## 使用 Flax 进行可视化脚本
 
@@ -85,11 +85,11 @@ Flax 引擎完全支持可视化脚本，具有许多出色的功能，例如：
 
 | 使用按钮                                           | 使用上下文菜单                                     |
 | -------------------------------------------------- | -------------------------------------------------- |
-| ![重写方法可视化脚本](media/override-method-1.png) | ![重写方法可视化脚本](media/override-method-2.png) |
+| ![重写方法可视化脚本](/manual/media/override-method-1.png) | ![重写方法可视化脚本](/manual/media/override-method-1.png) |
 
 现在，我们可以使用函数输出脉冲框来运行自定义脚本逻辑。
 
-![OnUpdate 函数可视化脚本](media/onupdate-function.png)
+![OnUpdate 函数可视化脚本](/manual/media/onupdate-function.png)
 
 > [!Note]
 > 请注意，脚本图中的所有函数都列在 *类成员* 面板中的 *函数* 组下。你可以使用它轻松导航到它们或编辑它们。
@@ -98,25 +98,25 @@ Flax 引擎完全支持可视化脚本，具有许多出色的功能，例如：
 你可以 *右键单击* *GetMouseButton* 节点，然后按 **转换为纯方法**。这将更改方法以不使用输入和输出信号，这对于仅返回状态值的典型 getter 节点非常有用。
 将按钮设置为 **Left** 作为 *GetMouseButton* 的输入，以检查该按钮何时被按下（被用户单击）。
 
-![可视化脚本输入 if 检查鼠标按钮按下](media/mouse-button-down-if-visual-script.png)
+![可视化脚本输入 if 检查鼠标按钮按下](/manual/media/mouse-button-down-if-visual-script.png)
 
 然后，让我们向脚本添加一个带有要打印消息的属性。为此，请按 **添加参数...** 按钮并选择参数的类型——在此示例中使用 **String**。然后 *双击* `New parameter` 名称标签将其重命名为 **Message**。
 
-![可视化脚本字符串参数](media/new-parameter.png)
+![可视化脚本字符串参数](/manual/media/new-parameter.png)
 
 在这里你可以指定我们将要打印的默认消息文本。在将脚本添加到场景中的 Actor 后，也可以在其实例上设置它。
 
 最后，让我们使用 *Debug* 类中的 **Log** 方法来打印自定义消息。
 
-![添加 Log 消息节点可视化脚本](media/log-message-add-new-node.png)
+![添加 Log 消息节点可视化脚本](/manual/media/log-message-add-new-node.png)
 
 然后，将其连接到 *If* 节点的 *True* 输出，以便在用户单击鼠标按钮时执行 *Log*。添加 **Get Message** 节点或将你的新参数拖放到曲面中，以将其值与 *Log* 方法中的 *message* 输入连接。
 
-![可视化脚本打印日志](media/visual-script-print-log-message.png)
+![可视化脚本打印日志](/manual/media/visual-script-print-log-message.png)
 
 最后一步是将此脚本添加到场景中的 Actor，设置 Message 属性，然后点击播放查看结果！每次用户单击给定的鼠标按钮时，它都会打印自定义日志消息。
 
-![可视化脚本消息日志单击结果](media/visual-script-tutorial-results.png)
+![可视化脚本消息日志单击结果](/manual/media/visual-script-tutorial-results.png)
 
 请随意开始使用可视化脚本语言编写你的游戏逻辑！
 此外，由于可视化脚本使用引擎的 C# API，你可以使用此 [API 参考](https://docs.flaxengine.com/api/FlaxEngine.html)。

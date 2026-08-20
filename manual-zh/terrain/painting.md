@@ -1,12 +1,12 @@
 # 地形绘制
 
-![地形绘制](media/terrain_pic_08.gif)
+![地形绘制](/manual/media/terrain_pic_08.gif)
 
 Flax 支持直接在编辑器内编辑地形层权重。在[创建](tutorials/create-terrain.md)或[导入](tutorials/import-terrain.md)地形后，你可以选择它，然后使用 **工具箱** 窗口中的 **地形** 选项卡来修改地形。它支持 3 种工作模式：**Sculpt**、**Paint** 和 **Edit**。
 
 ## 绘制模式
 
-![绘制工具](media/paint-tool.png)
+![绘制工具](/manual/media/paint-tool.png)
 
 使用 **绘制** 工具进行地形高度图编辑，允许使用单个纹理或整个材质来绘制地形。你所需要的就是准备一个使用地形层权重和绘制的材质。此工具提供了下面描述的多种编辑模式。选择所需的工具模式，编辑强度和其他模式属性，然后使用笔刷编辑地形。
 

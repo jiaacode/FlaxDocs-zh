@@ -4,7 +4,7 @@
 
 首先，创建或使用您的贴花材质。确保将 **Domain** 设置为 **Decal**。
 
-![贴花材质](media/decal-material.png)
+![贴花材质](/manual/media/decal-material.png)
 
 ### 2. 创建脚本
 
@@ -41,5 +41,5 @@ public class MouseShoot : Script
 
 最后，将脚本添加到场景中的任意 Actor 上，并将创建的材质挂接到脚本的 **Decal Material** 属性中。然后启动游戏并测试结果。
 
-![通过鼠标点击生成贴花](media/decal-spawn-with-mouse.gif)
+![通过鼠标点击生成贴花](/manual/media/decal-spawn-with-mouse.gif)
 

@@ -32,8 +32,8 @@
 | ![图标](../media/material-editor-ui-toolstrip-1.png) | 在 *内容* 窗口中显示并选择该资源 |
 | ![图标](../media/material-editor-ui-toolstrip-2.png) | 将资源保存到文件                 |
 | ![图标](../media/material-editor-ui-toolstrip-3.png) | 在曲面上显示整个材质图           |
-| ![图标](media/material-editor-ui-toolstrip-4.png)    | 显示生成的着色器源代码           |
-| ![图标](media/material-editor-ui-toolstrip-5.png)    | 显示在线材质文档页面             |
+| ![图标](/manual/media/material-editor-ui-toolstrip-4.png)    | 显示生成的着色器源代码           |
+| ![图标](/manual/media/material-editor-ui-toolstrip-5.png)    | 显示在线材质文档页面             |
 
 ## 视口
 
@@ -108,4 +108,4 @@
 
 材质编辑器窗口允许预览材质着色器的生成源代码。要查看它，请使用工具栏按钮。
 
-![材质源代码](media/material-source-code.png)
+![材质源代码](/manual/media/material-source-code.png)

@@ -5,7 +5,7 @@
 
 ## 属性
 
-![Flax 图形设置](media/graphics-settings.png)
+![Flax 图形设置](/manual/media/graphics-settings.png)
 
 | 属性                       | 描述                                                         |
 | -------------------------- | ------------------------------------------------------------ |

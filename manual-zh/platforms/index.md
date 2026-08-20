@@ -1,6 +1,6 @@
 # 平台
 
-![标题](media/title.jpg)
+![标题](/manual/media/title.jpg)
 
 Flax 是一个**跨平台游戏引擎**。这意味着你可以一次性创建游戏并同时部署到多个平台。引擎本身会处理平台差异、图形后端和脚本环境。这有助于游戏开发，并且是游戏引擎的重要组成部分之一。
 
@@ -41,7 +41,7 @@ Flax 是一个**跨平台游戏引擎**。这意味着你可以一次性创建�
 
 ## 崩溃日志
 
-![崩溃数据](media/crash-files.png)
+![崩溃数据](/manual/media/crash-files.png)
 
 Debug 和 Development 构建支持崩溃转储收集（取决于目标平台）。默认情况下，崩溃转储在 Logs 文件夹中名为 `Crash_<log_name>` 的目录中创建，它包含原始日志文件的副本和内存转储。
 例如，在 Windows 上，你可以使用 Visual Studio 打开 minidump 文件，指定引擎/游戏二进制文件（带有 .pdb 文件），并调试原生崩溃。

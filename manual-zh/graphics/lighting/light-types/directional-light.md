@@ -1,12 +1,12 @@
 # 方向光
 
-![方向光](media/directional-light.png)
+![方向光](/manual/media/directional-light.png)
 
 **方向光** 从单一方向均匀地发射光线。方向光适用于模拟太阳等大型、远距离光源。
 
 ## 光照属性
 
-![方向光属性](media/directional-light-properties-1.jpg)
+![方向光属性](/manual/media/directional-light-properties-1.jpg)
 
 | 属性           | 描述                                                         |
 | -------------- | ------------------------------------------------------------ |
@@ -17,7 +17,7 @@
 
 ## 阴影属性
 
-![方向光属性](media/directional-light-properties-2.jpg)
+![方向光属性](/manual/media/directional-light-properties-2.jpg)
 
 | 属性             | 描述                                                         |
 | ---------------- | ------------------------------------------------------------ |
@@ -40,7 +40,7 @@
 
 ## 体积雾属性
 
-![方向光属性](media/volumetric-fog-properties.jpg)
+![方向光属性](/manual/media/volumetric-fog-properties.jpg)
 
 | 属性         | 描述                                                         |
 | ------------ | ------------------------------------------------------------ |

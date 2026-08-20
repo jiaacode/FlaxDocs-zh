@@ -61,7 +61,7 @@ options.CompileEnv.PreprocessorDefinitions.Add("USE_BCRYPT");
 
 首先，将库文件复制到项目工作区中以便使用。您可以将它们放在 `Content/Steamworks.NET` 文件夹中。
 
-![使用第三方库代码示例](media/steamworks-files.png)
+![使用第三方库代码示例](/manual/media/steamworks-files.png)
 
 下一步是修改游戏代码构建脚本（例如 `Source/GameModule/GameModule.Build.cs`），在重写的 `Setup` 方法中引用该库：
 

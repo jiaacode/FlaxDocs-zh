@@ -1,6 +1,6 @@
 # Flax 面向 Godot 开发者
 
-![Godot 到 Flax](media/title.jpg)
+![Godot 到 Flax](/manual/media/title.jpg)
 
 Flax 和 Godot 有许多相似之处，并共享许多概念，然而也有一些差异。此页面帮助 Godot 引擎开发者将他们现有的 Godot 经验迁移到 Flax 引擎的世界中。
 
@@ -11,7 +11,7 @@ Flax 和 Godot 有许多相似之处，并共享许多概念，然而也有一�
 
 Flax 编辑器和 Godot 编辑器非常相似。你可以在两个编辑器的截图中看到彩色编码的高亮区域，它们具有共同的功能。Flax 编辑器的布局也是高度可定制的，因此你可以拖放窗口来使编辑器适应你的工作流程。
 
-![Godot 编辑器](media/godot-layout.png)
+![Godot 编辑器](/manual/media/godot-layout.png)
 
 ![Flax 编辑器](../media/flax-layout.png)
 

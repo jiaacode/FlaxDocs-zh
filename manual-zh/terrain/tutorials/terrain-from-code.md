@@ -78,10 +78,10 @@ public class TerrainFromCode : Script
 
 将脚本拖放到空 Actor 上，或使用 *属性* 窗口和 **添加脚本** 按钮。
 
-![添加脚本](media/add-terrain-generator-script.png)
+![添加脚本](/manual/media/add-terrain-generator-script.png)
 
 ## 4. 在运行模式下测试
 
 按下工具栏上的 **播放** 按钮或按 *F5* 键查看结果。地形应在后台快速生成。以下示例使用 *虚拟* 纹理来存储地形高度图和泼溅贴图，这意味着没有 I/O 使用。虚拟地形数据仅存储在内存中。你可以在需要在运行时或在编辑器中生成地形的游戏中使用它。
 
-![从代码创建地形结果](media/generated-terrain.png)
+![从代码创建地形结果](/manual/media/generated-terrain.png)

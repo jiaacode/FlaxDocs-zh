@@ -1,6 +1,6 @@
 # 天空与天空盒
 
-![日落](media/title.png)
+![日落](/manual/media/title.png)
 
 Flax 有两种可以绘制 3D 场景“背景”的 Actor 类型：
 - [Sky](http://docs.flaxengine.com/api/FlaxEngine.Sky.html)

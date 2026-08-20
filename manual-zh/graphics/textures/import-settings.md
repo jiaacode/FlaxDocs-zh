@@ -1,6 +1,6 @@
 # 纹理导入设置
 
-![纹理](media/import-texture-options.jpg)
+![纹理](/manual/media/import-texture-options.jpg)
 
 | 属性                      | 描述                                                         |
 | ------------------------- | ------------------------------------------------------------ |

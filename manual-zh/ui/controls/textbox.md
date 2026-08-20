@@ -1,5 +1,5 @@
 # 文本框
 
-![文本框](media/textbox.png)
+![文本框](/manual/media/textbox.png)
 
 **文本框** 控件允许用户使用键盘输入值（作为文本）。

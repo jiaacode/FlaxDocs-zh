@@ -1,6 +1,6 @@
 # HOWTO: Use dynamic texture
 
-![Texture](media/dynamic-texture-result.gif)
+![Texture](/manual/media/dynamic-texture-result.gif)
 
 In this tutorial, you will learn how to create a GPU texture from C# script that will be updated every frame with a custom data send from CPU to GPU.
 
@@ -96,7 +96,7 @@ public class DynamicTextureFromCode : Script
 
 Create a sample material that contains a public **GPUTexture** parameter named `tex`. It's used by the script to assign a texture to draw.
 
-![Material](media/dynamic-text-material.png)
+![Material](/manual/media/dynamic-text-material.png)
 
 ### 4. Link material and model
 
@@ -106,4 +106,4 @@ Add created script `DynamicTextureFromCode` to an actor in your scene (or create
 
 Press **Play** (or *F5*) and see the results! It will be updated only if Game Viewport is active (opened) because this example uses `MainRenderTask.Instance` to handle custom GPUContext logic before frame rendering. To overcome this you can create and use your own `RenderTask` object to use the rendering pipeline independently of the game view.
 
-![Results](media/dynamic-texture-result.gif)
+![Results](/manual/media/dynamic-texture-result.gif)

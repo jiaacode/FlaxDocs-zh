@@ -4,7 +4,7 @@
 
 在每个编辑器视口中均可通过 **视图 -> 调试视图** 使用它。
 
-![调试视图](media/debug-view.png)
+![调试视图](/manual/media/debug-view.png)
 
 完整的选项列表和文档可在[此处](https://docs.flaxengine.com/api/FlaxEngine.ViewMode.html)查看。
 
@@ -18,7 +18,7 @@ MainRenderTask.Instance.View.Mode = ViewMode.Diffuse;
 
 ## LOD 预览
 
-![LOD 预览调试视图](media/lod-preview.png)
+![LOD 预览调试视图](/manual/media/lod-preview.png)
 
 **LOD 预览** 根据 LOD 索引以颜色显示场景网格。这在调试基于距离或对象屏幕尺寸的模型 LOD 过渡时非常方便。下表显示了此调试视图使用的颜色图例。
 
@@ -28,7 +28,7 @@ MainRenderTask.Instance.View.Mode = ViewMode.Diffuse;
 
 ## 材质复杂度
 
-![材质复杂度调试视图](media/material-complexity.png)
+![材质复杂度调试视图](/manual/media/material-complexity.png)
 
 **材质复杂度** 显示材质渲染的逐像素复杂度。它根据着色器指令数量、使用的混合模式、纹理使用情况和细分使用情况来为像素着色。这通常可以作为材质性能指标的指示器，并可用于分析和优化场景。下表显示了此调试视图使用的颜色图例。
 
@@ -38,7 +38,7 @@ MainRenderTask.Instance.View.Mode = ViewMode.Diffuse;
 
 ## 四边形过度绘制
 
-![四边形过度绘制调试视图](media/quad-overdraw.png)
+![四边形过度绘制调试视图](/manual/media/quad-overdraw.png)
 
 **四边形过度绘制** 显示场景渲染过程中累积的逐像素过度绘制。它在分析几何复杂度（例如过高多边形网格）、模型剔除以及分析来自粒子、贴花等其他对象的过度绘制时非常有用。下表显示了基于覆盖给定像素的三角形数量，此调试视图使用的颜色图例。
 

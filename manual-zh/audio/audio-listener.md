@@ -1,6 +1,6 @@
 # 音频监听器
 
-![音频监听器](media/audio-listener-title.jpg)
+![音频监听器](/manual/media/audio-listener-title.jpg)
 
 **音频监听器** 是一种 Actor 类型，代表一个监听音频源的监听器。对于空间音频，播放音频的音量和音高由源与监听器之间的距离、朝向和速度差异决定。
 

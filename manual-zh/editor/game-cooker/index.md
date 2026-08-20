@@ -1,6 +1,6 @@
 # Game Cooker
 
-![Flax Game Cooker](media/title.jpg)
+![Flax Game Cooker](/manual/media/title.jpg)
 
 **Game Cooker** 是一个用于构建游戏的工具。
 它编译游戏脚本并处理所有使用的资源，为目标平台输出独立的游戏文件。
@@ -31,7 +31,7 @@ Game Cooker 的特性：
 
 ## 构建
 
-![Game Cooker](media/gameCooker1.png)
+![Game Cooker](/manual/media/gameCooker1.png)
 
 Game Cooker 窗口分为两种独立的模式。第二种模式是 **Build** 选项卡。
 它提供了易于使用的 GUI，用于快速构建游戏。
@@ -48,7 +48,7 @@ Game Cooker 窗口分为两种独立的模式。第二种模式是 **Build** 选
 
 ## 预设
 
-![Game Cooker](media/gameCooker2.png)
+![Game Cooker](/manual/media/gameCooker2.png)
 
 Game Cooker 最大的优势在于 **预设**。
 这些预设存储在 [构建设置](../game-settings/build-settings.md) 资源中。编辑器插件可以从 C# API 访问它。此外，该资源以纯 JSON 格式存储，因此任何版本控制系统都可以用于在团队中开发 Flax 游戏。
@@ -61,7 +61,7 @@ Game Cooker 最大的优势在于 **预设**。
 
 ## 自定义定义
 
-![Game Cooker 自定义定义](media/custom-defines.png)
+![Game Cooker 自定义定义](/manual/media/custom-defines.png)
 
 在处理更复杂的游戏构建设置时，你可以使用 **自定义定义** 功能，该功能允许你向构建系统注入自定义符号，并访问它们以更改脚本构建规则。例如，你可以使用它在游戏客户端或游戏服务器构建之间切换。
 

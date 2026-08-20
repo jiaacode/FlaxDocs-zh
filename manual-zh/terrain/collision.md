@@ -1,6 +1,6 @@
 # 地形碰撞
 
-![地形碰撞](media/terrain_pic_03.gif)
+![地形碰撞](/manual/media/terrain_pic_03.gif)
 
 地形使用每个地形图块的高度场碰撞体。你可以指定 **碰撞 LOD**，它可用于降低碰撞质量，但由于高度场的分辨率较低，可以提高模拟性能。每个地形都可以有自定义的物理材质，并使用高度图孔洞遮罩在地形下方创建洞穴和隧道。
 
@@ -8,6 +8,6 @@
 
 ## 物理材质
 
-![地形物理材质](media/terrain-physical-materials.png)
+![地形物理材质](/manual/media/terrain-physical-materials.png)
 
 地形支持为每个地形层分配最多 8 种不同的物理材质 - 可以反映材质外观。

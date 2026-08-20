@@ -1,6 +1,6 @@
 # 操作指南：设置实时全局光照
 
-![实时全局光照](media/ddgi.png)
+![实时全局光照](/manual/media/ddgi.png)
 
 在本教程中，你将学习如何在项目中设置实时全局光照，并使用它在场景中实现逼真的光照效果。
 
@@ -10,13 +10,13 @@
 
 首先，打开[图形设置](../../../editor/game-settings/graphics-settings.md)，在 *全局光照* 部分的 *后期处理设置* 下，将 **模式** 设置为 **DDGI**。这将在全局范围内启用实时 GI 渲染。
 
-![在图形设置中启用 DDGI](media/ddgi-enabled-settings.png)
+![在图形设置中启用 DDGI](/manual/media/ddgi-enabled-settings.png)
 
 ## 2. 启用光线追踪反射
 
 下一步是在 *屏幕空间反射* 设置（在图形设置内）中为 **追踪模式** 启用 **软件追踪**。这将启用使用全局表面图集光线追踪作为正常屏幕空间追踪的回退，通过添加整个场景的屏幕外反射来增强反射表面的外观。
 
-![在图形设置中启用软件追踪](media/ddgi-software-tracing-reflections.png)
+![在图形设置中启用软件追踪](/manual/media/ddgi-software-tracing-reflections.png)
 
 ### 3. 设置 SDF
 
@@ -42,17 +42,17 @@
 
 现在使用 **视图 -> 调试视图 -> 全局表面图集** 来调试表面缓存渲染，该渲染使用 DDGI 算法计算关卡内的光照。全局表面图集是场景的低分辨率表示，结合全局 SDF 可以大致表示场景，供 DDGI 光线追踪器使用（这显示了 *GI 算法所看到的内容*）。请参阅 [DDGI](realtime.md) 文档中的 *软件光线追踪* 和 *调试表面图集* 部分以了解更多信息。
 
-![全局表面图集调试预览](media/ddgi-surface-atlas-debug.png)
+![全局表面图集调试预览](/manual/media/ddgi-surface-atlas-debug.png)
 
 在此步骤中，重要的是将带有内部空间的较大对象拆分为较小的块，以便表面图集可以表示这些对象表面并使其发生反弹。一个常见的问题是使用整个房屋或其他建筑物的内部网格，而为了内部有正确的 GI 光照，结构应分为 2 或 3 个部分（例如，分离的墙壁和分离的地板）。通过使用全局表面图集调试视图，你可以发现关卡中在图集中表示缺失的粉红色区域。如果该区域很大（例如覆盖了屏幕的很大一部分），那么你应该优化内容以更好地配合算法（例如拆分网格）。此外，添加模型 LOD 也是一种良好的做法，因为它可以极大地提高性能。
 
 下面你可以看到一个不理想场景的示例，其中墙壁和一些道具大部分被粉红色覆盖，这表明全局表面图集上的覆盖范围缺失。
 
-![全局表面图集间隙](media/ddgi-surface-atlas-gaps.png)
+![全局表面图集间隙](/manual/media/ddgi-surface-atlas-gaps.png)
 
 ### 4. 测试结果并迭代
 
-![Flax 引擎中使用 DDGI 的实时 GI](media/realtime-gi.gif)
+![Flax 引擎中使用 DDGI 的实时 GI](/manual/media/realtime-gi.gif)
 
 最后，你可以在场景中测试和验证 GI。在初始设置后它应该可以正常工作，但可能需要根据你的内容和世界中的游戏玩法进行一些微调。
 

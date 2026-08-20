@@ -9,7 +9,7 @@
 
 在 `Source/<module_name>` 目录中创建一个名为 **MyEditorPlugin** 的新 C# 脚本，并使用目标类名加上 *Editor* 后缀。或者，您也可以使用额外的编辑器专用脚本模块，如[此处](add-scripts-module.md)的教程所示。
 
-![教程](media/custom-editor-tutorial-2.jpg)
+![教程](/manual/media/custom-editor-tutorial-2.jpg)
 
 ### 2. 实现插件逻辑
 
@@ -64,4 +64,4 @@ Flax 插件在其生命周期中使用两个主要方法：`InitializeEditor` �
 
 返回编辑器，等待脚本重新编译，然后查看自定义按钮是否已添加。单击它以查看我们已实现的弹出窗口。现在您已准备好为编辑器实现更多酷炫的功能。
 
-![使用自定义编辑器插件](media/editor-plugin-step-2.png)
+![使用自定义编辑器插件](/manual/media/editor-plugin-step-2.png)

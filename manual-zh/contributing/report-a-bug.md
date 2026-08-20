@@ -6,13 +6,13 @@
 
 导航到 [https://github.com/FlaxEngine/FlaxEngine/issues](https://github.com/FlaxEngine/FlaxEngine/issues) 页面，然后按下 **New issue** 按钮。
 
-![新建 Issue](media/new-issue.jpg)
+![新建 Issue](/manual/media/new-issue.jpg)
 
 ## 2. 描述问题并提交
 
 填写 Issue 表单。指定合适的标题并添加详细描述。你可以为 Issue 添加标签，以便更容易识别。然后按下 **Submit new issue** 按钮。
 
-![新建 Issue](media/issue-form.jpg)
+![新建 Issue](/manual/media/issue-form.jpg)
 
 ## 3. 等待帮助
 

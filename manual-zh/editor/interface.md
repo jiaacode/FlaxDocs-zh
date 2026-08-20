@@ -23,6 +23,6 @@ Flax 编辑器的界面由**可停靠窗口**组成，这些窗口可以重新�
 
 ## 默认布局
 
-![Flax 编辑器布局](media/restore-layout.jpg)
+![Flax 编辑器布局](/manual/media/restore-layout.jpg)
 
 始终可以通过使用主菜单选项 **窗口 -> 恢复默认布局** 来恢复默认窗口布局。
