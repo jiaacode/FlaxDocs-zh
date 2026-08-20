@@ -1,34 +1,37 @@
-# FlaxDocs-zh · Flax 引擎中文文档
+# FlaxDocs-zh · Flax 引擎汉化文档
+# FlaxDocs-zh · Flax Engine Documentation (Chinese Translation)
 
-> 简体中文 | [English (Original)](/manual)
-
-本仓库为 [FlaxEngine/FlaxDocs](https://github.com/FlaxEngine/FlaxDocs) 的中文翻译版本，由个人翻译，非官方。
-
----
-
-## 📖 访问文档
-
-- **中文版（简体）**：[`/zh/`](/zh)
-- **英文原版**：[`/manual/`](/manual)
+本仓库为 [FlaxEngine/FlaxDocs](https://github.com/FlaxEngine/FlaxDocs) 官方文档的**中文翻译**，非官方翻译，由个人维护。  
+This repository is a community-maintained Chinese translation of the official [FlaxEngine/FlaxDocs](https://github.com/FlaxEngine/FlaxDocs) documentation.
 
 ---
 
-## ⚠️ 说明
+## 📖 访问文档 / Access
 
-本仓库为**非官方**中文翻译，基于官方文档采用 **CC BY 4.0** 许可协议进行翻译与分享。
-
-如有内容错误或翻译建议，欢迎提交 Issue 或 Pull Request。
-
----
-
-## 🔗 相关链接
-
-- [Flax 引擎官网](https://flaxengine.com)
-- [Flax 官方文档（英文）](https://docs.flaxengine.com)
-- [FlaxEngine/FlaxDocs（GitHub）](https://github.com/FlaxEngine/FlaxDocs)
+- **中文版（简体）**：[`/zh/`](/zh)  
+- **英文原版**：[`/manual/`](/manual)  
 
 ---
 
-## 📄 许可证
+## ⚠️ 说明 / Disclaimer
 
-本翻译作品基于 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 协议分享。
+本翻译为**非官方**版本，基于官方文档，遵循 **CC BY 4.0** 许可协议进行翻译。  
+This is an **unofficial** translation, based on the official documentation and shared under the **CC BY 4.0** license.
+
+如需最准确的信息，请以官方英文文档为准。  
+Please refer to the official English documentation for the most accurate and up-to-date information.
+
+---
+
+## 🔗 相关链接 / Links
+
+- [Flax 引擎官网 / Official Website](https://flaxengine.com)
+- [官方文档（英文） / Official Documentation (English)](https://docs.flaxengine.com)
+- [官方 GitHub 仓库 / Official GitHub Repository](https://github.com/FlaxEngine/FlaxDocs)
+
+---
+
+## 📄 许可证 / License
+
+本翻译作品基于 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 协议分享。  
+This translation is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
