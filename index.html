@@ -17,19 +17,34 @@
       auto2top: true,
       basePath: '/FlaxDocs-zh/',
       homepage: 'index.md',
-      // ========== 路径别名（核心）==========
-      // 将根目录 index.md 中的链接映射到实际文档位置
-      // 无需修改任何源文件，只需在这里配置映射规则
-      alias: {
-        // Manual 链接：指向中文文档首页
-        '/manual/index.md': '/manual-zh/index.md',
-        // C# API 链接（保留英文原版，如果希望中文版可改路径）
-        '/api/index.md': '/api/index.md',
-        // C++ API 链接（保留英文原版）
-        '/api-cpp/index.md': '/api-cpp/index.md'
-        // 如果你还有其他类似链接，可以按相同格式添加
-        // 例如：'/other/index.md': '/manual-zh/other/index.md'
-      }
+      // ========== doneEach 插件 ==========
+      // 每次页面切换后，自动将 .md 链接改为不带后缀的路径
+      // 避免浏览器直接请求 .md 文件导致下载或 404
+      plugins: [
+        function(hook) {
+          hook.doneEach(function() {
+            try {
+              // 选取所有以 .md 结尾的链接（排除外部链接）
+              document.querySelectorAll('a[href$=".md"]').forEach(function(el) {
+                var href = el.getAttribute('href');
+                // 只处理相对路径，不处理 http/https 开头的链接
+                if (href && !href.startsWith('http')) {
+                  // 去掉 .md 后缀
+                  var newHref = href.replace(/\.md$/, '');
+                  // 如果路径为空则补上 /，避免 Docsify 解析异常
+                  if (newHref && !newHref.endsWith('/') && !newHref.endsWith('#')) {
+                    newHref += '/';
+                  }
+                  el.setAttribute('href', newHref);
+                }
+              });
+            } catch(e) {
+              // 容错：插件出错不影响页面渲染
+              console.warn('Docsify 链接修正插件出错:', e);
+            }
+          });
+        }
+      ]
     };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
