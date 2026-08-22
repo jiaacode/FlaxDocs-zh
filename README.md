@@ -1,6 +1,6 @@
 # FlaxDocs-zh · Flax 引擎汉化文档
 
-本仓库为 [FlaxEngine/FlaxDocs](https://github.com/FlaxEngine/FlaxDocs) 官方文档的**中文翻译**，非官方翻译，由个人维护。  
+本仓库为 [FlaxEngine/FlaxDocs](https://github.com/FlaxEngine/FlaxDocs) 官方文档的**中文翻译**，非官方翻译，由个人维护。  目前网站尚不稳定，请使用自解压静态文档。
 This repository is a community-maintained Chinese translation of the official [FlaxEngine/FlaxDocs](https://github.com/FlaxEngine/FlaxDocs) documentation.
 
 ---
