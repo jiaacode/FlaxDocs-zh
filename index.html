@@ -17,30 +17,28 @@
       auto2top: true,
       basePath: '/FlaxDocs-zh/',
       homepage: 'index.md',
-      // ========== doneEach 插件 ==========
-      // 每次页面切换后，自动将 .md 链接改为不带后缀的路径
-      // 避免浏览器直接请求 .md 文件导致下载或 404
+      // ========== 一次性链接修正（mounted 钩子） ==========
+      // 只在页面刷新时执行一次，不会在路由切换时重复运行
       plugins: [
         function(hook) {
-          hook.doneEach(function() {
+          hook.mounted(function() {
             try {
-              // 选取所有以 .md 结尾的链接（排除外部链接）
-              document.querySelectorAll('a[href$=".md"]').forEach(function(el) {
-                var href = el.getAttribute('href');
-                // 只处理相对路径，不处理 http/https 开头的链接
+              // 只处理 index.md 中的链接（Manual、C# API、C++ API）
+              document.querySelectorAll('#app a[href$=".md"]').forEach(function(el) {
+                let href = el.getAttribute('href');
                 if (href && !href.startsWith('http')) {
-                  // 去掉 .md 后缀
-                  var newHref = href.replace(/\.md$/, '');
-                  // 如果路径为空则补上 /，避免 Docsify 解析异常
-                  if (newHref && !newHref.endsWith('/') && !newHref.endsWith('#')) {
-                    newHref += '/';
+                  // 将 /manual/index.md 映射到 /manual-zh/index.md
+                  let newHref = href.replace(/^\/manual\//, '/manual-zh/');
+                  // 如果链接以 .md 结尾，保留 .md（让 Docsify 正常加载）
+                  // 如果不以 .md 结尾，补上 .md
+                  if (!newHref.endsWith('.md')) {
+                    newHref += '.md';
                   }
                   el.setAttribute('href', newHref);
                 }
               });
             } catch(e) {
-              // 容错：插件出错不影响页面渲染
-              console.warn('Docsify 链接修正插件出错:', e);
+              console.warn('链接修正脚本出错:', e);
             }
           });
         }
