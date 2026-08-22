@@ -7,7 +7,7 @@ This repository is a community-maintained Chinese translation of the official [F
 
 ## 📖 访问文档 / Access
 
-- **中文版（简体）**：[`/zh/`](/zh)  
+- **中文版（简体）**：[`/manual-zh/`](/manual-zh) 
 - **英文原版**：[`/manual/`](/manual)  
 
 ---
@@ -25,8 +25,7 @@ Please refer to the official English documentation for the most accurate and up-
 ## 🔗 相关链接 / Links
 
 - [Flax 引擎官网 / Official Website](https://flaxengine.com)
-- [官方文档（英文） / Official Documentation (English)](https://docs.flaxengine.com)
-- [官方 GitHub 仓库 / Official GitHub Repository](https://github.com/FlaxEngine/FlaxDocs)
+- [官方文档 / Official Documentation ](https://docs.flaxengine.com)
 
 ---
 
