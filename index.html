@@ -17,26 +17,19 @@
       auto2top: true,
       basePath: '/FlaxDocs-zh/',
       homepage: 'index.md',
-      plugins: [
-        function(hook) {
-          hook.mounted(function() {
-            try {
-              document.querySelectorAll('a[href$=".md"]').forEach(function(el) {
-                let href = el.getAttribute('href');
-                if (href && !href.startsWith('http')) {
-                  let newHref = href.replace(/\.md$/, '');
-                  if (newHref && !newHref.endsWith('/') && !newHref.endsWith('#')) {
-                    newHref += '/';
-                  }
-                  el.setAttribute('href', newHref);
-                }
-              });
-            } catch(e) {
-              console.warn('Docsify 链接修正插件出错:', e);
-            }
-          });
-        }
-      ]
+      // ========== 路径别名（核心）==========
+      // 将根目录 index.md 中的链接映射到实际文档位置
+      // 无需修改任何源文件，只需在这里配置映射规则
+      alias: {
+        // Manual 链接：指向中文文档首页
+        '/manual/index.md': '/manual-zh/index.md',
+        // C# API 链接（保留英文原版，如果希望中文版可改路径）
+        '/api/index.md': '/api/index.md',
+        // C++ API 链接（保留英文原版）
+        '/api-cpp/index.md': '/api-cpp/index.md'
+        // 如果你还有其他类似链接，可以按相同格式添加
+        // 例如：'/other/index.md': '/manual-zh/other/index.md'
+      }
     };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
