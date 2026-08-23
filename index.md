@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Flax Engine Documentation
 
 <hr>
@@ -6,7 +9,7 @@
 <div class="frontpage-section">
 <a href="manual/index.md"><img src="manual/physics/media/icon.jpg"></a>
 <h3><a href="manual-zh/index.md">使用手册</a></h3>
-<p>Learn how to create games with Flax Engine!</p>
+<p>学习如何使用Flax设计制作属于你的游戏!</p>
 </div>
 
 <div class="frontpage-section">
@@ -22,4 +25,3 @@
 </div>
 
 </div>
-
