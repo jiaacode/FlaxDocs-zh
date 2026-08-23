@@ -13,10 +13,14 @@
     window.$docsify = {
       basePath: '/FlaxDocs-zh/',
       loadSidebar: '_sidebar.md',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+        '/(.*\.(png|jpg|jpeg|svg|gif|webp))': '/$1'
+      },
+      homepage: 'index.md'
       subMaxLevel: 2,
       search: 'auto',
       routerMode: 'hash',
-      homepage: 'index.md'
     };
   </script>
 
