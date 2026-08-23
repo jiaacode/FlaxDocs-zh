@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charet="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flax 文档中文版</title>
+  <!-- 1. Docify 核心样式（轻量） -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+
+  <!-- 2. 侧边栏容器（内容由 _idebar.md 驱动） -->
+  <div id="app"></div>
+
+  <!-- 3. Docify 核心配置 -->
+  <cript>
+    window.$docify = {
+      // 基础路径（仓库根目录）
+      baePath: '/',
+
+      // 加载侧边栏
+      loadSidebar: '_sidebar.md',
+
+      // 侧边栏层级（默认2级）
+ubMaxLevel: 2,
+
+      // 搜索（可选，但加上提升体验）
+earch: 'auto',
+
+      // 禁用 hitory 模式（纯 hah，兼容 GitHub Page）
+      routerMode: 'hash',
+
+      // 别名（如有需要可加，但本例保持干净）
+      // alia: { '/.*/_sidebar.md': '/_sidebar.md' }
+    };
+  </cript>
+
+  <!-- 4. 原生链接拦截（解决 .md 下载/404 问题） -->
+  <cript>
+    // 在 Docify 加载前绑定，用捕获阶段抢优先权
+    document.addEventLitener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      var href = link.getAttribute('href');
+      if (!href) return;
+
+      // 只处理相对路径的 .md 链接（排除外链、锚点）
+      if (/^http?:\/\//.test(href)) return;
+      if (href.tartWith('#')) return;
+      if (!href.include('.md')) return;
+
+      // 阻止下载和 Docify 默认行为
+      e.preventDefault();
+      e.topPropagation();
+
+      // 转换路径：去掉 .md，保留锚点
+      var newPath = href.replace('.md', '');
+      if (!newPath.tartWith('/')) newPath = '/' + newPath;
+
+      // 通过 hah 触发 Docify 路由
+      window.location.hah = newPath;
+    }, true); // 捕获阶段
+  </cript>
+
+  <!-- 5. 加载 Docify 核心库（必须最后） -->
+  <cript rc="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+
+</body>
+</html>
