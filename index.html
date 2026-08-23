@@ -10,6 +10,24 @@
   <div id="app"></div>
 
   <script>
+    // ========== 修复所有硬编码链接 ==========
+    function fixHardcodedLinks() {
+      var container = document.getElementById('app');
+      if (!container) return;
+      var links = container.querySelectorAll('a[href$=".md"]');
+      for (var i = 0; i < links.length; i++) {
+        var el = links[i];
+        var href = el.getAttribute('href');
+        if (!href || href.match(/^(https?|mailto|javascript|#)/i)) continue;
+        var newHref = href.replace(/\.md$/, '');
+        if (newHref && !newHref.endsWith('/') && !newHref.endsWith('#')) {
+          newHref += '/';
+        }
+        el.setAttribute('href', newHref);
+      }
+    }
+
+    // ========== Docsify 配置 ==========
     window.$docsify = {
       name: 'Flax 中文文档',
       repo: 'https://github.com/jiaacode/FlaxDocs-zh',
@@ -18,17 +36,30 @@
       auto2top: true,
       basePath: '/FlaxDocs-zh/',
       homepage: 'index.md',
+      catchLinks: true,
+
+      // 路径别名（辅助）
       alias: {
         '/manual/(.*)': '/manual-zh/$1'
       },
+
       plugins: [
         function(hook) {
+          // 路由重写：将所有 manual 路径映射到 manual-zh
           hook.beforeEach(function(route) {
             if (route.path && route.path.endsWith('.md')) {
               route.path = route.path.replace(/\.md$/, '');
             }
+            // 核心修复：将 manual 开头的路径替换为 manual-zh
+            if (route.path && route.path.match(/^\/?manual/)) {
+              route.path = route.path.replace(/^\/?manual/, '/manual-zh');
+            }
             return route;
           });
+
+          // 页面加载后修复硬编码链接
+          hook.ready(fixHardcodedLinks);
+          hook.doneEach(fixHardcodedLinks);
         }
       ]
     };
