@@ -10,43 +10,24 @@
   <div id="app"></div>
 
   <script>
-    // ===== 拦截函数（全局） =====
-    function handleLinkClick(e) {
-      var target = e.target.closest('a');
-      if (!target) return;
+    // ========== 自动修复所有 HTML <a> 链接 ==========
+    function fixAllLinks() {
+      document.querySelectorAll('#app a[href$=".md"]').forEach(function(el) {
+        var href = el.getAttribute('href');
+        if (!href || href.match(/^(https?|mailto|javascript|#)/i)) return;
 
-      var href = target.getAttribute('href');
-      if (!href) return;
+        // 1. 去掉 .md
+        var newHref = href.replace(/\.md$/, '');
+        // 2. 映射 /manual/ → /manual-zh/
+        newHref = newHref.replace('/manual/', '/manual-zh/');
+        // 3. 确保以 / 结尾
+        if (!newHref.endsWith('/')) newHref += '/';
 
-      if (href.match(/^(https?|mailto|javascript|#)/i)) return;
-      if (!href.endsWith('.md')) return;
-
-      e.preventDefault();
-
-      // 使用 target.pathname 获取完整路径
-      var pathname = target.pathname;
-      pathname = pathname.replace(/\.md$/, '');
-      pathname = pathname.replace('/manual/', '/manual-zh/');
-      if (!pathname.endsWith('/')) pathname += '/';
-
-      window.location.hash = pathname;
+        el.setAttribute('href', newHref);
+      });
     }
 
-    function bindInterceptor() {
-      var container = document.getElementById('app');
-      if (!container) return;
-      container.removeEventListener('click', handleLinkClick);
-      container.addEventListener('click', handleLinkClick);
-    }
-
-    // ===== 初始化 =====
-    if (document.readyState === 'complete') {
-      bindInterceptor();
-    } else {
-      window.addEventListener('load', bindInterceptor);
-    }
-
-    // ===== Docsify 配置 =====
+    // ========== Docsify 配置 ==========
     window.$docsify = {
       name: 'Flax 中文文档',
       repo: 'https://github.com/jiaacode/FlaxDocs-zh',
@@ -57,7 +38,8 @@
       homepage: 'index.md',
       plugins: [
         function(hook) {
-          hook.doneEach(bindInterceptor);
+          // 每次页面切换后重新修复链接
+          hook.doneEach(fixAllLinks);
         }
       ]
     };
