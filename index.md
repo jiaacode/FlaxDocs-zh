@@ -5,7 +5,7 @@
 
 <div class="frontpage-section">
 <a href="manual/index.md"><img src="manual/physics/media/icon.jpg"></a>
-<h3><a href="manual-zh/index.md">使用手册l</a></h3>
+<h3><a href="manual-zh/index.md">使用手册</a></h3>
 <p>Learn how to create games with Flax Engine!</p>
 </div>
 
@@ -22,5 +22,4 @@
 </div>
 
 </div>
-
 
