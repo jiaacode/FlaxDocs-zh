@@ -10,24 +10,34 @@
   <div id="app"></div>
 
   <script>
-    // ========== 自动修复所有 HTML <a> 链接 ==========
-    function fixAllLinks() {
-      document.querySelectorAll('#app a[href$=".md"]').forEach(function(el) {
+    // ============================================================
+    // 1. 核心修复函数：自动修正所有硬编码 HTML 链接
+    // ============================================================
+    function fixHardcodedLinks() {
+      var container = document.getElementById('app');
+      if (!container) return;
+
+      var links = container.querySelectorAll('a[href$=".md"]');
+      for (var i = 0; i < links.length; i++) {
+        var el = links[i];
         var href = el.getAttribute('href');
-        if (!href || href.match(/^(https?|mailto|javascript|#)/i)) return;
+        if (!href) continue;
 
-        // 1. 去掉 .md
+        // 跳过外部链接、锚点、协议链接
+        if (href.match(/^(https?|mailto|javascript|#)/i)) continue;
+
+        // 去掉 .md 后缀，补上 /
         var newHref = href.replace(/\.md$/, '');
-        // 2. 映射 /manual/ → /manual-zh/
-        newHref = newHref.replace('/manual/', '/manual-zh/');
-        // 3. 确保以 / 结尾
-        if (!newHref.endsWith('/')) newHref += '/';
-
+        if (newHref && !newHref.endsWith('/') && !newHref.endsWith('#')) {
+          newHref += '/';
+        }
         el.setAttribute('href', newHref);
-      });
+      }
     }
 
-    // ========== Docsify 配置 ==========
+    // ============================================================
+    // 2. Docsify 配置（包含三层保障）
+    // ============================================================
     window.$docsify = {
       name: 'Flax 中文文档',
       repo: 'https://github.com/jiaacode/FlaxDocs-zh',
@@ -36,15 +46,32 @@
       auto2top: true,
       basePath: '/FlaxDocs-zh/',
       homepage: 'index.md',
+
+      // 保障1：让 Docsify 接管所有内部链接点击（默认开启，显式声明）
+      catchLinks: true,
+
+      // 保障2：路径映射（/manual/ → /manual-zh/）
+      alias: {
+        '/manual/(.*)': '/manual-zh/$1'
+      },
+
+      // 保障3：每次页面切换后自动修复硬编码链接
       plugins: [
         function(hook) {
-          // 每次页面切换后重新修复链接
-          hook.doneEach(fixAllLinks);
+          // 页面加载完成后执行
+          hook.ready(function() {
+            fixHardcodedLinks();
+          });
+          // 每次路由切换后执行
+          hook.doneEach(function() {
+            fixHardcodedLinks();
+          });
         }
       ]
     };
   </script>
 
+  <!-- 加载 Docsify 核心库 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
