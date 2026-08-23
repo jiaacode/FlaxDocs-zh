@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flax 引擎中文文档</title>
-  <!-- Docsify 主题 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
 <body>
   <div id="app"></div>
 
   <script>
-    // ===== Docsify 配置 =====
     window.$docsify = {
       name: 'Flax 中文文档',
       repo: 'https://github.com/jiaacode/FlaxDocs-zh',
@@ -20,7 +18,9 @@
       auto2top: true,
       basePath: '/FlaxDocs-zh/',
       homepage: 'index.md',
-      // ===== 兜底拦截：处理已进入路由的 .md 请求 =====
+      alias: {
+        '/manual/(.*)': '/manual-zh/$1'
+      },
       plugins: [
         function(hook) {
           hook.beforeEach(function(route) {
@@ -35,9 +35,5 @@
   </script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-
-  <!-- ===== 加载链接拦截脚本（intercept.js） ===== -->
-  <script src="/FlaxDocs-zh/intercept.js"></script>
-  
 </body>
 </html>
