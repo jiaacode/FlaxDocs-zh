@@ -7,8 +7,8 @@ This repository is a community-maintained Chinese translation of the official [F
 
 ## 📖 访问文档 / Access
 
-- **中文版（简体）**：[`/manual-zh/`](/manual-zh) 
-- **英文原版**：[`/manual/`](/manual)  
+- **中文版简体**：[`这里`](/manual-zh) 
+- **英文原版**：[`this`](/manual)  
 
 ---
 
