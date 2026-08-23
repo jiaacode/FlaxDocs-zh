@@ -3,160 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Flax 引擎中文文档</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Flax 引擎中文文档（非官方翻译），包含完整使用指南与 API 参考">
-  
-  <!-- Docsify 主题（vue 风格，清新易读） -->
+  <!-- 基础主题（极简，只保证样式正常） -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.13.1/themes/vue.css">
-  
-  <!-- 可选：代码高亮主题（与 vue 主题搭配） -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css">
 </head>
 <body>
-  <!-- Docsify 挂载点 -->
   <div id="app"></div>
 
-  <!-- ========== 插件加载区（按需引入） ========= -->
-  <!-- 全文搜索插件 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
-  <!-- 图片缩放插件（点击图片放大） -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/zoom-image.min.js"></script>
-  <!-- 代码复制插件（代码块右上角显示复制按钮） -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
-  <!-- 分页导航插件（底部上一页/下一页） -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/pagination.min.js"></script>
-
-  <!-- ========== Docsify 核心库 ========== -->
+  <!-- 核心库 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
 
-  <!-- ========== 全局配置 ========== -->
+  <!-- 极简配置 -->
   <script>
     window.$docsify = {
-      // ----- 基础信息 -----
-      name: 'Flax 引擎文档（中文）',          // 侧边栏顶部标题
-      repo: 'https://github.com/jiaacode/FlaxDocs-zh', // 右上角仓库链接
-      logo: '/logo.png',                    // 侧边栏 Logo（请确保根目录有 logo.png）
-      
-      // ----- 核心路由与文件 -----
-      basePath: '/',                       // 所有文件相对于根目录
-      homepage: 'index.md',                // ★ 指定根路径 / 对应的首页文件（即使用 index.md）
-      loadSidebar: true,                   // 启用侧边栏（加载 _sidebar.md）
-      loadNavbar: false,                  // 不启用顶部导航栏（根据需要可改为 true）
-      coverpage: false,                   // 不使用封面页
-      notFoundPage: '/404.md',            // 自定义 404 页面（若存在）
-      
-      // ----- 侧边栏与导航增强 -----
-      maxLevel: 2,                        // 侧边栏自动抓取标题的最大层级（只显示 h1、h2）
-      subMaxLevel: 0,                     // 不自动生成子标题列表（由 _sidebar.md 控制）
-      sidebarDisplayLevel: 0,             // 侧边栏默认全部折叠（0 为折叠，1 为展开一级）
-      auto2top: true,                     // 切换页面时自动滚动到顶部
-      
-      // ----- 路径别名（让所有子目录共用根目录的 _sidebar.md） -----
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      
-      // ----- 插件配置 -----
-      search: {
-        maxAge: 86400000,                 // 缓存一天
-        paths: 'auto',                    // 自动扫描所有可用的 md 文件
-        placeholder: '搜索文档...',
-        noData: '没有找到相关结果',
-        depth: 4                          // 搜索标题深度
-      },
-      copyCode: {
-        buttonText: '复制代码',
-        successText: '已复制！'
-      },
-      pagination: {
-        previousText: '上一页',
-        nextText: '下一页'
-      },
-      
-      // ----- 其他优化 -----
-      externalLinkTarget: '_blank',       // 外部链接新窗口打开
-      formatUpdated: '{YYYY}年{MM}月{DD}日 HH:mm', // 更新时间格式
-      topMargin: 60,                      // 滚动锚点偏移（防止被顶部导航遮盖）
-      relativePath: false,                // 使用绝对路径（更稳定）
-      executeScript: false                // 禁止执行 Markdown 中的脚本（安全）
+      name: 'Flax 引擎文档（中文）',        // 侧边栏标题
+      repo: 'https://github.com/jiaacode/FlaxDocs-zh',
+      basePath: '/FlaxDocs-zh/',           // ★★★★★ 关键：你的仓库名，务必写对
+      homepage: 'index.md',                // 首页使用根目录的 index.md
+      loadSidebar: true,                   // 加载 _sidebar.md
+      auto2top: true                       // 切换页面滚到顶部
+      // 其他统统不配置，最简！
     };
   </script>
-
-  <!-- ========== 自定义样式覆盖（提升阅读体验） ========== -->
-  <style>
-    /* 调整内容区域最大宽度，使长文本更易读 */
-    .content {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 20px 40px;
-    }
-    
-    /* 侧边栏宽度与背景 */
-    .sidebar {
-      width: 280px;
-      background: #f8f9fa;
-      border-right: 1px solid #eaecef;
-    }
-    .sidebar-nav {
-      padding: 20px 15px;
-    }
-    
-    /* 侧边栏链接样式 */
-    .sidebar-nav li > a {
-      font-size: 15px;
-      color: #2c3e50;
-      transition: all 0.15s;
-    }
-    .sidebar-nav li > a:hover {
-      color: #42b983;
-      text-decoration: none;
-    }
-    .sidebar-nav .active > a {
-      color: #42b983;
-      font-weight: 600;
-    }
-    
-    /* 文章标题样式 */
-    .markdown-section h1 {
-      font-size: 2.2rem;
-      border-bottom: 2px solid #eaecef;
-      padding-bottom: 0.6rem;
-      margin-bottom: 1.2rem;
-    }
-    .markdown-section h2 {
-      font-size: 1.7rem;
-      margin-top: 1.8rem;
-      border-bottom: 1px solid #f0f0f0;
-      padding-bottom: 0.3rem;
-    }
-    .markdown-section h3 {
-      font-size: 1.3rem;
-      margin-top: 1.4rem;
-    }
-    
-    /* 代码块字体 */
-    .markdown-section pre code {
-      font-size: 14px;
-      font-family: 'Fira Code', 'Consolas', monospace;
-    }
-    
-    /* 链接颜色 */
-    .markdown-section a {
-      color: #42b983;
-    }
-    .markdown-section a:hover {
-      text-decoration: underline;
-    }
-    
-    /* 移动端适配（小屏设备） */
-    @media screen and (max-width: 768px) {
-      .content {
-        padding: 15px 18px;
-      }
-      .sidebar {
-        width: 240px;
-      }
-    }
-  </style>
 </body>
 </html>
