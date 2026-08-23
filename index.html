@@ -10,34 +10,7 @@
   <div id="app"></div>
 
   <script>
-    // ============================================================
-    // 1. 核心修复函数：自动修正所有硬编码 HTML 链接
-    // ============================================================
-    function fixHardcodedLinks() {
-      var container = document.getElementById('app');
-      if (!container) return;
-
-      var links = container.querySelectorAll('a[href$=".md"]');
-      for (var i = 0; i < links.length; i++) {
-        var el = links[i];
-        var href = el.getAttribute('href');
-        if (!href) continue;
-
-        // 跳过外部链接、锚点、协议链接
-        if (href.match(/^(https?|mailto|javascript|#)/i)) continue;
-
-        // 去掉 .md 后缀，补上 /
-        var newHref = href.replace(/\.md$/, '');
-        if (newHref && !newHref.endsWith('/') && !newHref.endsWith('#')) {
-          newHref += '/';
-        }
-        el.setAttribute('href', newHref);
-      }
-    }
-
-    // ============================================================
-    // 2. Docsify 配置（包含三层保障）
-    // ============================================================
+    // ========== Docsify 配置 ==========
     window.$docsify = {
       name: 'Flax 中文文档',
       repo: 'https://github.com/jiaacode/FlaxDocs-zh',
@@ -46,25 +19,47 @@
       auto2top: true,
       basePath: '/FlaxDocs-zh/',
       homepage: 'index.md',
-
-      // 保障1：让 Docsify 接管所有内部链接点击（默认开启，显式声明）
+      
+      // 开启链接捕获（默认开启）
       catchLinks: true,
-
-      // 保障2：路径映射（/manual/ → /manual-zh/）
+      
+      // 路径别名（作为辅助，主要靠 beforeEach）
       alias: {
         '/manual/(.*)': '/manual-zh/$1'
       },
-
-      // 保障3：每次页面切换后自动修复硬编码链接
+      
+      // ========== 插件：拦截并重写所有 manual 路径 ==========
       plugins: [
         function(hook) {
-          // 页面加载完成后执行
-          hook.ready(function() {
-            fixHardcodedLinks();
+          // 在路由解析前重写路径
+          hook.beforeEach(function(route) {
+            // 1. 去掉 .md 后缀
+            if (route.path && route.path.endsWith('.md')) {
+              route.path = route.path.replace(/\.md$/, '');
+            }
+            
+            // 2. 核心修复：将 /manual/ 映射到 /manual-zh/
+            if (route.path && route.path.includes('/manual/')) {
+              route.path = route.path.replace(/\/manual\//g, '/manual-zh/');
+            }
+            
+            return route;
           });
-          // 每次路由切换后执行
+          
+          // 页面加载后修复硬编码链接
           hook.doneEach(function() {
-            fixHardcodedLinks();
+            document.querySelectorAll('#app a[href$=".md"]').forEach(function(el) {
+              var href = el.getAttribute('href');
+              if (!href) return;
+              if (href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) return;
+              
+              var newHref = href.replace(/\.md$/, '');
+              if (newHref && !newHref.endsWith('/')) {
+                newHref += '/';
+              }
+              // 如果链接指向 /manual/，但当前页面在 manual-zh 内，可能需要额外处理，但这里不强制改
+              el.setAttribute('href', newHref);
+            });
           });
         }
       ]
