@@ -1,6 +1,6 @@
 # Flax 入门
 
-![Flax 引擎徽标](/manual/media/flax-title.jpg)
+![Flax 引擎徽标](../manual/media/flax-title.jpg)
 
 欢迎阅读官方 Flax 引擎手册！在本节中，你将找到从零开始使用 Flax 创建游戏所需的一切内容。让我们开始吧！
 
