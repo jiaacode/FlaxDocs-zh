@@ -10,6 +10,43 @@
   <div id="app"></div>
 
   <script>
+    // ===== 拦截函数（全局） =====
+    function handleLinkClick(e) {
+      var target = e.target.closest('a');
+      if (!target) return;
+
+      var href = target.getAttribute('href');
+      if (!href) return;
+
+      if (href.match(/^(https?|mailto|javascript|#)/i)) return;
+      if (!href.endsWith('.md')) return;
+
+      e.preventDefault();
+
+      // 使用 target.pathname 获取完整路径
+      var pathname = target.pathname;
+      pathname = pathname.replace(/\.md$/, '');
+      pathname = pathname.replace('/manual/', '/manual-zh/');
+      if (!pathname.endsWith('/')) pathname += '/';
+
+      window.location.hash = pathname;
+    }
+
+    function bindInterceptor() {
+      var container = document.getElementById('app');
+      if (!container) return;
+      container.removeEventListener('click', handleLinkClick);
+      container.addEventListener('click', handleLinkClick);
+    }
+
+    // ===== 初始化 =====
+    if (document.readyState === 'complete') {
+      bindInterceptor();
+    } else {
+      window.addEventListener('load', bindInterceptor);
+    }
+
+    // ===== Docsify 配置 =====
     window.$docsify = {
       name: 'Flax 中文文档',
       repo: 'https://github.com/jiaacode/FlaxDocs-zh',
@@ -18,17 +55,9 @@
       auto2top: true,
       basePath: '/FlaxDocs-zh/',
       homepage: 'index.md',
-      alias: {
-        '/manual/(.*)': '/manual-zh/$1'
-      },
       plugins: [
         function(hook) {
-          hook.beforeEach(function(route) {
-            if (route.path && route.path.endsWith('.md')) {
-              route.path = route.path.replace(/\.md$/, '');
-            }
-            return route;
-          });
+          hook.doneEach(bindInterceptor);
         }
       ]
     };
