@@ -10,6 +10,23 @@
   <div id="app"></div>
 
   <script>
+    // ========== 修复所有硬编码链接 ==========
+    function fixHardcodedLinks() {
+      var container = document.getElementById('app');
+      if (!container) return;
+      var links = container.querySelectorAll('a[href$=".md"]');
+      for (var i = 0; i < links.length; i++) {
+        var el = links[i];
+        var href = el.getAttribute('href');
+        if (!href || href.match(/^(https?|mailto|javascript|#)/i)) continue;
+        var newHref = href.replace(/\.md$/, '');
+        if (newHref && !newHref.endsWith('/') && !newHref.endsWith('#')) {
+          newHref += '/';
+        }
+        el.setAttribute('href', newHref);
+      }
+    }
+
     // ========== Docsify 配置 ==========
     window.$docsify = {
       name: 'Flax 中文文档',
@@ -19,54 +36,35 @@
       auto2top: true,
       basePath: '/FlaxDocs-zh/',
       homepage: 'index.md',
-      
-      // 开启链接捕获（默认开启）
       catchLinks: true,
-      
-      // 路径别名（作为辅助，主要靠 beforeEach）
+
+      // 路径别名（辅助）
       alias: {
         '/manual/(.*)': '/manual-zh/$1'
       },
-      
-      // ========== 插件：拦截并重写所有 manual 路径 ==========
+
       plugins: [
         function(hook) {
-          // 在路由解析前重写路径
+          // 路由重写：将所有 manual 路径映射到 manual-zh
           hook.beforeEach(function(route) {
-            // 1. 去掉 .md 后缀
             if (route.path && route.path.endsWith('.md')) {
               route.path = route.path.replace(/\.md$/, '');
             }
-            
-            // 2. 核心修复：将 /manual/ 映射到 /manual-zh/
-            if (route.path && route.path.includes('/manual/')) {
-              route.path = route.path.replace(/\/manual\//g, '/manual-zh/');
+            // 核心修复：将 manual 开头的路径替换为 manual-zh
+            if (route.path && route.path.match(/^\/?manual/)) {
+              route.path = route.path.replace(/^\/?manual/, '/manual-zh');
             }
-            
             return route;
           });
-          
+
           // 页面加载后修复硬编码链接
-          hook.doneEach(function() {
-            document.querySelectorAll('#app a[href$=".md"]').forEach(function(el) {
-              var href = el.getAttribute('href');
-              if (!href) return;
-              if (href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) return;
-              
-              var newHref = href.replace(/\.md$/, '');
-              if (newHref && !newHref.endsWith('/')) {
-                newHref += '/';
-              }
-              // 如果链接指向 /manual/，但当前页面在 manual-zh 内，可能需要额外处理，但这里不强制改
-              el.setAttribute('href', newHref);
-            });
-          });
+          hook.ready(fixHardcodedLinks);
+          hook.doneEach(fixHardcodedLinks);
         }
       ]
     };
   </script>
 
-  <!-- 加载 Docsify 核心库 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
