@@ -4,26 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flax 引擎中文文档</title>
-  <!-- Docsify 默认主题（可替换为其他主题） -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
 <body>
-  <!-- Docsify 挂载点 -->
   <div id="app"></div>
 
   <script>
     window.$docsify = {
-      // ---------- 基础配置 ----------
-      name: 'Flax 中文文档',            // 左上角标题
-      repo: 'https://github.com/jiaacode/FlaxDocs-zh', // 右上角仓库链接
-      loadSidebar: true,               // 启用侧边栏（需 _sidebar.md）
-      subMaxLevel: 3,                  // 自动生成目录层级
-      auto2top: true,                  // 切换页面时滚动到顶部
-      basePath: '/FlaxDocs-zh/',       // 文档根路径
-      homepage: 'index.md',            // 首页文件
-
-      // ---------- 路由拦截（核心修复） ----------
-      // 功能：拦截所有以 .md 结尾的链接，交给 Docsify 渲染，而不是让浏览器下载
+      name: 'Flax 中文文档',
+      repo: 'https://github.com/jiaacode/FlaxDocs-zh',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      basePath: '/FlaxDocs-zh/',
+      homepage: 'index.md',
+      // 兜底拦截：处理已进入路由的 .md 请求
       plugins: [
         function(hook) {
           hook.beforeEach(function(route) {
@@ -37,7 +32,7 @@
     };
   </script>
 
-  <!-- 加载 Docsify 核心库 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="intercept.js"></script>
 </body>
 </html>
