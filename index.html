@@ -9,20 +9,20 @@
 <body>
   <div id="app"></div>
   <script>
-    // 动态获取部署路径，自动补全仓库名（官方推荐做法）
-    var path = window.location.pathname;
-    if (path.endsWith('/')) path = path.slice(0, -1); // 去掉末尾斜杠
     window.$docsify = {
-      basePath: path + '/',  // 自动变为 '/FlaxDocs-zh/'
+      basePath: '/FlaxDocs-zh/',
+            homepage: 'index.md',
       loadSidebar: '_sidebar.md',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/(.*\.(png|jpg|jpeg|svg|gif|webp))': '/$1'
+      },
       subMaxLevel: 2,
       search: 'auto',
       routerMode: 'hash',
-      homepage: 'index.md',
-      catchLinks: true        // 官方链接拦截，开启即可
+      catchLinks: true
     };
   </script>
-  <!-- 完全移除之前所有自定义拦截脚本，只保留 Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 </body>
 </html>
