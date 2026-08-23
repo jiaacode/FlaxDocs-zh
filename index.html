@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Flax 引擎中文文档</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.13.1/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
+  <script>
+    window.$docsify = {
+      name: 'Flax 引擎文档（中文）',
+      repo: 'https://github.com/jiaacode/FlaxDocs-zh',
+      basePath: '/FlaxDocs-zh/',
+      relativePath: true,
+      homepage: 'index.md',
+      loadSidebar: true,
+      auto2top: true,
+      maxLevel: 2,
+      catchLinks: true,                    // 显式开启
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/manual/(.*)': '/manual-zh/$1'   // 所有 manual/ 映射到 manual-zh/
+      }
+    };
+  </script>
+  
+  <!-- ===== 保险脚本：强制所有内部链接走 Docsify 路由 ===== -->
+  <script>
+    (function() {
+      // 等待 Docsify 加载完毕再绑定拦截器
+      if (window.Docsify) {
+        bindInterceptor();
+      } else {
+        document.addEventListener('docsify:init', bindInterceptor);
+      }
+      function bindInterceptor() {
+        document.addEventListener('click', function(e) {
+          const anchor = e.target.closest('a');
+          if (!anchor) return;
+          const href = anchor.getAttribute('href');
+          if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) return;
+          // 如果已经由 Docsify 处理，跳过（Docsify 会添加属性标记）
+          if (anchor.dataset.docsifyProcessed) return;
+          
+          e.preventDefault();
+          // 使用 Docsify 路由导航
+          if (window.Docsify && window.Docsify.router) {
+            // 将 href 转换为绝对路径（基于当前路由）
+            const currentPath = window.location.hash.replace(/^#\/?/, '') || '/';
+            const baseUrl = window.location.origin + window.location.pathname;
+            // 构造完整 URL 解析
+            const fullUrl = new 网站(href, baseUrl + currentPath);
+            let targetPath = fullUrl.pathname.replace(/^\/FlaxDocs-zh/, '') || '/';
+            // 确保以 / 开头
+            if (!targetPath.startsWith('/')) targetPath = '/' + targetPath;
+            window.Docsify.router.navigate(targetPath);
+          } else {
+            // 降级方案：直接修改 hash
+            window.location.hash = href;
+          }
+        }, true); // 捕获阶段优先
+      }
+    })();
+  </script>
+</body>
+</html>
