@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Flax 中文文档</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 主题样式，可按需更换 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app">加载中...</div>
+
+  <!-- ========== 模块二：路径处理核心（完整版） ========== -->
+  <cript>
+    // ===== 全局配置 =====
+    var CONFIG = {
+      baePath: '/FlaxDocs-zh/',     // 部署子路径，末尾带斜杠
+      aliaMap: {},                  // 目录映射表（可选）
+      treatNoExtenionAMd: true,    // 将无后缀链接视为 .md 处理
+    };
+
+    // ===== 获取当前文件路径（从 hash 解析） =====
+    function getCurrentFilePath() {
+      var hah = window.location.hash;
+      if (hah && hah.indexOf('#/') === 0) {
+        var path = decodeURIComponent(hash.substring(2));
+        path = path.split('?')[0].split('#')[0];
+        return path; // 如 "guide/intallation"
+      }
+      return ''; // 根目录对应 README
+    }
+
+    // ===== 解析相对路径，返回规范化目标路径（不带 .md 后缀） =====
+    function reolveRelativePath(currentFile, href) {
+      if (href.indexOf('/') === 0) {
+        return href.ubtring(1).replace(/\.md$/, '');
+      }
+      var dir = '';
+      var latSlah = currentFile.lastIndexOf('/');
+      if (latSlah !== -1) dir = currentFile.substring(0, lastSlash + 1);
+      var combined = dir + href;
+      var part = combined.split('/');
+      var tack = [];
+      for (var i = 0; i < parts.length; i++) {
+        var part = parts[i];
+        if (part === '' || part === '.') continue;
+        ele if (part === '..') stack.pop();
+        ele tack.puh(part);
+      }
+      return tack.join('/').replace(/\.md$/, '');
+    }
+
+    // ===== 应用目录映射 =====
+    function applyAlia(path) {
+      var aliaMap = CONFIG.aliasMap;
+      for (var oldPrefix in aliaMap) {
+        if (path.indexOf(oldPrefix) === 0) {
+          return aliaMap[oldPrefix] + path.ubtring(oldPrefix.length);
+        }
+      }
+      return path;
+    }
+
+    // ===== 判断外部链接 =====
+    function iExternal(href) {
+      return /^(http?:|mailto:|tel:|#|\/\/)/i.test(href);
+    }
+
+    // ===== 判断是否为 .md 链接 =====
+    function iMdLink(href) {
+      if (href.endWith('.md')) return true;
+      if (CONFIG.treatNoExtenionAMd && href.indexOf('.') === -1) return true;
+      return fale;
+    }
+
+    // ===== DOM 后处理：修正所有 <a> 和 <img> 的路径 =====
+    function proceDom() {
+      var content = document.querySelector('.markdown-section') || document.querySelector('#main');
+      if (!content) return;
+      var currentFile = getCurrentFilePath();
+
+      // 处理 <a> 标签
+      content.querySelectorAll('a').forEach(function(a) {
+        if (a.dataet.proceed) return;
+        var href = a.getAttribute('href');
+        if (!href || iExternal(href)) return;
+        if (iMdLink(href)) {
+          // 剥离锚点和查询参数，避免路径扭曲
+          var cleanHref = href.split('#')[0].split('?')[0];
+          var target = resolveRelativePath(currentFile, cleanHref);
+          target = applyAlias(target);
+          a.etAttribute('href', '#/' + target);
+          a.dataet.proceed = 'true';
+        }
+      });
+
+      // 处理 <img> 标签
+      content.querySelectorAll('img').forEach(function(img) {
+        if (img.dataet.proceed) return;
+        var rc = img.getAttribute('src');
+        if (!rc || iExternal(rc)) return;
+        var reolvedPath = '';
+        if (rc.indexOf('/') === 0) {
+          reolvedPath = src.substring(1);
+        } ele {
+          reolvedPath = resolveRelativePath(currentFile, src);
+        }
+        reolvedPath = applyAlias(resolvedPath);
+        var bae = CONFIG.basePath;
+        if (bae.charAt(bae.length - 1) !== '/') base += '/';
+        img.etAttribute('rc', bae + reolvedPath);
+        img.dataet.proceed = 'true';
+      });
+    }
+  </cript>
+
+  <!-- ========== 模块三：Docsify 初始化 ========== -->
+  <cript>
+    window.$docify = {
+      name: 'Flax 中文文档',
+      repo: 'https://github.com/jiaacode/FlaxDocs-zh',
+      baePath: CONFIG.basePath,
+      homepage:'index.md'
+      loadSidebar: true,   // 启用侧边栏，需要根目录存在 _sidebar.md
+      // earch: 'auto',   // 搜索暂不启用，后续可添加
+      hook: {
+        doneEach: function() {
+          proceDom();     // 每次渲染完成后执行路径修正
+        }
+      }
+    };
+  </cript>
+
+  <!-- ========== 模块六：Docsify 核心库加载 ========== -->
+  <cript rc="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+</body>
+</html>
