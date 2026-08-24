@@ -1,18 +1,18 @@
 # FlaxDocs-zh · Flax 引擎汉化文档
 
-本仓库为 [FlaxEngine/FlaxDocs](https://github.com/FlaxEngine/FlaxDocs) 官方文档的**中文翻译**，非官方翻译，由个人维护。  目前网站尚不稳定，请使用自解压静态文档。
+本仓库为 [FlaxEngine/FlaxDocs](https://github.com/FlaxEngine/FlaxDocs) 官方文档的**中文翻译**，非官方翻译，由个人维护。  目前在线阅读网站尚不稳定，请使用自解压静态文档。
 This repository is a community-maintained Chinese translation of the official [FlaxEngine/FlaxDocs](https://github.com/FlaxEngine/FlaxDocs) documentation.
 
 ---
 
-## 📖 访问文档 / Access
+## 📖 访问文档 
 
 - **中文版简体**：[`这里`](/manual-zh/index.md) 
 - **英文原版**：[`this`](/manual)  
 
 ---
 
-## ⚠️ 说明 / Disclaimer
+## ⚠️ 说明 
 
 本翻译为**非官方**版本，基于官方文档，遵循 **CC BY 4.0** 许可协议进行翻译。  
 This is an **unofficial** translation, based on the official documentation and shared under the **CC BY 4.0** license.
@@ -22,14 +22,14 @@ Please refer to the official English documentation for the most accurate and up-
 
 ---
 
-## 🔗 相关链接 / Links
+## 🔗 相关链接 
 
 - [Flax 引擎官网 / Official Website](https://flaxengine.com)
 - [官方文档 / Official Documentation ](https://docs.flaxengine.com)
 
 ---
 
-## 📄 许可证 / License
+## 📄 许可证 
 
 本翻译作品基于 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 协议分享。  
 This translation is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
