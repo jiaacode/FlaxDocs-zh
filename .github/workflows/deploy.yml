@@ -2,7 +2,7 @@ name: Deploy FlaxDocs-zh to GitHub Pages
 
 on:
   push:
-分支: ["main"]
+    branches: ["main"]
 
 permissions:
   contents: read
