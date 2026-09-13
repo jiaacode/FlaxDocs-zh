@@ -1,6 +1,6 @@
 # 安装 Flax 启动器
 
-![安装 Flax](/manual/media/installing-flax.png)
+![安装 Flax](../../manual/get-started/media/installing-flax.png)
 
 要获取 Flax：请访问[下载页面](https://flaxengine.com/download)下载 Flax 启动器安装程序。
 
@@ -15,7 +15,7 @@
 > [!Note]
 > 此步骤是可选的，可以通过单击 **跳过登录** 来跳过。
 
-![登录 Flax 启动器](/manual/media/flax-launcher-login.png)
+![登录 Flax 启动器](../../manual/get-started/media/flax-launcher-login.png)
 
 # 安装 Flax 引擎
 
